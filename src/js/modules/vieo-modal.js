@@ -11,6 +11,7 @@ Array.from(playrVideoButtons).forEach(function (button) {
       // Створити <iframe> елемент
       let iframe = document.createElement("iframe");
       iframe.setAttribute("id", "youtubePlayer");
+      iframe.setAttribute("rel", "dns-prefetch");
       iframe.setAttribute("width", "560");
       iframe.setAttribute("height", "315");
       iframe.setAttribute("src", data + "?enablejsapi=1");
