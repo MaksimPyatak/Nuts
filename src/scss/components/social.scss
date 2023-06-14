@@ -1,0 +1,26 @@
+.social {
+   width: 80px;
+   margin-top: -4px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 13px;
+
+   li {
+      cursor: pointer;
+   }
+
+   &__facebook {
+      color: #93B474;
+   }
+
+   //&__icon {}
+
+   &__insta {
+      margin-left: -3px;
+   }
+
+   &__youtube {
+      font-size: 16px;
+   }
+}

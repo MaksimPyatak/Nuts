@@ -1,0 +1,26 @@
+.lang-select {
+   position: relative;
+   //z-index: 1;
+
+   &::after {
+      content: "\e831";
+      font-family: "nut";
+      font-size: 6px;
+      color: #93B474;
+      bottom: 2px;
+      right: 0px;
+      position: absolute;
+      //z-index: 0;
+   }
+
+   select {
+      appearance: none;
+      width: 30px;
+      height: 15px;
+      background: rgba(245, 245, 245, 0.5);
+      font-weight: 500;
+      font-size: 13px;
+      color: #000000;
+      cursor: pointer;
+   }
+}

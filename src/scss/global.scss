@@ -1,0 +1,83 @@
+.icon {
+   font-family: "nut";
+   font-style: normal;
+}
+
+h1 {
+   font-size: 62px;
+   line-height: 73px;
+
+   @media (max-width: 1024px) {
+      font-size: 48px;
+      line-height: 56px;
+   }
+
+   @media (max-width: 768px) {
+      font-size: 36px;
+      line-height: 42px;
+   }
+
+   @media (max-width: 425px) {
+      font-size: 28px;
+      line-height: 33px;
+   }
+}
+
+h2 {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 122%;
+
+   @media (max-width: 1024px) {
+      font-size: 32px;
+      line-height: 121.875%;
+   }
+
+   @media (max-width: 375px) {
+      font-size: 26px;
+   }
+}
+
+h3 {
+   font-size: 22px;
+   line-height: 127.27%;
+
+   @media (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 125%;
+   }
+}
+
+h4 {
+   font-size: 16px;
+   line-height: 137.5%;
+}
+
+h6 {
+   font-weight: 300;
+   font-size: 11px;
+   line-height: 17.7px;
+   letter-spacing: 0.06em;
+}
+
+.subtitle-h1 {
+   font-weight: 600;
+   font-size: 25px;
+   line-height: 32px;
+   letter-spacing: 0.01em;
+
+   @media (max-width: 1024px) {
+      font-size: 22px;
+      line-height: 26px;
+   }
+
+   @media (max-width: 768px) {
+      font-size: 19px;
+      line-height: 22px;
+   }
+
+   @media (max-width: 425px) {
+      font-size: 17px;
+      line-height: 23px;
+   }
+}

@@ -1,0 +1,25 @@
+.messengers {
+   width: 114px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   li {
+      cursor: pointer;
+   }
+
+   &__icon-box {
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      background: #337D5A;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF;
+      font-size: 32px;
+      font-weight: 400;
+   }
+
+   &__icon {}
+}

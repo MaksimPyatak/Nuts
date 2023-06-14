@@ -1,0 +1,35 @@
+.basket-icon {
+   position: relative;
+   display: block;
+   width: 29px;
+   height: 24px;
+
+   //&__icon-box {
+   //}
+
+   &__icon {
+      color: #337D5A;
+      font-size: 23px;
+   }
+
+   &__counter {
+      position: absolute;
+      top: 0;
+      right: 1px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #93B474;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 8px;
+
+      p {
+         margin: 0 0 1px 0;
+      }
+   }
+}
+
+.icon {}

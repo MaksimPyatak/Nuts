@@ -1,0 +1,78 @@
+<header class="header">
+  <div class="header__zero"></div>
+  <div class="header__top-header top-header">
+    <div class="top-header__container">
+      <div class="top-header__social">@@include('./components/social.html',{})</div>
+      <div class="top-header__discount">Ваша персональная скидка - 5%</div>
+      <div class="top-header__user-navigation">
+        <div class="top-header__login-box">
+          <a class="top-header__login" href="../Login.html">
+            <i class="top-header__icon icon"> &#xe817; </i>
+            <span>Вход</span>
+          </a>
+          <a href="../registration.html" class="top-header__registration">Регистрация</a>
+        </div>
+        <div class="top-header__lang">@@include('./components/lang-select.html',{})</div>
+      </div>
+    </div>
+  </div>
+  <div class="header__middle-header middle-header">
+    <div class="middle-header__container">
+      <div class="middle-header__logo-section">
+        <div class="middle-header__burger-icon">
+          <span></span>
+        </div>
+        <a href="../index.html" class="middle-header__logo-box">
+          <img src="../img/logo.svg" alt="logo" class="middle-header__icon" />
+          <p class="middle-header__logo-text">ОРЕХ ПРИЧЕРНОМОРЬЯ</p>
+        </a>
+        <div class="middle-header__basket-icon" id="logo-basket">@@include('./components/basekt-icon.html',{})</div>
+      </div>
+      <div class="middle-header__comunication-section">
+        <div class="middle-header__contacts-box">
+          <div class="middle-header__messengers-box">@@include('./components/messengers.html',{})</div>
+          <div class="middle-header__tells-box">
+            <div class="middle-header__tell-icon-box">
+              <i class="middle-header__tell-icon icon"> &#xe82a; </i>
+            </div>
+            <div class="middle-header__tells">
+              <a href="tel:+38(044)750-50-11" class="middle-header__tell"> <span>+38 (044)</span>750-50-11 </a>
+              <a href="tel:+380447505051" class="middle-header__tell"> <span>+38 (097)</span>775-50-51 </a>
+            </div>
+          </div>
+        </div>
+        <div class="middle-header__button-box">
+          <div class="middle-header__button">
+            <p class="middle-header__button-text">Заказать звонок</p>
+          </div>
+          <div class="middle-header__coment">Ждем Вашего звонка ежедневно с 9 до 18</div>
+        </div>
+        <div class="middle-header__basket-icon" id="comunication-basket">@@include('./components/basekt-icon.html',{})</div>
+
+        <div class="middle-header__lang-select-wrapper">@@include('./components/lang-select.html',{})</div>
+      </div>
+    </div>
+  </div>
+  <div class="header__lower-header lower-header">
+    <ul class="lower-header__container">
+      <li class="lower-header__item-box menu-item">
+        <a href="../catalog.html" class="lower-header__item">Магазин</a>
+      </li>
+      <li class="lower-header__item-box menu-item">
+        <a href="../about-company.html" class="lower-header__item">О производстве </a>
+      </li>
+      <li class="lower-header__item-box menu-item">
+        <a href="../payment-delivery.html" class="lower-header__item">Оплата и доставка</a>
+      </li>
+      <li class="lower-header__item-box menu-item">
+        <a href="../corporate-clients.html" class="lower-header__item">Оптовым и корпоративным клиентам</a>
+      </li>
+      <li class="lower-header__item-box menu-item">
+        <a href="../news.html" class="lower-header__item">Новости и статьи</a>
+      </li>
+      <li class="lower-header__item-box menu-item">
+        <a href="#contacts" class="lower-header__item">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</header>

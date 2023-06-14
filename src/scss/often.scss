@@ -1,0 +1,61 @@
+@mixin container {
+   max-width: 1290px;
+   height: 100%;
+   padding: 0 var(--pdng-conteiner);
+   margin: 0 auto;
+   box-sizing: content-box;
+}
+
+@mixin button {
+   background: #337D5A;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #FFFFFF;
+   cursor: pointer;
+
+   &:hover {
+      background: transparent;
+      border: 1.5px solid #337D5A;
+      color: #337D5A;
+   }
+}
+
+// Текст з двома лініями з двох боків -ТЕКСТ----
+//Додаємо в основний блок
+@mixin discover-more($color: inherit, $background: rgba(255, 255, 255, 0.4)) {
+   width: fit-content;
+   height: 13px;
+
+   .discover-more__link {
+      position: relative;
+      font-size: 10px;
+      line-height: 120%;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: $color;
+      display: flex;
+      padding: 0 65px 0 16px;
+
+      &::before,
+      &::after {
+         content: " ";
+         position: absolute;
+         top: 35%;
+         display: block;
+         background: $background;
+      }
+
+      &::before {
+         left: 0;
+         width: 8px;
+         height: 1px;
+      }
+
+      &::after {
+         right: 0;
+         width: 56px;
+         height: 1px;
+      }
+   }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Главная - Орех Причерноморья" })
+
+  <body>
+    <!--@@include('html/elements/preloader.html',{})-->
+    <!--<div class="wrapper">-->
+    @@include('html/header.html',{})
+    <main class="main-page">
+      <div class="main-page__banner">@@include('html/components/main/banner.html',{})</div>
+    </main>
+    @@include('html/footer.html',{})
+    <!--</div>-->
+    @@include('./html/components/video-modal.html',{})
+    <!--@@include('html/elements/pop-up2.html',{})-->
+    <script src="js/app.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </body>
+</html>
