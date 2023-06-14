@@ -3,6 +3,7 @@
    src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway-ExtraBold.woff") format("woff");
    font-weight: 800;
    font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
       url('../fonts/Raleway-Medium.woff2') format('.woff2');
    font-weight: 500;
    font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
@@ -25,6 +27,7 @@
       url('../fonts/Raleway-SemiBold.woff2') format('.woff2');
    font-weight: 600;
    font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
@@ -36,6 +39,7 @@
       url('../fonts/Montserrat-MediumItalic.woff2') format('.woff2');
    font-weight: 500;
    font-style: italic;
+   font-display: swap;
 }
 
 @font-face {
@@ -47,6 +51,7 @@
       url('../fonts/Montserrat-SemiBold.woff2') format('.woff2');
    font-weight: 600;
    font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
@@ -58,4 +63,5 @@
       url('../fonts/Montserrat-ExtraBoldItalic.woff2') format('.woff2');
    font-weight: 800;
    font-style: italic;
+   font-display: swap;
 }
