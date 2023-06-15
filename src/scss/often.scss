@@ -21,6 +21,22 @@
    }
 }
 
+@mixin button-empty {
+   border: 1.5px solid #337D5A;
+   background: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #337D5A;
+   cursor: pointer;
+
+   &:hover {
+      background: #337D5A;
+      border: none;
+      color: #FFFFFF;
+   }
+}
+
 // Текст з двома лініями з двох боків -ТЕКСТ----
 //Додаємо в основний блок
 @mixin discover-more($color: inherit, $background: rgba(255, 255, 255, 0.4)) {

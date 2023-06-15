@@ -35,6 +35,7 @@ flsFunctions.isWebp();
 
 
 import "./modules/vieo-modal.js"
+import "./modules/product-card.js"
 
 //!!Підключення файлу з бургер-меню
 import "./modules/burger-menu.js";

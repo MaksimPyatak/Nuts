@@ -8,6 +8,16 @@
     @@include('html/header.html',{})
     <main class="main-page">
       <div class="main-page__banner">@@include('html/components/main/banner.html',{})</div>
+      <div class="main-page__production production">
+        <div class="production__container">
+          <h2 class="production__title">Продукция</h2>
+          <div class="production__subtitle subtitle-h2">Экологически чистые, качественные ядра грецкого ореха и фундука, а также плоды шиповника в удобной, надежной, вакуумной упаковке разного объема</div>
+          <div class="production__box">@@include('html/components/production.html',{})</div>
+          <a href="catalog.html" class="production__button">
+            <div class="production__button">Перейти в магазин</div>
+          </a>
+        </div>
+      </div>
     </main>
     @@include('html/footer.html',{})
     <!--</div>-->

@@ -52,10 +52,50 @@ main {
    }
 }
 
+.main-page {
+
+   .production {
+      margin-top: 83px;
+
+      &__container {
+         @include container;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      &__title {
+         margin: 0 0 32px 0;
+         color: #1A2F3F;
+      }
+
+      &__subtitle {
+         max-width: 540px;
+         margin: 0 0 65px 0;
+         text-align: center;
+         color: #1A2F3F;
+      }
+
+      &__box {}
+
+      &__button {
+         @include button-empty;
+         width: 200px;
+         height: 52px;
+      }
+   }
+}
+
+@import "../../node_modules/swiper/swiper.scss";
+@import '../../node_modules/swiper/modules/navigation/navigation.scss';
+//@import '../../node_modules/swiper/scss/navigation';
 
 @import "./components/header.scss";
 @import "./components/main/banner.scss";
 @import "./components/video-modal.scss";
+@import "./components/product-card.scss";
+
+
 
 
 

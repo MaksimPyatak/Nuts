@@ -1,0 +1,95 @@
+.product {
+   max-width: 500px;
+   height: 534px;
+   border: 1.5px solid #93B474;
+
+   &__swiper {
+      position: relative;
+      height: 278px;
+      background: #FCFCFC;
+   }
+
+   &__action-icon-box {
+      position: absolute;
+      top: 20px;
+      left: -3px;
+      width: 82px;
+      height: 31px;
+      background-image: url('@img/product1/action.svg');
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      background-position: left;
+   }
+
+   &__action-text {
+      margin: 7px 0 0 20px;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+   }
+
+   &__slide-img {}
+
+   &__content {
+
+      &__table {}
+   }
+
+   &__title {}
+
+   &__article {}
+
+   &__description {}
+
+   &__weight-box {}
+
+   &__weight-icon-box {}
+
+   &__weight-icon {}
+
+   &__weight-box-data {}
+
+   &__weight-heading {}
+
+   &__weight-data {}
+
+   &__package-box {}
+
+   &__package-icon-box {}
+
+   &__package-icon {}
+
+   &__package-box-data {}
+
+   &__package-heading {}
+
+   &__package-data {}
+
+   &__prise-section {}
+}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+.prise-section {
+
+   &__price-box {}
+
+   &__heading {}
+
+   &__price {}
+
+   &__old-price {}
+
+   &__button {}
+
+   &__text {}
+}

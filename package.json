@@ -43,7 +43,7 @@
 		"gulp-webpcss": "latest",
 		"gulp-zip": "latest",
 		"sass": "latest",
-		"swiper": "^8.4.4",
+		"swiper": "^8.4.7",
 		"vinyl-ftp": "latest",
 		"webp-converter": "2.2.3",
 		"webpack": "latest",
