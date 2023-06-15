@@ -1,0 +1,16 @@
+.about-page {
+
+    &__banner {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 75px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__contacts {}
+}
