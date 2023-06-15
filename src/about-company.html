@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title":"О компании - Орех Причерноморья" })
+@@include('html/head.html',{ "title":"О компании - Орех Причерноморья" })
 
-  <body>
-    <!--@@include('html/elements/preloader.html',{})-->
-    <div class="wrapper">
-      <!--@@include('html/header.html',{})-->
-      <main>
-        <h1 style="color: red; font-size: 48px">О компании</h1>
-      </main>
-      <!--@@include('html/footer.html',{})-->
+<body>
+  <!--@@include('html/elements/preloader.html',{})-->
+  <!--<div class="wrapper">-->
+  @@include('html/header.html',{})
+  <main class="about-page">
+    <div class="about-page__banner">@@include('html/components/main/banner.html',{})</div>
+    <div class="about-page__about-manufacturer-component">
+      @@include('html/components/about-company/about-manufacturer.html',{})
     </div>
-    <!--@@include('html/elements/pop-up.html',{})
-    @@include('html/elements/pop-up2.html',{})-->
-    <script src="js/app.min.js"></script>
-  </body>
+    <div class="about-page__contacts-component">@@include('html/components/contacts.html',{})</div>
+  </main>
+  @@include('html/footer.html',{})
+  <!--</div>-->
+  @@include('./html/components/video-modal.html',{})
+  <!--@@include('html/elements/pop-up2.html',{})-->
+  <script src="js/app.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api" async></script>
+</body>
+
 </html>
