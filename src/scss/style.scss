@@ -88,12 +88,19 @@ main {
 
 @import "../../node_modules/swiper/swiper.scss";
 @import '../../node_modules/swiper/modules/navigation/navigation.scss';
-//@import '../../node_modules/swiper/scss/navigation';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 
 @import "./components/header.scss";
 @import "./components/main/banner.scss";
 @import "./components/video-modal.scss";
 @import "./components/product-card.scss";
+@import "./components/contacts.scss";
+@import "./components/about-company/about-manufacturer.scss";
+
+
+// PAGE
+@import "./components/page/about-company.scss";
 
 
 
