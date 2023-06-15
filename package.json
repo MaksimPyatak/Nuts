@@ -9,7 +9,8 @@
 		"build": "gulp build --build",
 		"zip": "gulp deployZIP --build",
 		"deploy": "gulp deployFTP --build",
-		"svgSprive": "gulp svgSpriteTask"
+		"svgSprive": "gulp svgSpriteTask",
+      "format:html": "prettier --write \"src/**/*.html\""
 	},
 	"author": "FLS",
 	"license": "ISC",
