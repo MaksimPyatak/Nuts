@@ -1823,8 +1823,8 @@ button.swiper-pagination-bullet {
   margin-left: 0;
 }
 
-.lower-header._active .lower-header__item {
-  padding: 0;
+.lower-header._active .lower-header__item-box:hover a {
+  color: #FFFFFF;
 }
 
 .lower-header__container {
@@ -2040,6 +2040,196 @@ button.swiper-pagination-bullet {
   line-height: 12px;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+}
+
+.product .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product .swiper-button-prev::after,
+.product .swiper-button-next::after {
+  content: "";
+}
+
+.product .swiper-button-prev i,
+.product .swiper-button-next i {
+  font-size: 18px;
+  color: #337D5A;
+}
+
+.product .swiper-button-prev.swiper-button-disabled i,
+.product .swiper-button-next.swiper-button-disabled i {
+  color: #C4C4C4;
+}
+
+.product__slide-img {
+  margin: 0 auto;
+}
+
+.product__table {
+  padding: 19px 23px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 64.6% 31.3%;
+  grid-template-columns: 64.6% 31.3%;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.product__title {
+  margin-bottom: 7px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+}
+
+.product__article {
+  margin-bottom: 12px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #8A8A8A;
+}
+
+.product__description {
+  margin-bottom: 17px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 106%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.product__weight-box {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__weight-icon-box {
+  margin-right: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #337D5A;
+}
+
+.product__weight-box-data {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+}
+
+.product__weight-heading {
+  color: #337D5A;
+}
+
+.product__weight-data {
+  color: #8A8A8A;
+}
+
+.product__package-box {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__package-icon-box {
+  margin-right: 14px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #337D5A;
+}
+
+.product__package-box-data {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+}
+
+.product__package-heading {
+  color: #8A8A8A;
+}
+
+.product__package-data {
+  color: #337D5A;
+}
+
+.product .prise-section {
+  padding: 14px 23px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product .prise-section__price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+
+.product .prise-section__heading {
+  margin-right: 8px;
+}
+
+.product .prise-section__price {
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 24px;
+  color: #337D5A;
+}
+
+.product .prise-section__old-price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8A8A8A;
 }
 
 .contacts {

@@ -600,11 +600,10 @@
             &:nth-child(4) {
                margin-left: 0;
             }
-         }
 
-         &__item {
-            padding: 0;
-
+            &:hover a {
+               color: #FFFFFF;
+            }
          }
       }
    }

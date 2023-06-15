@@ -22,8 +22,12 @@
          <img src="@img/product1/1.jpg" alt="горіхи" class="product__slide-img">
       </div>-->
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev">
+      <i class="product__weight-icon icon"> &#xe827; </i>
+    </div>
+    <div class="swiper-button-next">
+      <i class="product__weight-icon icon"> &#xe803; </i>
+    </div>
   </div>
   <div class="product__content">
     <div class="product__table">
@@ -35,7 +39,7 @@
           <i class="product__weight-icon icon"> &#xe80a; </i>
         </div>
         <div class="product__weight-box-data">
-          <div class="product__weight-heading"></div>
+          <div class="product__weight-heading">Масса:</div>
           <div class="product__weight-data">@@weight</div>
         </div>
       </div>
@@ -44,7 +48,7 @@
           <i class="product__package-icon icon"> &#xe80a; </i>
         </div>
         <div class="product__package-box-data">
-          <div class="product__package-heading"></div>
+          <div class="product__package-heading">Упаковка</div>
           <div class="product__package-data">@@package</div>
         </div>
       </div>
@@ -52,8 +56,8 @@
     <div class="product__prise-section prise-section">
       <div class="prise-section__price-box">
         <div class="prise-section__heading">Цена:</div>
-        <div class="prise-section__price">@@price</div>
-        <div class="prise-section__old-price">@@old-price</div>
+        <div class="prise-section__price">@@price <span>грн.</span></div>
+        <div class="prise-section__old-price">@@old-price<span>грн.</span></div>
       </div>
       <button type="button" class="prise-section__button">
         <div class="prise-section__text">Купить</div>
