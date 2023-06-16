@@ -1,21 +1,28 @@
 <div class="product">
   <div class="product__swiper swiper">
-    <!--<div class="product__action-icon-box">
-      <p class="product__action-text">АКЦИЯ</p>
-    </div>-->
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <!--@@img1-->
+        <div class="product__zoom" data-content="@@img1">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
         <img src="@@img1" alt="горіхи" class="product__slide-img" />
       </div>
       <div class="swiper-slide">
+        <div class="product__zoom" data-content="@@img2">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
         <img src="@@img2" alt="горіхи" class="product__slide-img" />
       </div>
       <div class="swiper-slide">
-        <!--@@img1-->
+        <div class="product__zoom" data-content="@@img1">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
         <img src="@@img1" alt="горіхи" class="product__slide-img" />
       </div>
       <div class="swiper-slide">
+        <div class="product__zoom" data-content="@@img2">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
         <img src="@@img2" alt="горіхи" class="product__slide-img" />
       </div>
       <!--<div class="swiper-slide">
@@ -32,8 +39,8 @@
   <div class="product__content">
     <div class="product__table">
       <h4 class="product__title">@@title</h4>
-      <p class="product__article">Арт: @@art</p>
-      <p class="product__description">@@description</p>
+      <p class="product__article monts15">Арт: @@art</p>
+      <p class="product__description p16">@@description</p>
       <div class="product__weight-box">
         <div class="product__weight-icon-box">
           <i class="product__weight-icon icon"> &#xe80a; </i>
@@ -45,7 +52,7 @@
       </div>
       <div class="product__package-box">
         <div class="product__package-icon-box">
-          <i class="product__package-icon icon"> &#xe80a; </i>
+          <i class="product__package-icon icon"> &#xe80b; </i>
         </div>
         <div class="product__package-box-data">
           <div class="product__package-heading">Упаковка</div>
@@ -56,11 +63,14 @@
     <div class="product__prise-section prise-section">
       <div class="prise-section__price-box">
         <div class="prise-section__heading">Цена:</div>
-        <div class="prise-section__price">@@price <span>грн.</span></div>
-        <div class="prise-section__old-price">@@old-price<span>грн.</span></div>
+        <div class="prise-section__price"><span class="prise-section__from">@@from</span>@@price<span>грн.</span></div>
+        <div class="prise-section__old-price">
+          <div class="prise-section__old-price-line"></div>
+          @@old-price<span>@@currency</span>
+        </div>
       </div>
       <button type="button" class="prise-section__button">
-        <div class="prise-section__text">Купить</div>
+        <div class="prise-section__text p14">Купить</div>
       </button>
     </div>
   </div>

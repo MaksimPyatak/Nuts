@@ -25,16 +25,20 @@ h1 {
 
 h2 {
    font-weight: 700;
-   font-size: 36px;
+   font-size: 45px;
    line-height: 122%;
 
    @media (max-width: 1024px) {
-      font-size: 32px;
-      line-height: 121.875%;
+      font-size: 40px;
    }
 
-   @media (max-width: 375px) {
-      font-size: 26px;
+   @media (max-width: 768px) {
+      font-size: 36px;
+      line-height: 42px;
+   }
+
+   @media (max-width: 425px) {
+      font-size: 32px;
    }
 }
 
@@ -49,8 +53,10 @@ h3 {
 }
 
 h4 {
-   font-size: 16px;
-   line-height: 137.5%;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 178%;
+   //letter-spacing: 0.01em;
 }
 
 h6 {
@@ -85,7 +91,7 @@ h6 {
 .subtitle-h2 {
    font-weight: 500;
    font-size: 18px;
-   line-height: 122%;
+   line-height: 155%;
    letter-spacing: 0.01em;
 
    @media (max-width: 1024px) {
@@ -99,4 +105,30 @@ h6 {
    @media (max-width: 425px) {
       font-size: 12px;
    }
+}
+
+.monts15 {
+   font-family: 'Montserrat';
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 18px;
+   //letter-spacing: 0.01em;
+}
+
+.p16 {
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 130%;
+   letter-spacing: 0.01em;
+
+   @media (max-width: 768px) {
+      font-size: 14px;
+   }
+}
+
+.p14 {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
 }

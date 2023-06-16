@@ -65,13 +65,13 @@ main {
       }
 
       &__title {
-         margin: 0 0 32px 0;
+         margin: 0 0 27px 0;
          color: #1A2F3F;
       }
 
       &__subtitle {
-         max-width: 540px;
-         margin: 0 0 65px 0;
+         max-width: 615px;
+         margin: 0 0 62px 0;
          text-align: center;
          color: #1A2F3F;
       }
@@ -82,7 +82,15 @@ main {
          @include button-empty;
          width: 200px;
          height: 52px;
+         margin: 70px 0 0 0;
+         font-family: 'Raleway';
+         font-weight: 700;
+         font-size: 15px;
+         line-height: 18px;
+         letter-spacing: 0.02em;
       }
+
+      &__button-text {}
    }
 }
 
@@ -97,6 +105,7 @@ main {
 @import "./components/product-card.scss";
 @import "./components/contacts.scss";
 @import "./components/about-company/about-manufacturer.scss";
+@import "./components/productions.scss";
 
 
 // PAGE

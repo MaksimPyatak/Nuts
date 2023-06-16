@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible, Content-Security-Policy" content="IE=edge 'unsafe-inline'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230615193413" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230616233929" />
   <title>Главная - Орех Причерноморья</title>
 </head>
 
@@ -55,7 +55,7 @@
         <div class="middle-header__burger-icon">
           <span></span>
         </div>
-        <a href="../index.html" class="middle-header__logo-box">
+        <a href="index.html" class="middle-header__logo-box">
           <img src="img/logo.svg" alt="logo" class="middle-header__icon" />
           <p class="middle-header__logo-text">ОРЕХ ПРИЧЕРНОМОРЬЯ</p>
         </a>
@@ -156,25 +156,36 @@
           <div class="production__subtitle subtitle-h2">Экологически чистые, качественные ядра грецкого ореха и фундука, а также плоды шиповника в удобной, надежной, вакуумной упаковке разного объема</div>
           <!--<div class="production__box">-->
           <div class="production-box">
-  <div class="production-box__card"><div class="product">
+  <div class="production-box__card">
+    <div class="production-box__action-icon-box">
+      <p class="production-box__action-text">АКЦИЯ</p>
+    </div>
+    <div class="product">
   <div class="product__swiper swiper">
-    <!--<div class="product__action-icon-box">
-      <p class="product__action-text">АКЦИЯ</p>
-    </div>-->
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/1.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/1.webp" type="image/webp"><img src="img/product-card/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/1.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/1.webp" type="image/webp"><img src="img/product-card/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <!--<div class="swiper-slide">
          <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
@@ -190,20 +201,20 @@
   <div class="product__content">
     <div class="product__table">
       <h4 class="product__title">Грецкий орех</h4>
-      <p class="product__article">Арт: 0091</p>
-      <p class="product__description">Орех сладкий, классический, очищенный</p>
+      <p class="product__article monts15">Арт: 0091</p>
+      <p class="product__description p16">Орех сладкий, классический, очищенный</p>
       <div class="product__weight-box">
         <div class="product__weight-icon-box">
           <i class="product__weight-icon icon"> &#xe80a; </i>
         </div>
         <div class="product__weight-box-data">
           <div class="product__weight-heading">Масса:</div>
-          <div class="product__weight-data">40г</div>
+          <div class="product__weight-data">40г.</div>
         </div>
       </div>
       <div class="product__package-box">
         <div class="product__package-icon-box">
-          <i class="product__package-icon icon"> &#xe80a; </i>
+          <i class="product__package-icon icon"> &#xe80b; </i>
         </div>
         <div class="product__package-box-data">
           <div class="product__package-heading">Упаковка</div>
@@ -214,11 +225,176 @@
     <div class="product__prise-section prise-section">
       <div class="prise-section__price-box">
         <div class="prise-section__heading">Цена:</div>
-        <div class="prise-section__price">19 <span>грн.</span></div>
-        <div class="prise-section__old-price">21<span>грн.</span></div>
+        <div class="prise-section__price"><span class="prise-section__from"></span>19<span>грн.</span></div>
+        <div class="prise-section__old-price">
+          <div class="prise-section__old-price-line"></div>
+          21<span>грн.</span>
+        </div>
       </div>
       <button type="button" class="prise-section__button">
-        <div class="prise-section__text">Купить</div>
+        <div class="prise-section__text p14">Купить</div>
+      </button>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="production-box__card">
+    <div class="production-box__novelty-icon-box">
+      <p class="production-box__novelty-text">НОВИНКА</p>
+    </div>
+    <div class="product">
+  <div class="product__swiper swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="product__zoom" data-content="img/product-card/2.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/2.webp" type="image/webp"><img src="img/product-card/2.jpg" alt="горіхи" class="product__slide-img" /></picture>
+      </div>
+      <div class="swiper-slide">
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+      </div>
+      <div class="swiper-slide">
+        <div class="product__zoom" data-content="img/product-card/2.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/2.webp" type="image/webp"><img src="img/product-card/2.jpg" alt="горіхи" class="product__slide-img" /></picture>
+      </div>
+      <div class="swiper-slide">
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+      </div>
+      <!--<div class="swiper-slide">
+         <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
+      </div>-->
+    </div>
+    <div class="swiper-button-prev">
+      <i class="product__weight-icon icon"> &#xe827; </i>
+    </div>
+    <div class="swiper-button-next">
+      <i class="product__weight-icon icon"> &#xe803; </i>
+    </div>
+  </div>
+  <div class="product__content">
+    <div class="product__table">
+      <h4 class="product__title">Грецкий орех</h4>
+      <p class="product__article monts15">Арт: 0091</p>
+      <p class="product__description p16">Орех сладкий, классический, очищенный</p>
+      <div class="product__weight-box">
+        <div class="product__weight-icon-box">
+          <i class="product__weight-icon icon"> &#xe80a; </i>
+        </div>
+        <div class="product__weight-box-data">
+          <div class="product__weight-heading">Масса:</div>
+          <div class="product__weight-data">40г.</div>
+        </div>
+      </div>
+      <div class="product__package-box">
+        <div class="product__package-icon-box">
+          <i class="product__package-icon icon"> &#xe80b; </i>
+        </div>
+        <div class="product__package-box-data">
+          <div class="product__package-heading">Упаковка</div>
+          <div class="product__package-data">вакуумная</div>
+        </div>
+      </div>
+    </div>
+    <div class="product__prise-section prise-section">
+      <div class="prise-section__price-box">
+        <div class="prise-section__heading">Цена:</div>
+        <div class="prise-section__price"><span class="prise-section__from">от </span>21<span>грн.</span></div>
+        <div class="prise-section__old-price">
+          <div class="prise-section__old-price-line"></div>
+           <span></span>
+        </div>
+      </div>
+      <button type="button" class="prise-section__button">
+        <div class="prise-section__text p14">Купить</div>
+      </button>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="production-box__card"><div class="product">
+  <div class="product__swiper swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="product__zoom" data-content="img/product-card/3.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/3.webp" type="image/webp"><img src="img/product-card/3.jpg" alt="горіхи" class="product__slide-img" /></picture>
+      </div>
+      <div class="swiper-slide">
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+      </div>
+      <div class="swiper-slide">
+        <div class="product__zoom" data-content="img/product-card/3.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/3.webp" type="image/webp"><img src="img/product-card/3.jpg" alt="горіхи" class="product__slide-img" /></picture>
+      </div>
+      <div class="swiper-slide">
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+      </div>
+      <!--<div class="swiper-slide">
+         <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
+      </div>-->
+    </div>
+    <div class="swiper-button-prev">
+      <i class="product__weight-icon icon"> &#xe827; </i>
+    </div>
+    <div class="swiper-button-next">
+      <i class="product__weight-icon icon"> &#xe803; </i>
+    </div>
+  </div>
+  <div class="product__content">
+    <div class="product__table">
+      <h4 class="product__title">Грецкий орех</h4>
+      <p class="product__article monts15">Арт: 0091</p>
+      <p class="product__description p16">Орех сладкий, классический, очищенный</p>
+      <div class="product__weight-box">
+        <div class="product__weight-icon-box">
+          <i class="product__weight-icon icon"> &#xe80a; </i>
+        </div>
+        <div class="product__weight-box-data">
+          <div class="product__weight-heading">Масса:</div>
+          <div class="product__weight-data">40г.</div>
+        </div>
+      </div>
+      <div class="product__package-box">
+        <div class="product__package-icon-box">
+          <i class="product__package-icon icon"> &#xe80b; </i>
+        </div>
+        <div class="product__package-box-data">
+          <div class="product__package-heading">Упаковка</div>
+          <div class="product__package-data">вакуумная</div>
+        </div>
+      </div>
+    </div>
+    <div class="product__prise-section prise-section">
+      <div class="prise-section__price-box">
+        <div class="prise-section__heading">Цена:</div>
+        <div class="prise-section__price"><span class="prise-section__from">от </span>21<span>грн.</span></div>
+        <div class="prise-section__old-price">
+          <div class="prise-section__old-price-line"></div>
+          <span></span>
+        </div>
+      </div>
+      <button type="button" class="prise-section__button">
+        <div class="prise-section__text p14">Купить</div>
       </button>
     </div>
   </div>
@@ -226,23 +402,30 @@
 </div>
   <div class="production-box__card"><div class="product">
   <div class="product__swiper swiper">
-    <!--<div class="product__action-icon-box">
-      <p class="product__action-text">АКЦИЯ</p>
-    </div>-->
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/4.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/4.webp" type="image/webp"><img src="img/product-card/4.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/4.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/4.webp" type="image/webp"><img src="img/product-card/4.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <!--<div class="swiper-slide">
          <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
@@ -258,20 +441,20 @@
   <div class="product__content">
     <div class="product__table">
       <h4 class="product__title">Грецкий орех</h4>
-      <p class="product__article">Арт: 0091</p>
-      <p class="product__description">Орех сладкий, классический, очищенный</p>
+      <p class="product__article monts15">Арт: 0091</p>
+      <p class="product__description p16">Орех сладкий, классический, очищенный</p>
       <div class="product__weight-box">
         <div class="product__weight-icon-box">
           <i class="product__weight-icon icon"> &#xe80a; </i>
         </div>
         <div class="product__weight-box-data">
           <div class="product__weight-heading">Масса:</div>
-          <div class="product__weight-data">40г</div>
+          <div class="product__weight-data">40г.</div>
         </div>
       </div>
       <div class="product__package-box">
         <div class="product__package-icon-box">
-          <i class="product__package-icon icon"> &#xe80a; </i>
+          <i class="product__package-icon icon"> &#xe80b; </i>
         </div>
         <div class="product__package-box-data">
           <div class="product__package-heading">Упаковка</div>
@@ -282,11 +465,14 @@
     <div class="product__prise-section prise-section">
       <div class="prise-section__price-box">
         <div class="prise-section__heading">Цена:</div>
-        <div class="prise-section__price">19 <span>грн.</span></div>
-        <div class="prise-section__old-price">21<span>грн.</span></div>
+        <div class="prise-section__price"><span class="prise-section__from"></span>19<span>грн.</span></div>
+        <div class="prise-section__old-price">
+          <div class="prise-section__old-price-line"></div>
+          21<span>грн.</span>
+        </div>
       </div>
       <button type="button" class="prise-section__button">
-        <div class="prise-section__text">Купить</div>
+        <div class="prise-section__text p14">Купить</div>
       </button>
     </div>
   </div>
@@ -294,23 +480,30 @@
 </div>
   <div class="production-box__card"><div class="product">
   <div class="product__swiper swiper">
-    <!--<div class="product__action-icon-box">
-      <p class="product__action-text">АКЦИЯ</p>
-    </div>-->
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/5.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/5.webp" type="image/webp"><img src="img/product-card/5.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/5.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/5.webp" type="image/webp"><img src="img/product-card/5.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <!--<div class="swiper-slide">
          <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
@@ -326,20 +519,20 @@
   <div class="product__content">
     <div class="product__table">
       <h4 class="product__title">Грецкий орех</h4>
-      <p class="product__article">Арт: 0091</p>
-      <p class="product__description">Орех сладкий, классический, очищенный</p>
+      <p class="product__article monts15">Арт: 0091</p>
+      <p class="product__description p16">Орех сладкий, классический, очищенный</p>
       <div class="product__weight-box">
         <div class="product__weight-icon-box">
           <i class="product__weight-icon icon"> &#xe80a; </i>
         </div>
         <div class="product__weight-box-data">
           <div class="product__weight-heading">Масса:</div>
-          <div class="product__weight-data">40г</div>
+          <div class="product__weight-data">40г.</div>
         </div>
       </div>
       <div class="product__package-box">
         <div class="product__package-icon-box">
-          <i class="product__package-icon icon"> &#xe80a; </i>
+          <i class="product__package-icon icon"> &#xe80b; </i>
         </div>
         <div class="product__package-box-data">
           <div class="product__package-heading">Упаковка</div>
@@ -350,11 +543,14 @@
     <div class="product__prise-section prise-section">
       <div class="prise-section__price-box">
         <div class="prise-section__heading">Цена:</div>
-        <div class="prise-section__price">19 <span>грн.</span></div>
-        <div class="prise-section__old-price">21<span>грн.</span></div>
+        <div class="prise-section__price"><span class="prise-section__from">от </span>21<span>грн.</span></div>
+        <div class="prise-section__old-price">
+          <div class="prise-section__old-price-line"></div>
+          <span></span>
+        </div>
       </div>
       <button type="button" class="prise-section__button">
-        <div class="prise-section__text">Купить</div>
+        <div class="prise-section__text p14">Купить</div>
       </button>
     </div>
   </div>
@@ -362,23 +558,30 @@
 </div>
   <div class="production-box__card"><div class="product">
   <div class="product__swiper swiper">
-    <!--<div class="product__action-icon-box">
-      <p class="product__action-text">АКЦИЯ</p>
-    </div>-->
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/6.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/6.webp" type="image/webp"><img src="img/product-card/6.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/6.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/6.webp" type="image/webp"><img src="img/product-card/6.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+        <div class="product__zoom" data-content="img/product-card/nuts.jpg">
+          <i class="product__zoom-icon icon"> &#xe816; </i>
+        </div>
+        <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
       </div>
       <!--<div class="swiper-slide">
          <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
@@ -394,20 +597,20 @@
   <div class="product__content">
     <div class="product__table">
       <h4 class="product__title">Грецкий орех</h4>
-      <p class="product__article">Арт: 0091</p>
-      <p class="product__description">Орех сладкий, классический, очищенный</p>
+      <p class="product__article monts15">Арт: 0091</p>
+      <p class="product__description p16">Орех сладкий, классический, очищенный</p>
       <div class="product__weight-box">
         <div class="product__weight-icon-box">
           <i class="product__weight-icon icon"> &#xe80a; </i>
         </div>
         <div class="product__weight-box-data">
           <div class="product__weight-heading">Масса:</div>
-          <div class="product__weight-data">40г</div>
+          <div class="product__weight-data">40г.</div>
         </div>
       </div>
       <div class="product__package-box">
         <div class="product__package-icon-box">
-          <i class="product__package-icon icon"> &#xe80a; </i>
+          <i class="product__package-icon icon"> &#xe80b; </i>
         </div>
         <div class="product__package-box-data">
           <div class="product__package-heading">Упаковка</div>
@@ -418,147 +621,14 @@
     <div class="product__prise-section prise-section">
       <div class="prise-section__price-box">
         <div class="prise-section__heading">Цена:</div>
-        <div class="prise-section__price">19 <span>грн.</span></div>
-        <div class="prise-section__old-price">21<span>грн.</span></div>
+        <div class="prise-section__price"><span class="prise-section__from">от </span>21<span>грн.</span></div>
+        <div class="prise-section__old-price">
+          <div class="prise-section__old-price-line"></div>
+          <span></span>
+        </div>
       </div>
       <button type="button" class="prise-section__button">
-        <div class="prise-section__text">Купить</div>
-      </button>
-    </div>
-  </div>
-</div>
-</div>
-  <div class="production-box__card"><div class="product">
-  <div class="product__swiper swiper">
-    <!--<div class="product__action-icon-box">
-      <p class="product__action-text">АКЦИЯ</p>
-    </div>-->
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
-      </div>
-      <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
-      </div>
-      <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
-      </div>
-      <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
-      </div>
-      <!--<div class="swiper-slide">
-         <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
-      </div>-->
-    </div>
-    <div class="swiper-button-prev">
-      <i class="product__weight-icon icon"> &#xe827; </i>
-    </div>
-    <div class="swiper-button-next">
-      <i class="product__weight-icon icon"> &#xe803; </i>
-    </div>
-  </div>
-  <div class="product__content">
-    <div class="product__table">
-      <h4 class="product__title">Грецкий орех</h4>
-      <p class="product__article">Арт: 0091</p>
-      <p class="product__description">Орех сладкий, классический, очищенный</p>
-      <div class="product__weight-box">
-        <div class="product__weight-icon-box">
-          <i class="product__weight-icon icon"> &#xe80a; </i>
-        </div>
-        <div class="product__weight-box-data">
-          <div class="product__weight-heading">Масса:</div>
-          <div class="product__weight-data">40г</div>
-        </div>
-      </div>
-      <div class="product__package-box">
-        <div class="product__package-icon-box">
-          <i class="product__package-icon icon"> &#xe80a; </i>
-        </div>
-        <div class="product__package-box-data">
-          <div class="product__package-heading">Упаковка</div>
-          <div class="product__package-data">вакуумная</div>
-        </div>
-      </div>
-    </div>
-    <div class="product__prise-section prise-section">
-      <div class="prise-section__price-box">
-        <div class="prise-section__heading">Цена:</div>
-        <div class="prise-section__price">19 <span>грн.</span></div>
-        <div class="prise-section__old-price">21<span>грн.</span></div>
-      </div>
-      <button type="button" class="prise-section__button">
-        <div class="prise-section__text">Купить</div>
-      </button>
-    </div>
-  </div>
-</div>
-</div>
-  <div class="production-box__card"><div class="product">
-  <div class="product__swiper swiper">
-    <!--<div class="product__action-icon-box">
-      <p class="product__action-text">АКЦИЯ</p>
-    </div>-->
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
-      </div>
-      <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
-      </div>
-      <div class="swiper-slide">
-        <!--img/product1/1.jpg-->
-        <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
-      </div>
-      <div class="swiper-slide">
-        <picture><source srcset="img/product1/nuts.webp" type="image/webp"><img src="img/product1/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
-      </div>
-      <!--<div class="swiper-slide">
-         <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
-      </div>-->
-    </div>
-    <div class="swiper-button-prev">
-      <i class="product__weight-icon icon"> &#xe827; </i>
-    </div>
-    <div class="swiper-button-next">
-      <i class="product__weight-icon icon"> &#xe803; </i>
-    </div>
-  </div>
-  <div class="product__content">
-    <div class="product__table">
-      <h4 class="product__title">Грецкий орех</h4>
-      <p class="product__article">Арт: 0091</p>
-      <p class="product__description">Орех сладкий, классический, очищенный</p>
-      <div class="product__weight-box">
-        <div class="product__weight-icon-box">
-          <i class="product__weight-icon icon"> &#xe80a; </i>
-        </div>
-        <div class="product__weight-box-data">
-          <div class="product__weight-heading">Масса:</div>
-          <div class="product__weight-data">40г</div>
-        </div>
-      </div>
-      <div class="product__package-box">
-        <div class="product__package-icon-box">
-          <i class="product__package-icon icon"> &#xe80a; </i>
-        </div>
-        <div class="product__package-box-data">
-          <div class="product__package-heading">Упаковка</div>
-          <div class="product__package-data">вакуумная</div>
-        </div>
-      </div>
-    </div>
-    <div class="product__prise-section prise-section">
-      <div class="prise-section__price-box">
-        <div class="prise-section__heading">Цена:</div>
-        <div class="prise-section__price">19 <span>грн.</span></div>
-        <div class="prise-section__old-price">21<span>грн.</span></div>
-      </div>
-      <button type="button" class="prise-section__button">
-        <div class="prise-section__text">Купить</div>
+        <div class="prise-section__text p14">Купить</div>
       </button>
     </div>
   </div>
@@ -568,7 +638,7 @@
 
           <!--</div>-->
           <a href="catalog.html" class="production__button">
-            <div class="production__button">Перейти в магазин</div>
+            <div class="production__button-text">Перейти в магазин</div>
           </a>
         </div>
       </div>
@@ -633,7 +703,7 @@
 </div>
 
     
-    <script src="js/app.min.js?_v=20230615193413"></script>
-    <script src="https://www.youtube.com/iframe_api?_v=20230615193413" async></script>
+    <script src="js/app.min.js?_v=20230616233929"></script>
+    <script src="https://www.youtube.com/iframe_api?_v=20230616233929" async></script>
   </body>
 </html>
