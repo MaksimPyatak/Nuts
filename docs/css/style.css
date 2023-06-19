@@ -2149,11 +2149,12 @@ button.swiper-pagination-bullet {
 .about-manufacturer .swiper-button-prev,
 .about-manufacturer .swiper-button-next {
   top: auto;
-  bottom: 0;
+  bottom: 1px;
   width: 70.5px;
-  height: 58px;
+  height: 56.5px;
   background: #337D5A;
   font-size: 18px;
+  font-weight: 400;
   color: #FFFFFF;
 }
 
