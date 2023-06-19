@@ -129,6 +129,14 @@ h6 {
 }
 
 @font-face {
+  font-family: "Raleway";
+  src: local("Raleway Medium Italic"), local("Raleway-MediumItalic"), url("../fonts/Raleway-MediumItalic.woff2") format("woff2"), url("../fonts/Raleway-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Medium.eot");
   src: local("Montserrat Medium Italic"), local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format(".woff2");
@@ -2925,6 +2933,90 @@ button.swiper-pagination-bullet {
   padding: 0 10px 0 0;
 }
 
+.no-webp .banner-with-video{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 12, 12, 0.55)), to(rgba(13, 12, 12, 0.55))), url(../img/main/banner2.jpg); }
+
+.no-webp .banner-with-video{
+  background-image: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/banner2.jpg); }
+
+.no-webp .banner-with-video{
+  background-image: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/banner2.jpg); }
+
+.banner-with-video {
+  height: 740px;
+  width: 100%;
+  margin: 87px 0 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.banner-with-video__container {
+  max-width: 1290px;
+  height: 100%;
+  padding: 0 var(--pdng-conteiner);
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-with-video__header {
+  max-width: 1185px;
+  width: 100%;
+  margin: 36px 14px 67px 0;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.banner-with-video__play-icon-box {
+  width: 61px;
+  height: 61px;
+  margin: 0 17px 28px 0;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.banner-with-video__play-icon {
+  display: block;
+  font-size: 46px;
+  color: #FFFFFF;
+}
+
+.banner-with-video__comment {
+  margin: 0 19px 0 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  text-align: center;
+}
+
 .about-page__banner {
   margin-bottom: 100px;
 }
@@ -3389,6 +3481,20 @@ button.swiper-pagination-bullet {
     grid-template-columns: repeat(2, auto);
     row-gap: 40px;
   }
+
+  .banner-with-video__header {
+    margin: 0 0 67px 0;
+  }
+
+  .banner-with-video__play-icon-box {
+    margin: 0 0 28px 0;
+  }
+
+  .banner-with-video__comment {
+    margin: 0 0 0 0;
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -3494,6 +3600,15 @@ button.swiper-pagination-bullet {
   .p16 {
     font-size: 14px;
   }
+
+  .banner-with-video {
+    height: 600px;
+  }
+
+  .banner-with-video__comment {
+    font-size: 19px;
+    line-height: 22px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -3573,6 +3688,11 @@ button.swiper-pagination-bullet {
     height: 45px;
     width: 45px;
   }
+
+  .banner-with-video__play-icon-box {
+    height: 45px;
+    width: 45px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -3615,6 +3735,19 @@ button.swiper-pagination-bullet {
     -ms-grid-columns: (auto)[1];
     grid-template-columns: repeat(1, auto);
   }
+
+  .banner-with-video {
+    height: 450px;
+  }
+
+  .banner-with-video__header {
+    margin: 0 0 40px 0;
+  }
+
+  .banner-with-video__comment {
+    font-size: 17px;
+    line-height: 23px;
+  }
 }
 
 .webp .banner{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../img/main/banner.webp); }
@@ -3622,3 +3755,9 @@ button.swiper-pagination-bullet {
 .webp .banner{ background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/main/banner.webp); }
 
 .webp .banner{ background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/main/banner.webp); }
+
+.webp .banner-with-video{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 12, 12, 0.55)), to(rgba(13, 12, 12, 0.55))), url(../img/main/banner2.webp); }
+
+.webp .banner-with-video{ background-image: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/banner2.webp); }
+
+.webp .banner-with-video{ background-image: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/banner2.webp); }

@@ -1,0 +1,102 @@
+.banner-with-video {
+   height: 740px;
+   width: 100%;
+   margin: 87px 0 0 0;
+   background-image: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(@img/main/banner2.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   color: #FFFFFF;
+
+   @media (max-width: 768px) {
+      height: 600px;
+   }
+
+   @media (max-width: 425px) {
+      height: 450px;
+   }
+
+
+   &__container {
+      @include container;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__header {
+      max-width: 1185px;
+      width: 100%;
+      margin: 36px 14px 67px 0;
+      font-weight: 800;
+      text-align: center;
+      letter-spacing: 0.5px;
+
+      @media (max-width: 1024px) {
+         margin: 0 0 67px 0;
+      }
+
+      @media (max-width: 425px) {
+         margin: 0 0 40px 0;
+      }
+   }
+
+
+   &__play-icon-box {
+      width: 61px;
+      height: 61px;
+      margin: 0 17px 28px 0;
+      border: 2px solid #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      @media (max-width: 1024px) {
+         margin: 0 0 28px 0;
+      }
+
+      @media screen and (max-width: 425px) {
+         height: 45px;
+         width: 45px;
+      }
+   }
+
+   &__play-icon {
+      display: block;
+      font-size: 46px;
+      color: #FFFFFF;
+   }
+
+   &__comment {
+      margin: 0 19px 0 0;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.4px;
+      text-align: center;
+
+      @media (max-width: 1024px) {
+         margin: 0 0 0 0;
+         font-size: 22px;
+         line-height: 26px;
+      }
+
+      @media (max-width: 768px) {
+         font-size: 19px;
+         line-height: 22px;
+      }
+
+      @media (max-width: 425px) {
+         font-size: 17px;
+         line-height: 23px;
+      }
+   }
+}
+
+.play-video {}
+
+.icon {}
