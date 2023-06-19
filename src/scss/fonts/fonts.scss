@@ -1,13 +1,5 @@
 @font-face {
    font-family: 'Raleway';
-   src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway-ExtraBold.woff") format("woff");
-   font-weight: 800;
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: 'Raleway';
    src: url('../fonts/Raleway-Medium.eot');
    src: local('Raleway Medium'), local('../fonts/Raleway-Medium'),
       url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
@@ -31,14 +23,30 @@
 }
 
 @font-face {
+   font-family: 'Raleway';
+   src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway-ExtraBold.woff") format("woff");
+   font-weight: 800;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Raleway';
+   src: url("../fonts/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway-Black.woff") format("woff");
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
    font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-MediumItalic.eot');
-   src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'),
-      url('../fonts/Montserrat-MediumItalic.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Montserrat-MediumItalic.woff') format('woff'),
-      url('../fonts/Montserrat-MediumItalic.woff2') format('.woff2');
+   src: url('../fonts/Montserrat-Medium.eot');
+   src: local('Montserrat Medium Italic'), local('Montserrat-Medium'),
+      url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Montserrat-Medium.woff') format('woff'),
+      url('../fonts/Montserrat-Medium.woff2') format('.woff2');
    font-weight: 500;
-   font-style: italic;
+   font-style: normal;
    font-display: swap;
 }
 
@@ -56,12 +64,12 @@
 
 @font-face {
    font-family: 'Montserrat';
-   src: url('../fonts/Montserrat-ExtraBoldItalic.eot');
-   src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBoldItalic'),
-      url('../fonts/Montserrat-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Montserrat-ExtraBoldItalic.woff') format('woff'),
-      url('../fonts/Montserrat-ExtraBoldItalic.woff2') format('.woff2');
+   src: url('../fonts/Montserrat-ExtraBold.eot');
+   src: local('Montserrat ExtraBold Italic'), local('Montserrat-ExtraBold'),
+      url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+      url('../fonts/Montserrat-ExtraBold.woff2') format('.woff2');
    font-weight: 800;
-   font-style: italic;
+   font-style: normal;
    font-display: swap;
 }

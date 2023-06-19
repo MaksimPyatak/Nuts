@@ -48,6 +48,10 @@
 
    .swiper-button-next {
       left: 70.5px;
+
+      @media screen and (max-width: 768px) {
+         left: 55px;
+      }
    }
 
    .swiper-button-prev,
@@ -61,6 +65,12 @@
       font-weight: 400;
       color: #FFFFFF;
 
+      @media screen and (max-width: 768px) {
+         width: 55px;
+         height: 40px;
+         font-size: 14px;
+      }
+
       &::after {
          content: "";
       }
@@ -73,6 +83,18 @@
          }
       }
    }
+}
+
+@mixin mt-section {
+
+   @media screen and (max-width: 1024px) {
+      margin-top: 120px;
+   }
+
+   @media screen and (max-width: 425px) {
+      margin-top: 80px;
+   }
+
 }
 
 // Текст з двома лініями з двох боків -ТЕКСТ----

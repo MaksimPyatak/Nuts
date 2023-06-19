@@ -2,31 +2,56 @@
 
 .about-manufacturer {
    margin: 190px 0 0 0;
+   @include mt-section;
 
    &__container {
       @include container;
       display: grid;
       grid-template-columns: 37.98% 54.26%;
       column-gap: 7.76%;
+
+      @media (max-width: 1024px) {
+         grid-template-columns: 100%;
+      }
+
+      @media (max-width: 768px) {}
+
+      @media (max-width: 425px) {}
    }
 
    &__content {
       margin: 27px 0 0 0;
+
+      @media (max-width: 1024px) {
+         margin: 0 0 27px 0;
+      }
    }
 
    &__title {
+      width: max-content;
       margin: 0 0 39px 0;
       font-weight: 800;
       letter-spacing: 0.01em;
+
+      @media (max-width: 1024px) {
+         width: auto;
+         margin: 0 0 25px 0;
+         text-align: center;
+      }
    }
 
    &__text {
       margin: 0 0 45px 0;
       line-height: 26px;
+      text-align: center;
 
       p {
          margin: 0 25px 25px 0;
          font-weight: 400;
+
+         @media (max-width: 1024px) {
+            margin: 0 0 25px 0;
+         }
       }
 
       span {
@@ -41,6 +66,10 @@
       width: 170px;
       height: 52px;
       margin: 17px 0 0 0;
+
+      @media (max-width: 1024px) {
+         margin: 0 auto;
+      }
    }
 
    &__button-text {}

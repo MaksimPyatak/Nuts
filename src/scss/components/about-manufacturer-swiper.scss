@@ -8,8 +8,8 @@
 
    &__play-icon-box {
       position: absolute;
-      top: 52.5%;
-      left: 49.7%;
+      top: 51.5%;
+      left: 50.5%;
       transform: translate(-50%, -50%);
       z-index: 10;
    }
@@ -21,6 +21,12 @@
 
 .swiper-slide {
    position: relative;
+
+   img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+   }
 }
 
 .swiper-button-prev {}
