@@ -1,0 +1,55 @@
+@import "./../about-manufacturer-swiper.scss";
+
+.about-manufacturer {
+   margin: 190px 0 0 0;
+
+   &__container {
+      @include container;
+      display: grid;
+      grid-template-columns: 37.98% 54.26%;
+      column-gap: 7.76%;
+   }
+
+   &__content {
+      margin: 27px 0 0 0;
+   }
+
+   &__title {
+      margin: 0 0 39px 0;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+   }
+
+   &__text {
+      margin: 0 0 45px 0;
+      line-height: 26px;
+
+      p {
+         margin: 0 25px 25px 0;
+         font-weight: 400;
+      }
+
+      span {
+         font-weight: 600;
+         letter-spacing: 0.01em;
+         color: #337D5A;
+      }
+   }
+
+   &__button {
+      @include button-empty;
+      width: 170px;
+      height: 52px;
+      margin: 17px 0 0 0;
+   }
+
+   &__button-text {}
+
+
+   &__swiper {
+
+      .swiper-scrollbar {
+         display: none;
+      }
+   }
+}

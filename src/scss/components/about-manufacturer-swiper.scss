@@ -1,0 +1,35 @@
+.about-manufacturer {
+   @include swiper-button;
+
+   &__swiper {
+      width: 100%;
+      margin: 0;
+   }
+
+   &__play-icon-box {
+      position: absolute;
+      top: 52.5%;
+      left: 49.7%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+   }
+}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {
+   position: relative;
+}
+
+.swiper-button-prev {}
+
+.swiper-button-next {}
+
+.swiper-button-prev,
+.swiper-button-next {}
+
+
+
+.swiper-scrollbar {}

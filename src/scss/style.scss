@@ -76,7 +76,7 @@ main {
          color: #1A2F3F;
       }
 
-      &__box {}
+      //&__box {}
 
       &__button {
          @include button-empty;
@@ -90,7 +90,7 @@ main {
          letter-spacing: 0.02em;
       }
 
-      &__button-text {}
+      //&__button-text {}
    }
 }
 
@@ -100,23 +100,20 @@ main {
 @import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 
 @import "./components/header.scss";
+@import "./components/footer";
+
 @import "./components/main/banner.scss";
+@import "./components/main/about-manufacturer.scss";
+
 @import "./components/video-modal.scss";
 @import "./components/product-card.scss";
 @import "./components/contacts.scss";
 @import "./components/about-company/about-manufacturer.scss";
 @import "./components/productions.scss";
-
+@import "./components/play-video.scss";
 
 // PAGE
 @import "./components/page/about-company.scss";
-
-
-
-
-
-
-@import "./components/footer";
 
 //@import "pop-up";
 //@import "pop-up2";
