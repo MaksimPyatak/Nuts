@@ -114,6 +114,14 @@ h6 {
 
 @font-face {
   font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
   src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
@@ -620,8 +628,8 @@ h3 {
 }
 
 h4 {
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 178%;
 }
 
@@ -767,6 +775,10 @@ main {
 
 .main-page .production__button div {
   color: #337D5A;
+}
+
+.main-page__product-benefits {
+  margin: 82px 0 0 0;
 }
 
 /**
@@ -2251,7 +2263,6 @@ button.swiper-pagination-bullet {
 .about-manufacturer__text {
   margin: 0 0 45px 0;
   line-height: 26px;
-  text-align: center;
 }
 
 .about-manufacturer__text p {
@@ -3017,6 +3028,162 @@ button.swiper-pagination-bullet {
   text-align: center;
 }
 
+.product-benefits {
+  width: 100%;
+}
+
+.product-benefits__container {
+  max-width: 1290px;
+  height: 100%;
+  padding: 0 var(--pdng-conteiner);
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-benefits__header {
+  margin: 0 0 27px 0;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.product-benefits__subtitle {
+  width: 560px;
+  margin: 0 0 63px 0;
+  text-align: center;
+}
+
+.product-benefits__cards {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (31.78%)[3];
+  grid-template-columns: repeat(3, 31.78%);
+  -webkit-column-gap: 2.33%;
+     -moz-column-gap: 2.33%;
+          column-gap: 2.33%;
+}
+
+.product-benefits__card {
+  height: 525px;
+  width: 100%;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.product-benefits__card:hover .product-benefits__card-text {
+  display: block;
+}
+
+.product-benefits__card:hover .product-benefits__card-icon {
+  margin: 28px 0 8px 11px;
+}
+
+.product-benefits__card-icon {
+  margin: 0 0 21px 7px;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.product-benefits__card-heading {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.01em;
+}
+
+.product-benefits__card-text {
+  display: none;
+  margin: 3px 7px 0 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 128%;
+  letter-spacing: 0.01em;
+}
+
+.product-benefits__card-text p {
+  margin: 17px 0 0 0;
+}
+
+.product-benefits__card-text p:nth-child(2) {
+  line-height: 139%;
+}
+
+.no-webp .product-benefits .card-walnut{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("../img/main/walnuts.jpg"); }
+
+.no-webp .product-benefits .card-walnut{
+  background-image: -o-linear-gradient(transparent, transparent), url("../img/main/walnuts.jpg"); }
+
+.no-webp .product-benefits .card-walnut{
+  background-image: linear-gradient(transparent, transparent), url("../img/main/walnuts.jpg"); }
+
+.product-benefits .card-walnut .product-benefits__card-icon {
+  font-size: 76px;
+}
+
+.no-webp .product-benefits .card-walnut:hover{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url("../img/main/walnuts.jpg"); }
+
+.no-webp .product-benefits .card-walnut:hover{
+  background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/walnuts.jpg"); }
+
+.no-webp .product-benefits .card-walnut:hover{
+  background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/walnuts.jpg"); }
+
+.no-webp .product-benefits .card-hazelnut{
+  background: url("../img/main/hazelnut.jpg"); }
+
+.no-webp .product-benefits .card-hazelnut:hover{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url("../img/main/hazelnut.jpg"); }
+
+.no-webp .product-benefits .card-hazelnut:hover{
+  background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/hazelnut.jpg"); }
+
+.no-webp .product-benefits .card-hazelnut:hover{
+  background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/hazelnut.jpg"); }
+
+.no-webp .product-benefits .card-rosehip{
+  background: url("../img/main/rosehip.jpg"); }
+
+.product-benefits .card-rosehip .product-benefits__card-icon {
+  margin: -2px 17px 20px 0px;
+  font-size: 54px;
+}
+
+.no-webp .product-benefits .card-rosehip:hover{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url("../img/main/rosehip.jpg"); }
+
+.no-webp .product-benefits .card-rosehip:hover{
+  background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/rosehip.jpg"); }
+
+.no-webp .product-benefits .card-rosehip:hover{
+  background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/rosehip.jpg"); }
+
 .about-page__banner {
   margin-bottom: 100px;
 }
@@ -3761,3 +3928,31 @@ button.swiper-pagination-bullet {
 .webp .banner-with-video{ background-image: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/banner2.webp); }
 
 .webp .banner-with-video{ background-image: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/banner2.webp); }
+
+.webp .product-benefits .card-walnut{ background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url(../img/main/walnuts.webp); }
+
+.webp .product-benefits .card-walnut{ background-image: -o-linear-gradient(transparent, transparent), url(../img/main/walnuts.webp); }
+
+.webp .product-benefits .card-walnut{ background-image: linear-gradient(transparent, transparent), url(../img/main/walnuts.webp); }
+
+.webp .product-benefits .card-walnut:hover{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url(../img/main/walnuts.webp); }
+
+.webp .product-benefits .card-walnut:hover{ background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/walnuts.webp); }
+
+.webp .product-benefits .card-walnut:hover{ background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/walnuts.webp); }
+
+.webp .product-benefits .card-hazelnut{ background: url(../img/main/hazelnut.webp); }
+
+.webp .product-benefits .card-hazelnut:hover{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url(../img/main/hazelnut.webp); }
+
+.webp .product-benefits .card-hazelnut:hover{ background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/hazelnut.webp); }
+
+.webp .product-benefits .card-hazelnut:hover{ background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/hazelnut.webp); }
+
+.webp .product-benefits .card-rosehip{ background: url(../img/main/rosehip.webp); }
+
+.webp .product-benefits .card-rosehip:hover{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url(../img/main/rosehip.webp); }
+
+.webp .product-benefits .card-rosehip:hover{ background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/rosehip.webp); }
+
+.webp .product-benefits .card-rosehip:hover{ background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/rosehip.webp); }
