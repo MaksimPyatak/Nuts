@@ -8,16 +8,25 @@
       align-items: center;
    }
 
-   &__header {
+   &__title {
       margin: 0 0 27px 0;
       font-weight: 800;
       letter-spacing: 0.01em;
+      text-align: center;
    }
 
    &__subtitle {
-      width: 560px;
+      max-width: 560px;
       margin: 0 0 63px 0;
       text-align: center;
+
+      @media screen and (max-width: 768px) {
+         margin: 0 0 50px 0;
+      }
+
+      @media screen and (max-width: 425px) {
+         margin: 0 0 30px 0;
+      }
    }
 
    &__cards {
@@ -25,19 +34,36 @@
       display: grid;
       grid-template-columns: repeat(3, 31.78%);
       column-gap: 2.33%;
+
+      @media screen and (max-width: 1024px) {
+         grid-template-columns: repeat(1, 100%);
+         column-gap: 0;
+         row-gap: 20px;
+      }
    }
 
    &__card {
       height: 525px;
       width: 100%;
       padding: 40px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       color: #FFFFFF;
+
       //transition: all 0.9s ease 0s;
+      @media screen and (max-width: 1440px) {
+         padding: 20px;
+      }
+
+      @media screen and (max-width: 1024px) {
+         height: 400px;
+      }
 
       &:hover {
          //transition: all 0.9s ease 0s;
@@ -50,6 +76,9 @@
             //transition: all 0.9s ease 0s;
             margin: 28px 0 8px 11px;
 
+            @media screen and (max-width: 1440px) {
+               margin: 0 0 8px 11px;
+            }
 
          }
       }
@@ -72,6 +101,18 @@
       font-size: 40px;
       line-height: 47px;
       letter-spacing: 0.01em;
+
+      @media (max-width: 1024px) {
+         font-size: 36px;
+      }
+
+      @media (max-width: 768px) {
+         font-size: 32px;
+      }
+
+      @media (max-width: 425px) {
+         font-size: 28zpx;
+      }
    }
 
    &__card-text {
@@ -81,6 +122,21 @@
       font-size: 18px;
       line-height: 128%;
       letter-spacing: 0.01em;
+
+      @media (max-width: 1024px) {
+         padding: 0 15%;
+         font-size: 16px;
+      }
+
+      @media (max-width: 768px) {
+         padding: 0 10%;
+         font-size: 14px;
+      }
+
+      @media (max-width: 425px) {
+         padding: 0;
+         font-size: 12px;
+      }
 
       p {
          margin: 17px 0 0 0;
@@ -107,7 +163,7 @@
    }
 
    .card-hazelnut {
-      background: url('@img/main/hazelnut.jpg');
+      background-image: url('@img/main/hazelnut.jpg');
       //transition: all 0.9s ease 0s;
 
       .product-benefits__card-icon {}
@@ -119,7 +175,7 @@
    }
 
    .card-rosehip {
-      background: url("@img/main/rosehip.jpg");
+      background-image: url("@img/main/rosehip.jpg");
       //transition: all 0.9s ease 0s;
 
       .product-benefits__card-icon {
