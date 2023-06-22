@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html',{ "title":"О компании - Орех Причерноморья" })
+  @@include('html/head.html',{ "title":"О компании - Орех Причерноморья" })
 
-<body>
-  <!--@@include('html/elements/preloader.html',{})-->
-  <!--<div class="wrapper">-->
-  @@include('html/header.html',{})
-  <main class="about-page">
-    <div class="about-page__banner">@@include('html/components/main/banner.html',{})</div>
-    <div class="about-page__about-manufacturer-component">
-      @@include('html/components/about-company/about-manufacturer.html',{})
-    </div>
-    <div class="about-page__contacts-component">@@include('html/components/contacts.html',{})</div>
-  </main>
-  @@include('html/footer.html',{})
-  <!--</div>-->
-  @@include('./html/components/video-modal.html',{})
-  <!--@@include('html/elements/pop-up2.html',{})-->
-  <script src="js/app.min.js"></script>
-  <script src="https://www.youtube.com/iframe_api" async></script>
-</body>
+  <body>
+    <!--@@include('html/elements/preloader.html',{})-->
+    <!--<div class="wrapper">-->
+    @@include('html/header.html',{})
+    <main class="about-page">
+      <section class="about-page__banner">@@include('html/components/main/banner.html',{})</section>
+      <section class="about-page__about-manufacturer">@@include('html/components/about-company/about-manufacturer.html',{})</section>
+      <section class="about-page__history">@@include('html/components/about-company/history.html',{})</section>
+      <section class="about-page__statistics">@@include('html/components/statistics.html',{})</section>
 
+      <section class="main-page__eco-banner">@@include('html/components/eco-banner.html',{})</section>
+      <section class="main-page__news">@@include('html/components/news.html',{})</section>
+      <section class="about-page__contacts">@@include('html/components/contacts.html',{})</section>
+    </main>
+    @@include('html/footer.html',{})
+    <!--</div>-->
+    @@include('./html/components/video-modal.html',{})
+    <!--@@include('html/elements/pop-up2.html',{})-->
+    <script src="js/app.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api" async></script>
+  </body>
 </html>

@@ -1,0 +1,101 @@
+.history {
+   padding: 100px 0 90px 0;
+
+   &__container {
+      @include container;
+      display: grid;
+      grid-template-columns: 26.6116% 31.8606% 35.1162%;
+      column-gap: 3.2058%;
+   }
+
+   &__img-box {
+      width: 100%;
+      object-fit: cover;
+   }
+
+   &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   &__about-person {
+      padding: 34px 0 0 1px;
+   }
+
+   &__title {
+      margin: 0 0 13px 0;
+   }
+
+   &__subtile {
+      margin: 0 0 36px 2px;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.16px;
+   }
+
+   &__quote {
+      display: flex;
+      font-size: 15px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: -0.15px;
+
+      p {
+         margin: 2px 0 0 0;
+      }
+   }
+
+   &__quotes-icon-box {
+      margin: -3px 13px 0 2px;
+      font-size: 18px;
+      color: #337D5A;
+
+   }
+
+   &__button {
+      @include button-empty;
+      width: 188px;
+      height: 52px;
+      margin: 58px 0 0 0;
+   }
+
+   &__text {}
+
+   &__history-box {
+      position: relative;
+      padding: 34px 34px 41px 47px;
+      background-color: #337D5A;
+      background-image: url('@img/about-company-page/logo.svg');
+      background-repeat: no-repeat;
+      background-size: 322.401px 298.796px;
+      background-position: 168% 114%;
+      color: #FFFFFF;
+   }
+
+   &__history-title {
+      margin: 0 0 33px 0;
+   }
+
+   &__history-text {
+      color: #FCFCFC;
+      font-size: 14px;
+      font-family: Montserrat;
+      font-weight: 500;
+      line-height: 22px;
+
+      p {
+         margin: 0 0 15px 0;
+      }
+   }
+}
+
+.eco-banner {
+
+   &__eco-icon {}
+}
+
+.icon {}

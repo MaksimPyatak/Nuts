@@ -43,12 +43,19 @@ h2 {
 }
 
 h3 {
-   font-size: 22px;
-   line-height: 127.27%;
+   font-size: 32px;
+   letter-spacing: 0.32px;
 
    @media (max-width: 1024px) {
-      font-size: 20px;
-      line-height: 125%;
+      font-size: 28px;
+   }
+
+   @media (max-width: 768px) {
+      font-size: 25px;
+   }
+
+   @media (max-width: 425px) {
+      font-size: 22px;
    }
 }
 
