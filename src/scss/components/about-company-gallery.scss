@@ -1,0 +1,35 @@
+.about-company-gallery {
+   //padding: 90px 0 100px 0;
+
+   &__container {
+      @include container;
+   }
+
+   &__title {
+      margin: 0 0 16px 0;
+      letter-spacing: 0.45px;
+      text-align: center;
+   }
+
+   &__subtitle {
+      margin: 0 0 63px 0;
+      text-align: center;
+   }
+
+   &__gallery {}
+
+   &__button {
+      @include button-empty;
+      width: 235px;
+      height: 52px;
+      margin: 68px auto 0;
+   }
+
+   &__button-text {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.28px;
+   }
+}
+
+.subtitle-h2 {}

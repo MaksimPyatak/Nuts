@@ -74,5 +74,18 @@
       @import "../about-company/history.scss";
    }
 
+   &__statistics {
+      padding: 0 0 85px 0;
+
+      .statistics {
+         margin: 70px 0 0 0;
+      }
+   }
+
+   &__gallery {
+      @import "../about-company-gallery.scss";
+      margin: 90px 0 100px 0;
+   }
+
    &__contacts {}
 }
