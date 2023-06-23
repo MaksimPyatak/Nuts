@@ -3874,7 +3874,7 @@ button.swiper-pagination-bullet {
 
 .about-page__gallery .about-company-gallery__title {
   margin: 0 0 16px 0;
-  letter-spacing: 0.45px;
+  letter-spacing: 0.01em;
   text-align: center;
 }
 
