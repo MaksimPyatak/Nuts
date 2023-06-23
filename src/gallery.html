@@ -3,16 +3,15 @@
   @@include('html/head.html',{ "title":"Галерея - Орех Причерноморья" })
 
   <body>
-    <!--@@include('html/elements/preloader.html',{})-->
-    <div class="wrapper">
-      <!--@@include('html/header.html',{})-->
-      <main>
-        <h1 style="color: red; font-size: 48px">Галерея</h1>
-      </main>
-      <!--@@include('html/footer.html',{})-->
-    </div>
-    <!--@@include('html/elements/pop-up.html',{})
-    @@include('html/elements/pop-up2.html',{})-->
+    @@include('html/header.html',{})
+    <main class="gallery">
+      <section class="gallery__banner">@@include('html/components/breadcrumbs.html',{"second-link": "", "second-page": "", "page-now": "О производстве"}) @@include('html/components/main/banner.html',{})</section>
+      <section class="gallery__gallery-section">@@include('html/components/about-company/about-company-gallery.html',{})</section>
+      <section class="gallery__contacts">@@include('html/components/contacts.html',{})</section>
+    </main>
+    @@include('html/footer.html',{}) @@include('./html/components/video-modal.html',{})
+    <!--@@include('html/elements/pop-up2.html',{})-->
     <script src="js/app.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api" async></script>
   </body>
 </html>
