@@ -1,8 +1,7 @@
 .about-page {
 
    &__banner {
-      //margin-bottom: 100px;
-
+      position: relative;
 
       @media screen and (max-width: 1024px) {
          margin-bottom: 75px;
@@ -12,10 +11,10 @@
          margin-bottom: 40px;
       }
 
-   }
+      .banner {
+         background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('@img/about-company-page/banner.jpg');
 
-   .banner {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('@img/about-company-page/banner.jpg');
+      }
 
    }
 
@@ -84,8 +83,38 @@
 
    &__gallery {
       @import "../about-company-gallery.scss";
-      margin: 90px 0 100px 0;
+      padding: 90px 0 100px 0;
+      background: #FBFBFB;
+
+      @media (max-width:1024px) {
+         padding: 90px 0 68px 0;
+      }
+
+      @media (max-width: 425px) {
+         padding: 60px 0 60px 0;
+      }
    }
 
-   &__contacts {}
+   &__eco-banner {
+      .eco-banner {
+         background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("@img/about-company-page/eco-banner.jpg");
+
+         &__eco-icon-box {
+            margin: 54px 0 42px 2px;
+         }
+
+         &__title {
+            margin: 0 19px 12px 0;
+         }
+      }
+   }
+
+   &__news {
+      padding: 87px 0 0 0;
+      background: rgba(249, 249, 249, 0.70);
+   }
+
+   &__contacts {
+      padding: 101px 0 0 0;
+   }
 }

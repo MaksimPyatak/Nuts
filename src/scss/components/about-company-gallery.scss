@@ -23,6 +23,10 @@
       width: 235px;
       height: 52px;
       margin: 68px auto 0;
+
+      @media (max-width: 425px) {
+         margin: 60px auto 0;
+      }
    }
 
    &__button-text {

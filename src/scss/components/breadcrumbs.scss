@@ -1,0 +1,35 @@
+.breadcrumbs {
+   position: absolute;
+   top: 37px;
+   left: 0;
+   width: 100%;
+
+   &__container {
+      @include container;
+      color: #FFF;
+      font-size: 14px;
+      font-family: Raleway;
+      font-weight: 600;
+      letter-spacing: 0.28px;
+   }
+
+   &__link {
+      margin: 0 6px 0 0;
+
+      &:nth-child(3) {
+         display: none;
+      }
+   }
+
+   &__right-arrow-icon {
+      margin: 0 6px 0 0;
+      font-weight: normal;
+      font-size: 12px;
+
+      &:nth-child(4) {
+         display: none;
+      }
+   }
+
+   &__page-now {}
+}

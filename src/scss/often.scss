@@ -33,7 +33,10 @@
    &:hover {
       background: #337D5A;
       border: none;
-      color: #FFFFFF;
+
+      div {
+         color: #FFFFFF;
+      }
    }
 
    div {

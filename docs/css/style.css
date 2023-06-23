@@ -778,6 +778,9 @@ main {
 .main-page .production__button:hover {
   background: #337D5A;
   border: none;
+}
+
+.main-page .production__button:hover div {
   color: #FFFFFF;
 }
 
@@ -2315,6 +2318,9 @@ button.swiper-pagination-bullet {
 .about-manufacturer__button:hover {
   background: #337D5A;
   border: none;
+}
+
+.about-manufacturer__button:hover div {
   color: #FFFFFF;
 }
 
@@ -3236,6 +3242,8 @@ button.swiper-pagination-bullet {
 .eco-banner {
   width: 100%;
   height: 740px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .eco-banner__container {
@@ -3456,6 +3464,9 @@ button.swiper-pagination-bullet {
 .news__button:hover {
   background: #337D5A;
   border: none;
+}
+
+.news__button:hover div {
   color: #FFFFFF;
 }
 
@@ -3465,7 +3476,7 @@ button.swiper-pagination-bullet {
 
 .gallery-component__first-row {
   width: 100%;
-  max-height: 556px;
+  max-height: 43.1vw;
   margin: 0 0 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3482,6 +3493,7 @@ button.swiper-pagination-bullet {
 .gallery-component__first-row .gallery-component__img-box:nth-child(1) {
   position: relative;
   width: 57.28%;
+  margin: 0 30px 0 0;
 }
 
 .gallery-component__first-row .gallery-component__img-box:nth-child(1):hover .gallery-component__content {
@@ -3499,7 +3511,7 @@ button.swiper-pagination-bullet {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 79px 0 0 39px;
+  padding: 79px 40px 0 39px;
   background: rgba(51, 125, 90, 0.97);
   color: #FFF;
 }
@@ -3516,13 +3528,14 @@ button.swiper-pagination-bullet {
   font-size: 15px;
   font-family: Montserrat;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 148.5%;
 }
 
 .gallery-component__first-row .gallery-component__content-subtitle span {
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.32px;
+  line-height: 112.5%;
 }
 
 .gallery-component__second-row {
@@ -3543,7 +3556,8 @@ button.swiper-pagination-bullet {
   left: 0;
   width: 100%;
   height: 100%;
-  margin: 55px 0 0 0;
+  padding: 110px 0 0 0;
+  background: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3565,7 +3579,7 @@ button.swiper-pagination-bullet {
 }
 
 .gallery-component__second-row .gallery-component__content-title {
-  margin: 0 0 16px 0;
+  margin: 0 0 15px 0;
   font-size: 22px;
   font-family: Montserrat;
   letter-spacing: 0.22px;
@@ -3577,13 +3591,7 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   font-family: Montserrat;
   font-weight: 500;
-  line-height: 21px;
-}
-
-.gallery-component__second-row .img-box-second {
-  width: 100%;
-  max-height: 556px;
-  margin: 0 0 30px 0;
+  line-height: 150%;
 }
 
 .gallery-component__third-row {
@@ -3619,13 +3627,56 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 
-.no-webp .about-page .banner{
+.breadcrumbs {
+  position: absolute;
+  top: 37px;
+  left: 0;
+  width: 100%;
+}
+
+.breadcrumbs__container {
+  max-width: 1290px;
+  height: 100%;
+  padding: 0 var(--pdng-conteiner);
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  color: #FFF;
+  font-size: 14px;
+  font-family: Raleway;
+  font-weight: 600;
+  letter-spacing: 0.28px;
+}
+
+.breadcrumbs__link {
+  margin: 0 6px 0 0;
+}
+
+.breadcrumbs__link:nth-child(3) {
+  display: none;
+}
+
+.breadcrumbs__right-arrow-icon {
+  margin: 0 6px 0 0;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.breadcrumbs__right-arrow-icon:nth-child(4) {
+  display: none;
+}
+
+.about-page__banner {
+  position: relative;
+}
+
+.no-webp .about-page__banner .banner{
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../img/about-company-page/banner.jpg"); }
 
-.no-webp .about-page .banner{
+.no-webp .about-page__banner .banner{
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/about-company-page/banner.jpg"); }
 
-.no-webp .about-page .banner{
+.no-webp .about-page__banner .banner{
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/about-company-page/banner.jpg"); }
 
 .about-page__about-manufacturer .swiper {
@@ -3762,6 +3813,9 @@ button.swiper-pagination-bullet {
 .about-page__history .history__button:hover {
   background: #337D5A;
   border: none;
+}
+
+.about-page__history .history__button:hover div {
   color: #FFFFFF;
 }
 
@@ -3805,7 +3859,8 @@ button.swiper-pagination-bullet {
 }
 
 .about-page__gallery {
-  margin: 90px 0 100px 0;
+  padding: 90px 0 100px 0;
+  background: #FBFBFB;
 }
 
 .about-page__gallery .about-company-gallery__container {
@@ -3850,6 +3905,9 @@ button.swiper-pagination-bullet {
 .about-page__gallery .about-company-gallery__button:hover {
   background: #337D5A;
   border: none;
+}
+
+.about-page__gallery .about-company-gallery__button:hover div {
   color: #FFFFFF;
 }
 
@@ -3861,6 +3919,32 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.28px;
+}
+
+.no-webp .about-page__eco-banner .eco-banner{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url("../img/about-company-page/eco-banner.jpg"); }
+
+.no-webp .about-page__eco-banner .eco-banner{
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/about-company-page/eco-banner.jpg"); }
+
+.no-webp .about-page__eco-banner .eco-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/about-company-page/eco-banner.jpg"); }
+
+.about-page__eco-banner .eco-banner__eco-icon-box {
+  margin: 54px 0 42px 2px;
+}
+
+.about-page__eco-banner .eco-banner__title {
+  margin: 0 19px 12px 0;
+}
+
+.about-page__news {
+  padding: 87px 0 0 0;
+  background: rgba(249, 249, 249, 0.7);
+}
+
+.about-page__contacts {
+  padding: 101px 0 0 0;
 }
 
 @media screen and (min-width: 1025px) {
@@ -4416,6 +4500,43 @@ button.swiper-pagination-bullet {
   .news {
     padding: 0 0 60px 0;
   }
+
+  .gallery-component__first-row .gallery-component__content {
+    padding: 50px 40px 0 39px;
+  }
+
+  .gallery-component__first-row .gallery-component__content-title {
+    font-size: 20px;
+  }
+
+  .gallery-component__first-row .gallery-component__content-subtitle {
+    font-size: 14px;
+  }
+
+  .gallery-component__first-row .gallery-component__content-subtitle span {
+    font-size: 14px;
+  }
+
+  .gallery-component__second-row .gallery-component__content {
+    padding: 0px 0 0 0;
+  }
+
+  .gallery-component__second-row .gallery-component__play-icon-box {
+    margin: 0 0 30px 0;
+  }
+
+  .gallery-component__second-row .gallery-component__content-title {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+  }
+
+  .gallery-component__second-row .gallery-component__content-subtitle {
+    font-size: 13px;
+  }
+
+  .about-page__gallery {
+    padding: 90px 0 68px 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -4600,6 +4721,69 @@ button.swiper-pagination-bullet {
   .news__swiper-button {
     width: 110px;
     top: 159.2px;
+  }
+
+  .gallery-component__first-row {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+  }
+
+  .gallery-component__first-row .gallery-component__img-box:nth-child(1) {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+
+  .gallery-component__first-row .gallery-component__img-box:nth-child(2) {
+    display: none;
+  }
+
+  .gallery-component__first-row .gallery-component__content {
+    padding: 30px 30px 0 30px;
+  }
+
+  .gallery-component__first-row .gallery-component__content-title {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+  }
+
+  .gallery-component__first-row .gallery-component__content-subtitle {
+    font-size: 12px;
+  }
+
+  .gallery-component__first-row .gallery-component__content-subtitle span {
+    font-size: 12px;
+  }
+
+  .gallery-component__second-row {
+    margin: 0 0 20px 0;
+  }
+
+  .gallery-component__second-row .gallery-component__play-icon-box {
+    height: 45px;
+    width: 45px;
+    margin: 0 0 10px 0;
+  }
+
+  .gallery-component__second-row .gallery-component__content-title {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+  }
+
+  .gallery-component__second-row .gallery-component__content-subtitle {
+    padding: 0 15px 0 15px;
+    font-size: 11px;
+  }
+
+  .gallery-component__third-row {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+
+  .gallery-component__third-row .gallery-component__img-box:nth-child(2) {
+    display: none;
   }
 }
 
@@ -4809,6 +4993,62 @@ button.swiper-pagination-bullet {
   .news__swiper-button {
     top: 154.2px;
   }
+
+  .gallery-component__first-row .gallery-component__content {
+    padding: 15px 15px 0 15px;
+  }
+
+  .gallery-component__first-row .gallery-component__content-title {
+    font-size: 15px;
+  }
+
+  .gallery-component__first-row .gallery-component__content-subtitle {
+    font-size: 11px;
+  }
+
+  .gallery-component__first-row .gallery-component__content-subtitle span {
+    font-size: 11px;
+  }
+
+  .gallery-component__second-row .gallery-component__play-icon-box {
+    margin: 0 0 10px 0;
+  }
+
+  .gallery-component__second-row .gallery-component__content-title {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+  }
+
+  .gallery-component__second-row .gallery-component__content-subtitle {
+    display: none;
+    font-size: 10px;
+  }
+
+  .gallery-component__third-row {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+
+  .gallery-component__third-row .gallery-component__img-box {
+    height: 43.1995vw;
+    overflow: hidden;
+  }
+
+  .gallery-component__third-row .gallery-component__img-box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .about-page__gallery .about-company-gallery__button {
+    margin: 60px auto 0;
+  }
+
+  .about-page__gallery {
+    padding: 60px 0 60px 0;
+  }
 }
 
 .webp .banner{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../img/main/banner.webp); }
@@ -4857,8 +5097,14 @@ button.swiper-pagination-bullet {
 
 .webp .eco-banner{ background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/main/eco-banner.webp); }
 
-.webp .about-page .banner{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../img/about-company-page/banner.webp); }
+.webp .about-page__banner .banner{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../img/about-company-page/banner.webp); }
 
-.webp .about-page .banner{ background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/about-company-page/banner.webp); }
+.webp .about-page__banner .banner{ background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/about-company-page/banner.webp); }
 
-.webp .about-page .banner{ background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/about-company-page/banner.webp); }
+.webp .about-page__banner .banner{ background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/about-company-page/banner.webp); }
+
+.webp .about-page__eco-banner .eco-banner{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../img/about-company-page/eco-banner.webp); }
+
+.webp .about-page__eco-banner .eco-banner{ background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/about-company-page/eco-banner.webp); }
+
+.webp .about-page__eco-banner .eco-banner{ background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/about-company-page/eco-banner.webp); }
