@@ -23,7 +23,7 @@
 
    &__logo-box {
       width: 217px;
-      margin: 4px 7.52% 0 0;
+      margin: 4px 7.22% 0 0;
       display: flex;
       justify-content: space-between;
       align-items: start;
@@ -49,6 +49,7 @@
       margin-top: 10px;
       font-size: 15px;
       line-height: 18px;
+      letter-spacing: 0.3px;
 
       @media screen and (max-width: 1024px) {
          text-align: center;
@@ -74,7 +75,7 @@
 
 .menu-footer {
    height: min-content;
-   padding: 27px 0 0 0;
+   padding: 28px 0 0 0;
    flex-wrap: wrap;
    align-self: center;
    margin-right: -15px;
@@ -94,7 +95,9 @@
    &__item {
       padding: 0 !important;
       font-weight: 600;
-      letter-spacing: -0.1px !important;
+      //letter-spacing: -0.1px !important;
+      letter-spacing: 0.15px;
+      font-size: 15px;
    }
 }
 
