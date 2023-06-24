@@ -2,6 +2,8 @@
 
 /*Обнулення*/
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -93,15 +95,6 @@ h6 {
 }
 
 /*--------------------*/
-
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway-Medium.eot");
-  src: local("Raleway Medium"), local("../fonts/Raleway-Medium"), url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.woff2") format(".woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
   font-family: "Raleway";
@@ -4487,6 +4480,10 @@ button.swiper-pagination-bullet {
 
   .lower-header__item-box:nth-child(4):hover {
     margin: 0 -12px !important;
+  }
+
+  .top-footer {
+    display: none;
   }
 
   .top-footer__logo-box {

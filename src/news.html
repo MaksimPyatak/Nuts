@@ -3,16 +3,17 @@
   @@include('html/head.html',{ "title":"Новости и статьи - Орех Причерноморья" })
 
   <body>
-    <!--@@include('html/elements/preloader.html',{})-->
-    <div class="wrapper">
-      <!--@@include('html/header.html',{})-->
-      <main>
-        <h1 style="color: red; font-size: 48px">Новости и статьи</h1>
-      </main>
-      <!--@@include('html/footer.html',{})-->
-    </div>
-    <!--@@include('html/elements/pop-up.html',{})
-    @@include('html/elements/pop-up2.html',{})-->
+    @@include('html/header.html',{})
+    <main class="news-page">
+      <section class="news-page__breadcrumbs">@@include('html/components/breadcrumbs.html',{"second-link": "", "second-page": "", "page-now": "Новости и статьи "})</section>
+      <section class="news-page__news">@@include('html/components/news.html',{})</section>
+      <section class="news-page__contacts">@@include('html/components/contacts.html',{})</section>
+    </main>
+    @@include('html/footer.html',{})
+    <!--</div>-->
+    @@include('./html/components/video-modal.html',{})
+    <!--@@include('html/elements/pop-up2.html',{})-->
     <script src="js/app.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api" async></script>
   </body>
 </html>
