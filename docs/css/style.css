@@ -1754,6 +1754,11 @@ button.swiper-pagination-bullet {
   margin: 12px 0 0 0;
 }
 
+.middle-header__icon {
+  width: 54px;
+  height: 53px;
+}
+
 .middle-header__logo-text {
   width: 155px;
   margin: 5px 0 0 8px;
