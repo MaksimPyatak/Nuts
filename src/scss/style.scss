@@ -142,11 +142,11 @@ main {
 @import "./components/eco-banner.scss";
 @import "./components/news.scss";
 @import "./components/gallery-component.scss";
-//@import "./components/breadcrumbs.scss";
+@import "./components/breadcrumbs.scss";
 
-//// PAGE
-//@import "./components/page/about-company.scss";
-//@import "./components/page/gallery-page.scss";
+// PAGE
+@import "./components/page/about-company.scss";
+@import "./components/page/gallery-page.scss";
 
 //@import "pop-up";
 //@import "pop-up2";

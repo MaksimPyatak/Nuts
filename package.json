@@ -10,7 +10,7 @@
 		"zip": "gulp deployZIP --build",
 		"deploy": "gulp deployFTP --build",
 		"svgSprive": "gulp svgSpriteTask",
-      "format:html": "prettier --write \"src/**/*.html\""
+		"format:html": "prettier --write \"src/**/*.html\""
 	},
 	"author": "FLS",
 	"license": "ISC",
@@ -19,6 +19,7 @@
 	},
 	"devDependencies": {
 		"browser-sync": "latest",
+		"critical": "^5.1.1",
 		"del": "latest",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "latest",
