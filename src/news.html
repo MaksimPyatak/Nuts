@@ -6,8 +6,9 @@
     @@include('html/header.html',{})
     <main class="news-page">
       <section class="news-page__breadcrumbs">@@include('html/components/breadcrumbs.html',{"second-link": "/", "second-page": "", "page-now": "Новости и статьи "})</section>
-      <section class="news-page__main-article"></section>
-      <section class="news-page__news">@@include('html/components/news.html',{})</section>
+      <section class="news-page__main-article">@@include('html/components/news/main-article.html',{})</section>
+      <section class="news-page__articles">@@include('html/components/news/articles.html',{})</section>
+      <section class="news-page__video">@@include('html/components/news/vido-section.html',{})</section>
       <section class="news-page__contacts">@@include('html/components/contacts.html',{})</section>
     </main>
     @@include('html/footer.html',{})

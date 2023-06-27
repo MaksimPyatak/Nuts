@@ -23,11 +23,23 @@
    &__gallery-section {
       @import "../gallery/gallery-page-component.scss";
       padding: 93px 0 100px 0;
+
+      @media (max-width: 1024px) {
+         padding: 93px 0 60px 0;
+      }
    }
 
    &__contacts {
       margin: 0 0 41px 0;
       padding: 102px 0 12px 0;
       background: #FBFBFB;
+
+      @media (max-width: 1024px) {
+         padding: 70px 0 0 0;
+      }
+
+      @media (max-width: 768px) {
+         padding: 40px 0 0 0;
+      }
    }
 }
