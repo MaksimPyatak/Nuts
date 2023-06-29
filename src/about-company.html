@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title":"О компании - Орех Причерноморья" })
+  @@include('html/head.html',{ "title":"О компании - Орех Причерноморья", "style": "css/style.min.css" })
 
   <body>
     <!--@@include('html/elements/preloader.html',{})-->
     <!--<div class="wrapper">-->
     @@include('html/header.html',{})
     <main class="about-page">
-      <section class="about-page__banner">@@include('html/components/breadcrumbs.html',{"second-link": "/", "second-page": "", "page-now": "О производстве"}) @@include('html/components/main/banner.html',{"title": "Орех Причерноморья", "subtitle": "Единственный в Украине сад совместного выращивание фундука и грецкого ореха"})</section>
+      <section class="about-page__banner">
+        @@include('html/components/breadcrumbs.html',{"second-link": "/", "second-page": "", "page-now": "О производстве"})
+        <!--  -->
+        @@include('html/components/main/banner.html',{"title": "Орех Причерноморья", "subtitle": "Единственный в Украине сад совместного выращивание фундука и грецкого ореха"})
+      </section>
       <section class="about-page__about-manufacturer">@@include('html/components/about-company/about-manufacturer.html',{})</section>
       <section class="about-page__history">@@include('html/components/about-company/history.html',{})</section>
       <section class="about-page__statistics">@@include('html/components/statistics.html',{})</section>

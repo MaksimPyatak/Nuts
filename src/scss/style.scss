@@ -1,21 +1,21 @@
-@import "nullstyle";
+@import "./components/nullstyle";
 // Підключення шрифтів
 //&display=swap - додати при підключенні через плагін
 //@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;400&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;400&display=swap');
 //@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
 
 @import "fonts/fonts";
 @import "./fonts/nut.scss";
 
 //Те що часто використовується
-@import "often";
+@import "./components/often";
 
 // Variable
-@import "variable";
+@import "./components/variable";
 
 // Загальні стилі
-@import "global";
+@import "./components/global";
 
 //@import "../../node_modules/swiper/swiper.scss";
 //@import "../../node_modules/swiper/modules/navigation/navigation.scss";
@@ -147,7 +147,8 @@ main {
 // PAGE
 @import "./components/page/about-company.scss";
 @import "./components/page/gallery-page.scss";
-@import "./components/page/news.scss"
+@import "./components/page/news.scss";
+@import "./components/page/one-news.scss";
 
 //@import "pop-up";
 //@import "pop-up2";
