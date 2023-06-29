@@ -11,9 +11,9 @@
   разного объема."
   />
 
-  <link rel="stylesheet" href="css/catalog.min.css?_v=20230629103437" />
-  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230629103437" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230629103437" />-->
+  <link rel="stylesheet" href="css/catalog.min.css" />
+  <!--<link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />-->
   <title>Каталог продукции - Орех Причерноморья</title>
 </head>
 
@@ -158,7 +158,7 @@
 
         <!--  -->
         <div class="smal-banner">
-  <picture><source srcset="img/catalog/banner.webp" type="image/webp"><img src="img/catalog/banner.jpg" alt="background" class="smal-banner__img" /></picture>
+  <img src="img/catalog/banner.jpg" alt="background" class="smal-banner__img" />
   <div class="smal-banner__container">
     <!--<div class="smal-banner__content">-->
     <h1 class="smal-banner__title">Каталог продукции</h1>
@@ -168,7 +168,30 @@
 
       </section>
       <section class="catalog__productions">
-        <div class="catalog__productions-container"><div class="production-box">
+        <div class="catalog__productions-container">
+          <div class="filters">
+  <!--<select name="taste" id="taste">
+    <option value="">Вкусный</option>
+    <option value="">Очуеь вкусный</option>
+    <option value="">Самый вкусный</option>
+  </select>-->
+  <!--<select class="select" name="language">
+    <option disabled>Выбрать</option>
+    <option value="HTML">HTML</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="PHP">PHP</option>
+  </select>-->
+  <select class="select" name="language">
+  <option disabled>Вкус</option>
+  <option value="HTML">Вкусный</option>
+  <option value="JavaScript">Очуеь вкусный</option>
+  <option value="PHP">Самый вкусный</option>
+</select>
+
+</div>
+
+          <!--  -->
+          <div class="production-box">
   <div class="production-box__card">
     <div class="production-box__action-icon-box">
       <p class="production-box__action-text">АКЦИЯ</p>
@@ -181,7 +204,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/1.webp" type="image/webp"><img src="img/product-card/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/1.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -189,7 +212,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -197,7 +220,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/1.webp" type="image/webp"><img src="img/product-card/1.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/1.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -205,11 +228,11 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <!--<div class="swiper-slide">
-         <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
+         <img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img">
       </div>-->
     </div>
     <div class="swiper-button-prev">
@@ -274,7 +297,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/2.webp" type="image/webp"><img src="img/product-card/2.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/2.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -282,7 +305,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -290,7 +313,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/2.webp" type="image/webp"><img src="img/product-card/2.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/2.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -298,11 +321,11 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <!--<div class="swiper-slide">
-         <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
+         <img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img">
       </div>-->
     </div>
     <div class="swiper-button-prev">
@@ -363,7 +386,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/3.webp" type="image/webp"><img src="img/product-card/3.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/3.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -371,7 +394,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -379,7 +402,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/3.webp" type="image/webp"><img src="img/product-card/3.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/3.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -387,11 +410,11 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <!--<div class="swiper-slide">
-         <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
+         <img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img">
       </div>-->
     </div>
     <div class="swiper-button-prev">
@@ -451,7 +474,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/4.webp" type="image/webp"><img src="img/product-card/4.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/4.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -459,7 +482,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -467,7 +490,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/4.webp" type="image/webp"><img src="img/product-card/4.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/4.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -475,11 +498,11 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <!--<div class="swiper-slide">
-         <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
+         <img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img">
       </div>-->
     </div>
     <div class="swiper-button-prev">
@@ -539,7 +562,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/5.webp" type="image/webp"><img src="img/product-card/5.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/5.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -547,7 +570,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -555,7 +578,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/5.webp" type="image/webp"><img src="img/product-card/5.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/5.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -563,11 +586,11 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <!--<div class="swiper-slide">
-         <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
+         <img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img">
       </div>-->
     </div>
     <div class="swiper-button-prev">
@@ -627,7 +650,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/6.webp" type="image/webp"><img src="img/product-card/6.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/6.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -635,7 +658,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -643,7 +666,7 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/6.webp" type="image/webp"><img src="img/product-card/6.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/6.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <div class="swiper-slide">
@@ -651,11 +674,11 @@
           <i class="product__zoom-icon icon"> &#xe816; </i>
         </div>
         <a href="card-product.html" class="product__slide-link">
-          <picture><source srcset="img/product-card/nuts.webp" type="image/webp"><img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" /></picture>
+          <img src="img/product-card/nuts.jpg" alt="горіхи" class="product__slide-img" />
         </a>
       </div>
       <!--<div class="swiper-slide">
-         <picture><source srcset="img/product1/1.webp" type="image/webp"><img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img"></picture>
+         <img src="img/product1/1.jpg" alt="горіхи" class="product__slide-img">
       </div>-->
     </div>
     <div class="swiper-button-prev">
@@ -708,7 +731,8 @@
 </div>
 </div>
 </div>
-</div>
+
+        </div>
       </section>
       <section class="catalog__contacts"><div class="contacts">
   <div class="contacts__container">
@@ -834,6 +858,6 @@
   </div>
 </div>
 
-    <script src="js/app.min.js?_v=20230629103437"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

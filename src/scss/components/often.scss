@@ -129,6 +129,125 @@
 
 }
 
+@mixin select {
+   .select {
+      display: block;
+      max-width: 215px;
+      width: 100%;
+      position: relative;
+
+      font-size: 14px;
+      font-family: Montserrat;
+      font-weight: 500;
+      line-height: 17px;
+   }
+
+   .new-select {
+      position: relative;
+      border: 1px solid #ced4da;
+      padding: 13px 15px;
+      cursor: pointer;
+      user-select: none;
+
+      &:hover {
+         border: 0.5px solid hsla(0, 0%, 0%, 0.15);
+         background: rgba(51, 125, 90, 0.10);
+      }
+
+      &.on {
+         border: 1.5px solid #337D5A;
+      }
+   }
+
+   .new-select__list {
+      position: absolute;
+      top: 45px;
+      left: 0;
+      width: 100%;
+      border: 1px solid #ced4da;
+      padding: 0 15px; //10px
+      cursor: pointer;
+      background: #fff;
+      user-select: none;
+
+      color: hsl(0, 0%, 20%);
+      z-index: 3;
+   }
+
+   .new-select__list.on {
+      display: block;
+   }
+
+   .new-select__item {
+      height: 44px;
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+         border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      span {
+         width: 100%;
+         display: block;
+      }
+   }
+
+   .new-select__item:hover {
+      color: #FFFFFF;
+      margin: 0 -15px; //10px
+      padding: 0 15px; //10px
+      background: #337D5A;
+   }
+
+   .new-select:after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      right: 9px;
+      top: 9px;
+      background: url('path-to-image') no-repeat right center / cover;
+      opacity: 0.6;
+
+      -webkit-transition: all .27s ease-in-out;
+      -o-transition: all .27s ease-in-out;
+      transition: all .27s ease-in-out;
+
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+
+   .new-select.on:after {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+   }
+
+   .new-select .arrow {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: transparent transparent #337D5A #337D5A;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%) rotate(-45deg);
+      transition: transform 0.3s;
+   }
+
+   .new-select.on .arrow {
+      transform: translateY(-50%) rotate(135deg);
+   }
+
+}
+
 // Текст з двома лініями з двох боків -ТЕКСТ----
 //Додаємо в основний блок
 @mixin discover-more($color: inherit, $background: rgba(255, 255, 255, 0.4)) {

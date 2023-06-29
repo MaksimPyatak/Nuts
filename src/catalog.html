@@ -11,7 +11,11 @@
         @@include('html/components/small-banner.html',{"title": "Каталог продукции", "img": "@img/catalog/banner.jpg"})
       </section>
       <section class="catalog__productions">
-        <div class="catalog__productions-container">@@include('html/components/production.html',{})</div>
+        <div class="catalog__productions-container">
+          @@include('html/components/catalog/filters.html',{})
+          <!--  -->
+          @@include('html/components/production.html',{})
+        </div>
       </section>
       <section class="catalog__contacts">@@include('html/components/contacts.html',{})</section>
     </main>
