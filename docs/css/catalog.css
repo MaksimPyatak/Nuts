@@ -1570,7 +1570,7 @@ button.swiper-pagination-bullet {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2518,7 +2518,7 @@ button.swiper-pagination-bullet {
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 15px;
@@ -3096,13 +3096,12 @@ button.swiper-pagination-bullet {
     border-bottom: 0;
     color: #FFFFFF;
     width: 100vw;
-    margin: 0 -12px;
-    padding-left: 12px;
+    margin: 0 calc(0 - var(--pdng-conteiner));
     background: #337D5A;
   }
 
   .lower-header__item-box:nth-child(4):hover {
-    margin: 0 -12px !important;
+    margin: 0 calc(0 - var(--pdng-conteiner));
   }
 
   .top-footer {

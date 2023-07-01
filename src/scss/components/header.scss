@@ -113,7 +113,7 @@
 
    &__user-navigation {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       align-items: center;
 
       @media screen and (max-width: 1024px) {
@@ -649,13 +649,13 @@
             border-bottom: 0;
             color: #FFFFFF;
             width: 100vw;
-            margin: 0 -12px;
-            padding-left: 12px;
+            margin: 0 calc(0 - var(--pdng-conteiner));
+            //padding-left: 12px;
             background: #337D5A;
          }
 
          &:nth-child(4):hover {
-            margin: 0 -12px !important;
+            margin: 0 calc(0 - var(--pdng-conteiner));
          }
       }
    }
