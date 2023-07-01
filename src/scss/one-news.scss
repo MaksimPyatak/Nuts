@@ -12,6 +12,16 @@
 // Загальні стилі
 @import "./components/global";
 
+@import "./components/header.scss";
+@import "./components/footer";
+
+@import "./components/breadcrumbs.scss";
+@import "./components/one-news/article-box.scss";
+@import './components/one-news/article.scss';
+@import './components/one-news/news-box.scss';
+@import "./components/contacts.scss";
+
+
 body {
    font-family: "Raleway";
    font-weight: 800;
@@ -35,10 +45,6 @@ main {
       margin: 117px 0 0 0;
    }
 }
-
-@import "./components/one-news/article-box.scss";
-@import './components/one-news/article.scss';
-@import './components/one-news/news-box.scss';
 
 .one-news {
 
@@ -77,4 +83,8 @@ main {
          padding: 40px 0 0 0;
       }
    }
+}
+
+.video-modal {
+   display: none;
 }

@@ -13,17 +13,15 @@
 @import "./components/global";
 @import "../../node_modules/swiper/swiper.scss";
 @import '../../node_modules/swiper/modules/navigation/navigation.scss';
-@import '../../node_modules/swiper/modules/pagination/pagination.scss';
-@import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 
 @import "./components/header.scss";
 @import "./components/footer";
 
+@import "./components/breadcrumbs.scss";
 @import "./components/banner.scss";
 @import "./components/play-video.scss";
 @import "./components/gallery/gallery-page-component.scss";
 @import "./components/gallery-component.scss";
-@import "./components/breadcrumbs.scss";
 @import "./components/contacts.scss";
 
 body {
