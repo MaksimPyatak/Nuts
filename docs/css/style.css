@@ -2260,6 +2260,46 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
+.breadcrumbs {
+  position: absolute;
+  top: 37px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.breadcrumbs__container {
+  max-width: 1290px;
+  height: 100%;
+  padding: 0 var(--pdng-conteiner);
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  color: #FFF;
+  font-size: 14px;
+  font-family: Raleway;
+  font-weight: 600;
+  letter-spacing: 0.28px;
+}
+
+.breadcrumbs__link {
+  margin: 0 6px 0 0;
+}
+
+.breadcrumbs__link:nth-child(3) {
+  display: none;
+}
+
+.breadcrumbs__right-arrow-icon {
+  margin: 0 6px 0 0;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.breadcrumbs__right-arrow-icon:nth-child(4) {
+  display: none;
+}
+
 .banner {
   position: relative;
   height: 600px;
@@ -3694,46 +3734,6 @@ button.swiper-pagination-bullet {
      object-position: right top;
 }
 
-.breadcrumbs {
-  position: absolute;
-  top: 37px;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.breadcrumbs__container {
-  max-width: 1290px;
-  height: 100%;
-  padding: 0 var(--pdng-conteiner);
-  margin: 0 auto;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  color: #FFF;
-  font-size: 14px;
-  font-family: Raleway;
-  font-weight: 600;
-  letter-spacing: 0.28px;
-}
-
-.breadcrumbs__link {
-  margin: 0 6px 0 0;
-}
-
-.breadcrumbs__link:nth-child(3) {
-  display: none;
-}
-
-.breadcrumbs__right-arrow-icon {
-  margin: 0 6px 0 0;
-  font-weight: normal;
-  font-size: 12px;
-}
-
-.breadcrumbs__right-arrow-icon:nth-child(4) {
-  display: none;
-}
-
 @media screen and (min-width: 1025px) {
   .middle-header__button {
     background: #337D5A;
@@ -4022,7 +4022,7 @@ button.swiper-pagination-bullet {
     height: auto;
     position: absolute;
     background-color: white;
-    top: 97px;
+    top: -100vh;
     left: 0;
     -webkit-box-sizing: border-box !important;
             box-sizing: border-box !important;
@@ -4037,6 +4037,7 @@ button.swiper-pagination-bullet {
   .lower-header._active {
     width: 100vw;
     max-height: calc(100vh - 98px);
+    top: 97px;
     left: 0;
     background: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);

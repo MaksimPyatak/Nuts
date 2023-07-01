@@ -3569,7 +3569,7 @@ main {
     height: auto;
     position: absolute;
     background-color: white;
-    top: 97px;
+    top: -100vh;
     left: 0;
     -webkit-box-sizing: border-box !important;
             box-sizing: border-box !important;
@@ -3584,6 +3584,7 @@ main {
   .lower-header._active {
     width: 100vw;
     max-height: calc(100vh - 98px);
+    top: 97px;
     left: 0;
     background: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);

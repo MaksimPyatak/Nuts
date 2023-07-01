@@ -8,7 +8,7 @@ if (iconMenu) {
    let height = lowerHeader.scrollHeight;
    lowerHeader.style.top = (0 - height) + 'px';
 
-   function changeLowerHeaderTop() {
+   async function changeLowerHeaderTop() {
       const classList = lowerHeader.classList;
       let height = lowerHeader.scrollHeight;
       lowerHeader.style.top = (0 - height) + 'px';
