@@ -20,6 +20,7 @@
 @import "./components/header.scss";
 @import "./components/footer";
 
+@import "./components/breadcrumbs.scss";
 @import "./components/about-company/about-manufacturer.scss";
 @import "./components/about-company/history.scss";
 @import "./components/about-company-gallery.scss";
@@ -27,13 +28,11 @@
 @import "./components/banner.scss";
 @import "./components/video-modal.scss";
 @import "./components/play-video.scss";
-@import "./components/breadcrumbs.scss";
 @import "./components/main/about-manufacturer.scss";
 @import "./components/statistics.scss";
 @import "./components/gallery-component.scss";
 @import "./components/eco-banner.scss";
 @import "./components/news.scss";
-
 @import "./components/contacts.scss";
 
 body {

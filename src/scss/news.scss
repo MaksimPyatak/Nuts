@@ -12,9 +12,16 @@
 // Загальні стилі
 @import "./components/global";
 
+@import "./components/header.scss";
+@import "./components/footer";
+
+@import "./components/breadcrumbs.scss";
 @import "./components/news/main-article.scss";
 @import "./components/news/articles.scss";
 @import "./components/news/vido-section.scss";
+@import "./components/contacts.scss";
+@import "./components/video-modal.scss";
+@import "./components/play-video.scss";
 
 body {
    font-family: "Raleway";
