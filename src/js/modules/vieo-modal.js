@@ -3,7 +3,7 @@ const videoModal = document.querySelector('.video-modal');
 const videoBox = document.querySelector('.video-modal__container');
 const headerZero = document.querySelector('.header__zero');
 
-Array.from(playrVideoButtons).forEach(function (button) {
+Array.from(playrVideoButtons).forEach(async function (button) {
    button.addEventListener("click", function () {
       let data = button.getAttribute("data-content");
       videoModal.style.display = "block";
@@ -33,7 +33,7 @@ Array.from(playrVideoButtons).forEach(function (button) {
       let player;
 
       // Ініціалізація програвача при завантаженні API
-      function onYouTubeIframeAPIReady() {
+      async function onYouTubeIframeAPIReady() {
          player = new YT.Player("youtubePlayer", {
             events: {
                onReady: onPlayerReady
@@ -43,13 +43,13 @@ Array.from(playrVideoButtons).forEach(function (button) {
 
       const closeIcon = document.querySelector('.video-modal__icon-box');
       // Функція, яка буде викликана, коли програвач готовий
-      function onPlayerReady(event) {
+      async function onPlayerReady(event) {
          // Встановлюємо обробник події закриття модального вікна
          headerZero.addEventListener("click", close);
          closeIcon.addEventListener("click", close);
       }
 
-      function close(e) {
+      async function close(e) {
          youtubePlayer.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
          if (bodyElement.classList.contains('_lock')) {
             document.body.classList.remove('_lock');
