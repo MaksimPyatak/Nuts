@@ -1,3 +1,66 @@
+@import "./components/nullstyle";
+
+@import "fonts/fonts";
+@import "./fonts/nut.scss";
+
+//Те що часто використовується
+@import "./components/often";
+
+// Variable
+@import "./components/variable";
+
+// Загальні стилі
+@import "./components/global";
+
+@import "../../node_modules/swiper/swiper.scss";
+@import '../../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
+
+@import "./components/header.scss";
+@import "./components/footer";
+
+@import "./components/about-company/about-manufacturer.scss";
+@import "./components/about-company/history.scss";
+@import "./components/about-company-gallery.scss";
+@import "./components/about-company-gallery.scss";
+@import "./components/banner.scss";
+@import "./components/video-modal.scss";
+@import "./components/play-video.scss";
+@import "./components/breadcrumbs.scss";
+@import "./components/main/about-manufacturer.scss";
+@import "./components/statistics.scss";
+@import "./components/gallery-component.scss";
+@import "./components/eco-banner.scss";
+@import "./components/news.scss";
+
+@import "./components/contacts.scss";
+
+body {
+   font-family: "Raleway";
+   font-weight: 800;
+   font-size: 14px;
+   color: #1A2F3F;
+   background: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+}
+
+._lock {
+   overflow: hidden;
+}
+
+
+main {
+   margin: 179px 0 0 0;
+   flex: 1 1 auto;
+
+   @media screen and (max-width: 1024px) {
+      margin: 117px 0 0 0;
+   }
+
+}
+
 .about-page {
 
    &__banner {
@@ -12,14 +75,18 @@
       }
 
       .banner {
-         background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('@img/about-company-page/banner.jpg');
+         &__shading {
+            background: rgba(0, 0, 0, 0.45);
+         }
+
+         //background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+         //url('@img/about-company-page/banner.jpg');
 
       }
 
    }
 
    &__about-manufacturer {
-      @import "./components/about-company/about-manufacturer.scss";
 
       .swiper {
          max-height: 472px;
@@ -32,10 +99,6 @@
             margin: 0 0 0 0;
          }
 
-         //@media screen and (max-width: 768px) {
-         //   //margin: 100px 0 0 0;
-         //}
-
          &__container {}
 
          &__content {
@@ -47,7 +110,6 @@
          }
 
          &__text {
-            //margin: 0 12px 45px 0;
             font-size: 16px;
             font-weight: 500;
             line-height: 24px;
@@ -60,9 +122,6 @@
                   margin: 0 0px 28px 0;
                }
 
-               //&:nth-child(3) {
-               //   margin: 0 0px 28px 0;
-               //}
             }
          }
       }
@@ -70,7 +129,6 @@
 
    &__history {
       background: #FBFBFB;
-      @import "../about-company/history.scss";
    }
 
    &__statistics {
@@ -82,7 +140,6 @@
    }
 
    &__gallery {
-      @import "../about-company-gallery.scss";
       padding: 90px 0 100px 0;
       background: #FBFBFB;
 

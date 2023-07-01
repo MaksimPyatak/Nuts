@@ -1,0 +1,1175 @@
+@charset "UTF-8";
+
+/*Обнулення*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Medium.eot");
+  src: local("Raleway Medium"), local("../fonts/Raleway-Medium"), url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.woff2") format(".woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-SemiBold.eot");
+  src: local("Raleway SemiBold"), local("../fonts/Raleway-SemiBold"), url("../fonts/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.woff2") format(".woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Medium Italic"), local("Raleway-MediumItalic"), url("../fonts/Raleway-MediumItalic.woff2") format("woff2"), url("../fonts/Raleway-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: local("Montserrat Medium Italic"), local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.woff2") format(".woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.woff2") format(".woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.eot");
+  src: local("Montserrat ExtraBold Italic"), local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.woff2") format(".woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: local("Lato Medium"), local("Lato-Medium"), url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "nut";
+  src: url("../fonts/nut.woff2?38424369") format("woff2"), url("../fonts/nut.woff?38424369") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'nut';
+    src: url('../font/nut.svg?38424369#nut') format('svg');
+  }
+}
+*/
+
+[class^=icon-]:before,
+[class*=" icon-"]:before {
+  font-family: "nut";
+  font-style: normal;
+  font-weight: normal;
+  /*speak: never;*/
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-arrow-down:before {
+  content: "\e801";
+}
+
+/* '' */
+
+.icon-bank-card:before {
+  content: "\e802";
+}
+
+/* '' */
+
+.icon-breadcrumbs:before {
+  content: "\e803";
+}
+
+/* '' */
+
+.icon-cake:before {
+  content: "\e804";
+}
+
+/* '' */
+
+/*.icon-close-button-(2):before { content: '\e805'; } */
+
+/* '' */
+
+.icon-copy:before {
+  content: "\e806";
+}
+
+/* '' */
+
+.icon-dinner-table:before {
+  content: "\e807";
+}
+
+/* '' */
+
+.icon-eco:before {
+  content: "\e808";
+}
+
+/* '' */
+
+.icon-facebook:before {
+  content: "\e809";
+}
+
+/* '' */
+
+.icon-food-scale-tool:before {
+  content: "\e80a";
+}
+
+/* '' */
+
+.icon-group:before {
+  content: "\e80b";
+}
+
+/* '' */
+
+.icon-group4:before {
+  content: "\e80c";
+}
+
+/* '' */
+
+.icon-group5:before {
+  content: "\e80d";
+}
+
+/* '' */
+
+.icon-group8:before {
+  content: "\e80e";
+}
+
+/* '' */
+
+.icon-icon:before {
+  content: "\e80f";
+}
+
+/* '' */
+
+.icon-icon2:before {
+  content: "\e810";
+}
+
+/* '' */
+
+.icon-icon3:before {
+  content: "\e811";
+}
+
+/* '' */
+
+.icon-instagram:before {
+  content: "\e812";
+}
+
+/* '' */
+
+.icon-left-arrow:before {
+  content: "\e813";
+}
+
+/* '' */
+
+.icon-locked:before {
+  content: "\e814";
+}
+
+/* '' */
+
+.icon-lorry:before {
+  content: "\e815";
+}
+
+/* '' */
+
+.icon-magnifying-glass:before {
+  content: "\e816";
+}
+
+/* '' */
+
+.icon-man-user:before {
+  content: "\e817";
+}
+
+/* '' */
+
+.icon-museum:before {
+  content: "\e818";
+}
+
+/* '' */
+
+.icon-package:before {
+  content: "\e819";
+}
+
+/* '' */
+
+.icon-place-holder:before {
+  content: "\e81a";
+}
+
+/* '' */
+
+.icon-play-icon:before {
+  content: "\e81b";
+}
+
+/* '' */
+
+.icon-play-icon-1:before {
+  content: "\e81c";
+}
+
+/* '' */
+
+.icon-right-arrow:before {
+  content: "\e81d";
+}
+
+/* '' */
+
+.icon-right-arrow2:before {
+  content: "\e81e";
+}
+
+/* '' */
+
+.icon-right-top:before {
+  content: "\e81f";
+}
+
+/* '' */
+
+.icon-settings:before {
+  content: "\e820";
+}
+
+/* '' */
+
+.icon-shop:before {
+  content: "\e821";
+}
+
+/* '' */
+
+.icon-sticker:before {
+  content: "\e822";
+}
+
+/* '' */
+
+.icon-supermarket:before {
+  content: "\e823";
+}
+
+/* '' */
+
+.icon-telegram:before {
+  content: "\e824";
+}
+
+/* '' */
+
+.icon-vector:before {
+  content: "\e825";
+}
+
+/* '' */
+
+.icon-vector2:before {
+  content: "\e826";
+}
+
+/* '' */
+
+.icon-vector3:before {
+  content: "\e827";
+}
+
+/* '' */
+
+.icon-vector4:before {
+  content: "\e828";
+}
+
+/* '' */
+
+.icon-vector6:before {
+  content: "\e829";
+}
+
+/* '' */
+
+.icon-vector7:before {
+  content: "\e82a";
+}
+
+/* '' */
+
+.icon-vector8:before {
+  content: "\e82b";
+}
+
+/* '' */
+
+.icon-vector9:before {
+  content: "\e82c";
+}
+
+/* '' */
+
+.icon-vector10:before {
+  content: "\e82d";
+}
+
+/* '' */
+
+.icon-vector11:before {
+  content: "\e82e";
+}
+
+/* '' */
+
+.icon-vector12:before {
+  content: "\e82f";
+}
+
+/* '' */
+
+.icon-vector13:before {
+  content: "\e830";
+}
+
+/* '' */
+
+.icon-vector14:before {
+  content: "\e831";
+}
+
+/* '' */
+
+.icon-vector15:before {
+  content: "\e832";
+}
+
+/* '' */
+
+.icon-vector16:before {
+  content: "\e833";
+}
+
+/* '' */
+
+.icon-vector17:before {
+  content: "\e834";
+}
+
+/* '' */
+
+.icon-viber:before {
+  content: "\e835";
+}
+
+/* '' */
+
+.icon-view:before {
+  content: "\e836";
+}
+
+/* '' */
+
+.icon-wallet:before {
+  content: "\e837";
+}
+
+/* '' */
+
+.icon-warning-sigh:before {
+  content: "\e838";
+}
+
+/* '' */
+
+.icon-warning:before {
+  content: "\e839";
+}
+
+/* '' */
+
+.icon-whatsapp:before {
+  content: "\e83a";
+}
+
+/* '' */
+
+.icon-xmlid-835:before {
+  content: "\e83b";
+}
+
+/* '' */
+
+.icon-youtube:before {
+  content: "\e83c";
+}
+
+/* '' */
+
+.icon-zoom:before {
+  content: "\e83d";
+}
+
+/* '' */
+
+.icon-акция:before {
+  content: "\e83e";
+}
+
+/* '' */
+
+.icon-новинка:before {
+  content: "\e83f";
+}
+
+/* '' */
+
+:root {
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 767px;
+  --breakpoint-lg: 1023px;
+  --breakpoint-xl: 1439px;
+  --pdng-conteiner: 56px;
+  --width-smaller-container: 1044px;
+  --pdng-text-conteiner: 120px;
+}
+
+.icon {
+  font-family: "nut";
+  font-style: normal;
+}
+
+h1 {
+  font-size: 62px;
+  line-height: 73px;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 122%;
+}
+
+h3 {
+  font-size: 32px;
+  letter-spacing: 0.01em;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 178%;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 17.7px;
+  letter-spacing: 0.06em;
+}
+
+.subtitle-h1 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+}
+
+.subtitle-h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155%;
+  letter-spacing: 0.01em;
+}
+
+.monts15 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.p16 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+}
+
+.p14 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+body {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 14px;
+  color: #1A2F3F;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+._lock {
+  overflow: hidden;
+}
+
+main {
+  margin: 179px 0 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.article-box {
+  width: 100%;
+}
+
+.article-box__container {
+  max-width: 1290px;
+  height: 100%;
+  padding: 0 var(--pdng-conteiner);
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto minmax(220px, 20.155%);
+  grid-template-columns: auto minmax(220px, 20.155%);
+  -webkit-column-gap: 3.1%;
+     -moz-column-gap: 3.1%;
+          column-gap: 3.1%;
+  row-gap: 30px;
+}
+
+.article-box__title {
+  max-width: 470px;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.article-box__date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #8A8A8A;
+  font-size: 15px;
+}
+
+.article-box__article {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.article-box__news-box {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.article__img-box {
+  margin: 0 0 28px 0;
+  padding-top: 60.101%;
+  position: relative;
+}
+
+.article img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.article__p {
+  margin: 0 0 13px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.article__title {
+  max-width: 501px;
+  margin: 38px 0 22px 0;
+}
+
+.article__list-title {
+  padding: 6px 0 10px 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+
+.article__list {
+  margin: 0 0 29px 0;
+}
+
+.article__list li {
+  margin: 0 0 3px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article__list li:before {
+  margin: 0 24px 0 0;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background: #337D5A;
+}
+
+.article .article__img-box + h5 {
+  margin: -1px 0 22px 0;
+}
+
+.news-box__container {
+  padding: 22px 0 0 0;
+  background: #FCFCFC;
+}
+
+.news-box__tittle {
+  margin: 0 0 21px 0;
+  line-height: 25px;
+  text-align: center;
+}
+
+.news-box__card {
+  width: 100%;
+  padding: 0 20px 39px 20px;
+}
+
+.news-box__card:last-child {
+  padding: 0 20px 28px 20px;
+}
+
+.news-box__card-img-box {
+  width: 100%;
+  margin: 0 0 14px 0;
+  padding-top: 74.09%;
+  position: relative;
+}
+
+.news-box__card-img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news-box__card-date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #8A8A8A;
+  margin: 14px 0 8px 0;
+}
+
+.news-box__card-title {
+  margin: 8px 0 0 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+}
+
+.news-box__link {
+  display: block;
+  margin: 5px 0 0 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+}
+
+.news-box__link:hover {
+  color: #337D5A;
+}
+
+.news-box__link i {
+  margin: 0 0 0 4px;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+.news-box__social-box {
+  width: 100%;
+  height: 226px;
+  margin: 26px 0px 0 0px;
+  padding: 43px 10px 0;
+  background: #337D5A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news-box__social-title {
+  text-align: center;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.4px;
+  color: #FFF;
+}
+
+.news-box__social-subtitle {
+  margin: 20px 37px 0 37px;
+  color: #EFEFEF;
+  text-align: center;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.34px;
+}
+
+.news-box__social-icons {
+  margin: 35px 0px 0 0px;
+  color: #FFF;
+  font-weight: normal;
+}
+
+.news-box__social-icons .social__facebook {
+  color: #FFF;
+}
+
+.one-news__breadcrumbs {
+  height: 64px;
+  position: relative;
+}
+
+.one-news__breadcrumbs .breadcrumbs__container {
+  color: #8A8A8A;
+}
+
+.one-news__article {
+  padding: 44px 0 77px 0;
+}
+
+.one-news__contacts {
+  margin: 0 0 40px 0;
+  padding: 102px 0 13px 0;
+  background: #FBFBFB;
+}
+
+@media screen and (max-width: 1440px) {
+  :root {
+    --width-smaller-container: 72.64%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --width-smaller-container: 68.95%;
+  }
+
+  main {
+    margin: 117px 0 0 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .subtitle-h1 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .subtitle-h2 {
+    font-size: 16px;
+  }
+
+  .news-box__card-title {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .one-news__article {
+    padding: 44px 0 47px 0;
+  }
+
+  .one-news__contacts {
+    padding: 70px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --pdng-conteiner: 36px;
+  }
+
+  :root {
+    --width-smaller-container: 67.71%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h5 {
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  .subtitle-h1 {
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  .subtitle-h2 {
+    font-size: 14px;
+  }
+
+  .p16 {
+    font-size: 14px;
+  }
+
+  .article-box__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .article-box__news-box {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+
+  .article__list-title {
+    font-size: 14px;
+  }
+
+  .news-box__card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 5%;
+       -moz-column-gap: 5%;
+            column-gap: 5%;
+  }
+
+  .news-box__card-date {
+    margin: 0px 0 8px 0;
+  }
+
+  .news-box__card-title {
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  .news-box__social-box {
+    height: auto;
+    padding: 35px 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .one-news__contacts {
+    padding: 40px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --width-smaller-container: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  :root {
+    --pdng-conteiner: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .subtitle-h1 {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .subtitle-h2 {
+    font-size: 12px;
+  }
+
+  .news-box__card-title {
+    font-size: 11px;
+    line-height: 12px;
+  }
+}

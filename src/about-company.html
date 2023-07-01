@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title":"О компании - Орех Причерноморья", "style": "css/style.min.css" })
+  @@include('html/head.html',{ "title":"О компании - Орех Причерноморья", "style": "css/about-company.min.css" })
 
   <body>
     <!--@@include('html/elements/preloader.html',{})-->
@@ -10,7 +10,7 @@
       <section class="about-page__banner">
         @@include('html/components/breadcrumbs.html',{"second-link": "/", "second-page": "", "page-now": "О производстве"})
         <!--  -->
-        @@include('html/components/main/banner.html',{"title": "Орех Причерноморья", "subtitle": "Единственный в Украине сад совместного выращивание фундука и грецкого ореха"})
+        @@include('html/components/banner.html',{"img":"@img/about-company-page/banner.jpg","title": "Орех Причерноморья", "subtitle": "Единственный в Украине сад совместного выращивание фундука и грецкого ореха"})
       </section>
       <section class="about-page__about-manufacturer">@@include('html/components/about-company/about-manufacturer.html',{})</section>
       <section class="about-page__history">@@include('html/components/about-company/history.html',{})</section>

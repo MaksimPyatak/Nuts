@@ -2442,6 +2442,7 @@ button.swiper-pagination-bullet {
   top: 37px;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .breadcrumbs__container {

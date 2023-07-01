@@ -1,3 +1,46 @@
+@import "./components/nullstyle";
+
+@import "fonts/fonts";
+@import "./fonts/nut.scss";
+
+//Те що часто використовується
+@import "./components/often";
+
+// Variable
+@import "./components/variable";
+
+// Загальні стилі
+@import "./components/global";
+
+@import "./components/news/main-article.scss";
+@import "./components/news/articles.scss";
+@import "./components/news/vido-section.scss";
+
+body {
+   font-family: "Raleway";
+   font-weight: 800;
+   font-size: 14px;
+   color: #1A2F3F;
+   background: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+}
+
+._lock {
+   overflow: hidden;
+}
+
+
+main {
+   margin: 179px 0 0 0;
+   flex: 1 1 auto;
+
+   @media screen and (max-width: 1024px) {
+      margin: 117px 0 0 0;
+   }
+
+}
+
 .news-page {
 
    &__breadcrumbs {
@@ -14,7 +57,6 @@
    }
 
    &__main-article {
-      @import "../news/main-article.scss";
       padding: 0 0 59px 0;
 
       @media (max-width: 768px) {
@@ -23,12 +65,10 @@
    }
 
    &__articles {
-      @import "../news/articles.scss";
       padding: 0 0 24px 0;
    }
 
    &__video {
-      @import "../news/vido-section.scss";
       padding: 0 0 90px 0;
 
       @media (max-width: 1024px) {
