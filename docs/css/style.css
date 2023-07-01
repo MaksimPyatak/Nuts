@@ -3996,8 +3996,9 @@ button.swiper-pagination-bullet {
   position: relative;
 }
 
-.no-webp .gallery__banner .banner{
-  background-image: url("../img/gallery/banner.jpg"); }
+.gallery__banner .banner {
+  background-image: none;
+}
 
 .gallery__banner .banner__title {
   margin: -24px 0 11px 0;
@@ -6177,5 +6178,3 @@ button.swiper-pagination-bullet {
 .webp .about-page__eco-banner .eco-banner{ background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/about-company-page/eco-banner.webp); }
 
 .webp .about-page__eco-banner .eco-banner{ background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/about-company-page/eco-banner.webp); }
-
-.webp .gallery__banner .banner{ background-image: url(../img/gallery/banner.webp); }
