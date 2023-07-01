@@ -63,8 +63,8 @@ main {
       position: relative;
 
       .banner {
-         background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("@img/gallery/banner.jpg");
-         //background-image: none;
+         //background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("@img/gallery/banner.jpg");
+         background-image: none;
       }
 
       .banner__title {
