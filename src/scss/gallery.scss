@@ -1,0 +1,104 @@
+@import "./components/nullstyle";
+
+@import "fonts/fonts";
+@import "./fonts/nut.scss";
+
+//Те що часто використовується
+@import "./components/often";
+
+// Variable
+@import "./components/variable";
+
+// Загальні стилі
+@import "./components/global";
+@import "../../node_modules/swiper/swiper.scss";
+@import '../../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
+
+@import "./components/header.scss";
+@import "./components/footer";
+
+@import "./components/main/banner.scss";
+@import "./components/play-video.scss";
+@import "./components/gallery/gallery-page-component.scss";
+@import "./components/gallery-component.scss";
+@import "./components/breadcrumbs.scss";
+@import "./components/contacts.scss";
+
+body {
+   font-family: "Raleway";
+   font-weight: 800;
+   font-size: 14px;
+   color: #1A2F3F;
+   background: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+}
+
+._lock {
+   overflow: hidden;
+}
+
+.wrapper {
+   position: relative;
+   max-width: 1920px;
+   min-height: 100%;
+   margin: 0 auto;
+   //background-color: #e5e5e5;
+}
+
+main {
+   margin: 179px 0 0 0;
+   flex: 1 1 auto;
+
+   @media screen and (max-width: 1024px) {
+      margin: 117px 0 0 0;
+   }
+}
+
+.gallery {
+
+   &__banner {
+      position: relative;
+
+      .banner {
+         background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("@img/gallery/banner.jpg");
+         //background-image: none;
+      }
+
+      .banner__title {
+         margin: -24px 0 11px 0;
+      }
+
+      .banner__text {
+         font-weight: 500;
+      }
+
+      .play-video {
+         display: none;
+      }
+   }
+
+   &__gallery-section {
+      padding: 93px 0 100px 0;
+
+      @media (max-width: 1024px) {
+         padding: 93px 0 60px 0;
+      }
+   }
+
+   &__contacts {
+      margin: 0 0 41px 0;
+      padding: 102px 0 12px 0;
+      background: #FBFBFB;
+
+      @media (max-width: 1024px) {
+         padding: 70px 0 0 0;
+      }
+
+      @media (max-width: 768px) {
+         padding: 40px 0 0 0;
+      }
+   }
+}
