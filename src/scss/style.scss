@@ -36,7 +36,6 @@ body {
    max-width: 1920px;
    min-height: 100%;
    margin: 0 auto;
-   //background-color: #e5e5e5;
 }
 
 main {
@@ -77,8 +76,6 @@ main {
          color: #1A2F3F;
       }
 
-      //&__box {}
-
       &__button {
          @include button-empty;
          width: 200px;
@@ -90,8 +87,6 @@ main {
          line-height: 18px;
          letter-spacing: 0.02em;
       }
-
-      //&__button-text {}
    }
 
    &__product-benefits {
