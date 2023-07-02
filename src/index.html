@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title":"Главная - Орех Причерноморья", "style": "css/style.min.css" })
+  @@include('html/head.html',{ "title":"Главная - Орех Причерноморья", "style": "css/style.min.css", "style-preload": "css/main.min.css" })
 
   <body>
     <!--@@include('html/elements/preloader.html',{})-->
@@ -27,6 +27,8 @@
       <div class="main-page__news">@@include('html/components/news.html',{})</div>
       <div class="main-page__contacts">@@include('html/components/contacts.html',{})</div>
     </main>
+    <!-- Підключення додаткового файлу стилів -->
+    <link rel="stylesheet" href="main.min.css" />
     @@include('html/footer.html',{})
     <!--</div>-->
     @@include('./html/components/video-modal.html',{})
