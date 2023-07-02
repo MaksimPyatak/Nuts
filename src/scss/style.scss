@@ -89,57 +89,56 @@ main {
       }
    }
 
-   //&__product-benefits {
-   //   margin: 82px 0 0 0;
-   //}
+   &__product-benefits {
+      margin: 82px 0 0 0;
+   }
 
-   //&__eco-banner {
-   //   margin: 100px 0 0 0;
-   //}
+   &__eco-banner {
+      margin: 100px 0 0 0;
+   }
 
-   //&__news {
-   //   padding: 84px 0 0 0;
-   //   background: rgba(249, 249, 249, 0.7);
-   //}
+   &__news {
+      padding: 84px 0 0 0;
+      background: rgba(249, 249, 249, 0.7);
+   }
 
-   //&__contacts {
-   //   padding: 100px 0 0 0;
+   &__contacts {
+      padding: 100px 0 0 0;
 
-   //   @media (max-width: 1024px) {
-   //      padding: 70px 0 0 0;
-   //   }
+      @media (max-width: 1024px) {
+         padding: 70px 0 0 0;
+      }
 
-   //   @media (max-width: 768px) {
-   //      padding: 40px 0 0 0;
-   //   }
-   //}
+      @media (max-width: 768px) {
+         padding: 40px 0 0 0;
+      }
+   }
 }
 
 @import "../../node_modules/swiper/swiper.scss";
 @import '../../node_modules/swiper/modules/navigation/navigation.scss';
-
 //@import '../../node_modules/swiper/modules/pagination/pagination.scss';
 //@import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 
 @import "./components/header.scss";
-//@import "./components/footer";
+@import "./components/footer";
 
-////@import "./components/main/banner.scss";
-//@import "./components/main/about-manufacturer.scss";
+//@import "./components/main/banner.scss";
+@import "./components/main/about-manufacturer.scss";
 
 @import "./components/breadcrumbs.scss";
 @import "./components/banner.scss";
-//@import "./components/video-modal.scss";
+@import "./components/video-modal.scss";
 @import "./components/product-card.scss";
-//@import "./components/contacts.scss";
+@import "./components/contacts.scss";
 @import "./components/productions.scss";
-//@import "./components/play-video.scss";
-//@import "./components/statistics.scss";
-//@import "./components/banner_with_video.scss";
-//@import "./components/main/product-benefits.scss";
-//@import "./components/eco-banner.scss";
-//@import "./components/news.scss";
-//@import "./components/gallery-component.scss";
+@import "./components/play-video.scss";
+@import "./components/statistics.scss";
+@import "./components/banner_with_video.scss";
+@import "./components/main/product-benefits.scss";
+@import "./components/eco-banner.scss";
+@import "./components/news.scss";
+@import "./components/gallery-component.scss";
 
 // PAGE
 //@import "./components/page/about-company.scss";
