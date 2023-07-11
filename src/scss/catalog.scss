@@ -47,6 +47,14 @@ main {
 
    &__productions {
       padding: 0 0 96px 0;
+
+      @media (max-width: 1024px) {
+         padding: 0 0 70px 0;
+      }
+
+      @media (max-width: 768px) {
+         padding: 0 0 60px 0;
+      }
    }
 
    &__productions-container {
@@ -69,6 +77,14 @@ main {
       padding: 100px 0 90px 0;
       background: #FBFBFB;
 
+      @media (max-width: 1024px) {
+         padding: 70px 0 70px 0;
+      }
+
+      @media (max-width: 768px) {
+         padding: 60px 0 60px 0;
+      }
+
       .nuts-description {
          margin: 0;
       }
@@ -77,6 +93,13 @@ main {
    &__contacts {
       padding: 90px 0 0 0;
 
+      @media (max-width: 1024px) {
+         padding: 70px 0 0 0;
+      }
+
+      @media (max-width: 768px) {
+         padding: 40px 0 0 0;
+      }
    }
 }
 

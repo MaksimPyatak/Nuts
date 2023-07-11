@@ -2686,6 +2686,7 @@ main {
   margin: 1px 0 8px 0;
   line-height: 102.2222%;
   letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .nuts-description__subtitle {
@@ -2694,6 +2695,7 @@ main {
   font-weight: 600;
   line-height: 50px;
   letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .nuts-description__text {
@@ -3346,6 +3348,18 @@ main {
     font-size: 16px;
   }
 
+  .catalog__productions {
+    padding: 0 0 70px 0;
+  }
+
+  .catalog__nuts-description {
+    padding: 70px 0 70px 0;
+  }
+
+  .catalog__contacts {
+    padding: 70px 0 0 0;
+  }
+
   .filters {
     -ms-grid-columns: auto auto;
     grid-template-columns: auto auto;
@@ -3389,9 +3403,24 @@ main {
     margin: 0 20px 0 0;
   }
 
+  .nuts-description {
+    height: 800px;
+  }
+
   .nuts-description__container {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
+    -ms-grid-rows: 48% 48%;
+    grid-template-rows: 48% 48%;
+    row-gap: 4%;
+  }
+
+  .nuts-description__text .swiper-slide p {
+    padding: 0 45px 0 0;
+  }
+
+  .nuts-description__text .swiper-slide p {
+    padding: 0 30px 0 0;
   }
 }
 
@@ -3517,6 +3546,18 @@ main {
 
   .p16 {
     font-size: 14px;
+  }
+
+  .catalog__productions {
+    padding: 0 0 60px 0;
+  }
+
+  .catalog__nuts-description {
+    padding: 60px 0 60px 0;
+  }
+
+  .catalog__contacts {
+    padding: 40px 0 0 0;
   }
 
   .new-select__header {
