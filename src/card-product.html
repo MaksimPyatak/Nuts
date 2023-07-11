@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title":"Карточка товара - Орех Причерноморья" })
+  @@include('html/head.html',{ "title":"Карточка товара - Орех Причерноморья", "style": "css/card-product.min.css" })
 
   <body>
-    <!--@@include('html/elements/preloader.html',{})-->
-    <div class="wrapper">
-      <!--@@include('html/header.html',{})-->
-      <main>
-        <h1 style="color: red; font-size: 48px">Карточка товара</h1>
-      </main>
-      <!--@@include('html/footer.html',{})-->
-    </div>
-    <!--@@include('html/elements/pop-up.html',{})
-    @@include('html/elements/pop-up2.html',{})-->
+    @@include('html/header.html',{})
+    <main class="card-product">
+      <section class="card-product__breadcrumbs">@@include('html/components/breadcrumbs.html',{"second-link": "/", "second-page": "", "page-now": "Карточка товара"})</section>
+      <section class="card-product__product">@@include('html/components/card-product/product.html',{})</section>
+      <section class="card-product__tubs-section">@@include('html/components/card-product/tubs-section.html',{})</section>
+      <section class="card-product__contacts">@@include('html/components/contacts.html',{})</section>
+    </main>
+    @@include('html/footer.html',{})
+    <!--  -->
+    @@include('./html/components/video-modal.html',{})
     <script src="js/app.min.js"></script>
   </body>
 </html>

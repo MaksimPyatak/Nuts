@@ -37,12 +37,20 @@ main {
 
 }
 
-.catalog {
-   position: relative;
+.card-product {
+   //position: relative;
 
-   .breadcrumbs {
-      //color: #FFF;
-      z-index: 2;
+   &__breadcrumbs {
+      height: 64px;
+      position: relative;
+
+      .breadcrumbs {
+         top: 37px;
+
+         &__container {
+            color: #8A8A8A;
+         }
+      }
    }
 
    &__productions {
@@ -118,4 +126,3 @@ main {
 @import "./components/product-card.scss";
 @import "./components/catalog/nuts-description.scss";
 @import "./components/contacts.scss";
-@import "./components/video-modal.scss";

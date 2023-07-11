@@ -716,19 +716,24 @@ main {
           flex: 1 1 auto;
 }
 
-.catalog {
+.card-product__breadcrumbs {
+  height: 64px;
   position: relative;
 }
 
-.catalog .breadcrumbs {
-  z-index: 2;
+.card-product__breadcrumbs .breadcrumbs {
+  top: 37px;
 }
 
-.catalog__productions {
+.card-product__breadcrumbs .breadcrumbs__container {
+  color: #8A8A8A;
+}
+
+.card-product__productions {
   padding: 0 0 96px 0;
 }
 
-.catalog__productions-container {
+.card-product__productions-container {
   max-width: 1290px;
   height: 100%;
   padding: 0 var(--pdng-conteiner);
@@ -737,7 +742,7 @@ main {
           box-sizing: content-box;
 }
 
-.catalog__productions-button {
+.card-product__productions-button {
   border: 1.5px solid #337D5A;
   background: transparent;
   display: -webkit-box;
@@ -760,29 +765,29 @@ main {
   letter-spacing: 0.3px;
 }
 
-.catalog__productions-button:hover {
+.card-product__productions-button:hover {
   background: #337D5A;
   border: none;
 }
 
-.catalog__productions-button:hover div {
+.card-product__productions-button:hover div {
   color: #FFFFFF;
 }
 
-.catalog__productions-button div {
+.card-product__productions-button div {
   color: #337D5A;
 }
 
-.catalog__nuts-description {
+.card-product__nuts-description {
   padding: 100px 0 90px 0;
   background: #FBFBFB;
 }
 
-.catalog__nuts-description .nuts-description {
+.card-product__nuts-description .nuts-description {
   margin: 0;
 }
 
-.catalog__contacts {
+.card-product__contacts {
   padding: 90px 0 0 0;
 }
 
@@ -2914,44 +2919,6 @@ main {
   letter-spacing: 0.01em;
 }
 
-.video-modal {
-  max-width: 604px;
-  width: 100%;
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  padding: 40px 20px 20px;
-  border: 2px solid rgba(0, 0, 0, 0.45);
-  background: white;
-  z-index: 51;
-}
-
-.video-modal__container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 56.25%;
-}
-
-.video-modal__icon-box {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
-.video-modal iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 @media screen and (min-width: 1025px) {
   .middle-header__button {
     background: #337D5A;
@@ -3384,15 +3351,15 @@ main {
     font-size: 16px;
   }
 
-  .catalog__productions {
+  .card-product__productions {
     padding: 0 0 70px 0;
   }
 
-  .catalog__nuts-description {
+  .card-product__nuts-description {
     padding: 70px 0 70px 0;
   }
 
-  .catalog__contacts {
+  .card-product__contacts {
     padding: 70px 0 0 0;
   }
 
@@ -3592,15 +3559,15 @@ main {
     font-size: 14px;
   }
 
-  .catalog__productions {
+  .card-product__productions {
     padding: 0 0 60px 0;
   }
 
-  .catalog__nuts-description {
+  .card-product__nuts-description {
     padding: 60px 0 60px 0;
   }
 
-  .catalog__contacts {
+  .card-product__contacts {
     padding: 40px 0 0 0;
   }
 

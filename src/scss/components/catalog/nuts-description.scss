@@ -18,7 +18,6 @@
       column-gap: 4.76%;
 
       @media (max-width: 1024px) {
-         //height: 800px;
          grid-template-columns: 100%;
          grid-template-rows: 48% 48%;
          row-gap: 4%;
@@ -35,7 +34,10 @@
       margin: 1px 0 8px 0;
       line-height: 102.2222%;
       letter-spacing: 0.01em;
-      text-align: center;
+
+      @media (max-width: 1024px) {
+         text-align: center;
+      }
    }
 
    &__subtitle {
@@ -44,7 +46,10 @@
       font-weight: 600;
       line-height: 50px;
       letter-spacing: 0.01em;
-      text-align: center;
+
+      @media (max-width: 1024px) {
+         text-align: center;
+      }
    }
 
    &__text {
