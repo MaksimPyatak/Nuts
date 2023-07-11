@@ -1,14 +1,19 @@
 <div class="filters">
-  <!--<select name="taste" id="taste">
-    <option value="">Вкусный</option>
-    <option value="">Очуеь вкусный</option>
-    <option value="">Самый вкусный</option>
-  </select>-->
-  <!--<select class="select" name="language">
-    <option disabled>Выбрать</option>
-    <option value="HTML">HTML</option>
-    <option value="JavaScript">JavaScript</option>
-    <option value="PHP">PHP</option>
-  </select>-->
-  @@include('../select.html',{"disabled": "Вкус", "option1": "Вкусный", "option2": "Очуеь вкусный", "option3": "Самый вкусный"})
+  <div class="filters__filters-icon-block">
+    <div class="filters__filters-icon-title">Фильтр</div>
+    <div class="filters__filters-icon-box">
+      <i class="filters__filters-icon icon"> &#xe820; </i>
+    </div>
+  </div>
+  <div class="filters__sorting-block">
+    <div class="filters__taste-select">@@include('../select.html',{"disabled": "Вкус", "option1": "Вкусный", "option2": "Очуеь вкусный", "option3": "Самый вкусный"})</div>
+    <div class="filters__weight-select">@@include('../select.html',{"disabled": "Масса ", "option1": "40г", "option2": "100г", "option3": "250г"})</div>
+    <div class="filters__sorting">@@include('./sorting.html',{})</div>
+  </div>
+  <div class="filters__button-block">
+    <div class="filters__button">
+      <div class="filters__button-text">Применить</div>
+    </div>
+    <div class="filters__reset">@@include('./reset.html',{})</div>
+  </div>
 </div>

@@ -1,9 +1,7 @@
-import Swiper, { Navigation, Scrollbar } from 'swiper';
-//import 'swiper/css';
-//import 'swiper/css/navigation';
+import Swiper, { Navigation } from 'swiper';
 
 export const aboutManufacturerSwiper = new Swiper('.about-manufacturer__swiper', {
-   modules: [Navigation, Scrollbar],
+   modules: [Navigation],
    navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

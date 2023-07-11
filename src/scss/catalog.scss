@@ -45,16 +45,44 @@ main {
       z-index: 2;
    }
 
-   &__productions {}
+   &__productions {
+      padding: 0 0 96px 0;
+   }
 
    &__productions-container {
       @include container;
+   }
+
+   &__productions-button {
+      @include button-empty;
+      width: 200px;
+      height: 52px;
+      margin: 69px auto 0 auto;
+      //padding: 71px 0 96px 0;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.3px;
+   }
+
+   &__nuts-description {
+      padding: 100px 0 90px 0;
+      background: #FBFBFB;
+
+      .nuts-description {
+         margin: 0;
+      }
+   }
+
+   &__contacts {
+      padding: 90px 0 0 0;
+
    }
 }
 
 @import "../../node_modules/swiper/swiper.scss";
 @import '../../node_modules/swiper/modules/navigation/navigation.scss';
-@import '../../node_modules/swiper/modules/pagination/pagination.scss';
+//@import '../../node_modules/swiper/modules/pagination/pagination.scss';
 @import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 
 @import "./components/header.scss";
@@ -65,4 +93,5 @@ main {
 @import "./components/catalog/filters.scss";
 @import "./components/productions.scss";
 @import "./components/product-card.scss";
+@import "./components/catalog/nuts-description.scss";
 @import "./components/contacts.scss";

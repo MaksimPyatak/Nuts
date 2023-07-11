@@ -41,6 +41,7 @@ import "./modules/img-modal.js"
 import "./modules/about-manufacturer-swiper.js"
 import "./modules/news.js"
 import "./modules/select.js"
+import "./modules/scroll-container.js"
 
 //!!Підключення файлу з бургер-меню
 //flsFunctions.burgerMenu();

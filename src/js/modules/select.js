@@ -17,16 +17,14 @@ selectElements.forEach(function (selectElement) {
 
    //const selectHead = _this.nextElementSibling;
    const selectHead = document.createElement('div');
-   selectHead.classList.add('select-header');
+   selectHead.classList.add('new-select__header');
    selectHead.textContent = _this.querySelector('option:disabled').textContent;
    newSelect.appendChild(selectHead);
-   console.log(newSelect);
-   console.log(selectHead);
    const selectList = document.createElement('div');
    selectList.classList.add('new-select__list');
    selectHead.insertAdjacentElement('afterend', selectList);
    selectHead.innerHTML = `
-       <span class="arrow"></span>
+       <span class="new-select__arrow arrow"></span>
        ${selectHead.innerHTML}
    `;
    //selectHead.addEventListener('click', function () {
@@ -45,20 +43,48 @@ selectElements.forEach(function (selectElement) {
 
    const selectItem = selectList.querySelectorAll('.new-select__item');
    selectList.style.display = 'none';
+
+   //newSelect.addEventListener("click", function (event) {
+   //   // Перевірити, чи елемент, на якому відбувся клік, є selectHead або є його дочірнім елементом
+   //   let isClickInsideSelectHead = selectHead.contains(event.target) || event.target === selectHead;
+
+   //   if (isClickInsideSelectHead) {
+   //      // Клік відбувся на або всередині елемента selectHead
+   //      console.log("Клік на або всередині елемента selectHead");
+   //   } else {
+   //      // Клік відбувся за межами елемента selectHead
+   //      console.log("Клік за межами елемента selectHead");
+   //   }
+   //});
    selectHead.addEventListener('click', function () {
       if (!selectHead.classList.contains('on')) {
          selectHead.classList.add('on');
          selectList.style.display = 'block';
+
+         let clickOutsideNewSelect = function (event) {
+            // Перевірити, чи елемент, на якому відбувся клік, не є частиною контейнера
+            if (!newSelect.contains(event.target)) {
+               // Клік відбувся за межами контейнера
+               selectList.style.display = 'none';
+               selectHead.classList.remove('on');
+               document.removeEventListener("click", clickOutsideNewSelect);
+            }
+         };
+
+         document.addEventListener("click", clickOutsideNewSelect);
 
          selectItem.forEach(function (item) {
             item.addEventListener('click', function () {
                let chooseItem = item.getAttribute('data-value');
 
                _this.value = chooseItem; // Встановлюємо вибраний елемент в селекті
-               selectHead.textContent = item.querySelector('span').textContent;
+               //selectHead.textContent = item.querySelector('span').textContent + ;
+
+               selectHead.innerHTML = ` <span class="new-select__arrow arrow"></span>   ${item.querySelector('span').textContent}`;
 
                selectList.style.display = 'none';
                selectHead.classList.remove('on');
+               document.removeEventListener("click", clickOutsideNewSelect);
             });
          });
 

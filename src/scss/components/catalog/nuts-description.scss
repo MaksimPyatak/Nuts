@@ -1,0 +1,67 @@
+@import "./../about-manufacturer-swiper.scss";
+
+.nuts-description {
+   width: 100%;
+   height: 472px;
+   margin: 190px 0 0 0;
+   @include mt-section;
+
+   &__container {
+      @include container;
+      display: grid;
+      grid-template-columns: 40.98% 54.26%;
+      grid-template-rows: 100%;
+      column-gap: 4.76%;
+
+      @media (max-width: 1024px) {
+         grid-template-columns: 100%;
+      }
+
+   }
+
+   &__content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      //overflow: hidden;
+   }
+
+   &__title {
+      margin: 1px 0 8px 0;
+      line-height: 102.2222%;
+      letter-spacing: 0.01em;
+   }
+
+   &__subtitle {
+      margin: 0 0 2px 0;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 50px;
+      letter-spacing: 0.01em;
+   }
+
+   &__text {
+      //max-height: 100%;
+      flex: 1 1 auto;
+      font-weight: 500;
+      line-height: normal;
+      overflow: auto;
+      @import "./scroll-container.scss";
+
+
+      //p {
+      //   &:not(:last-child) {
+      //      margin: 0 0 32px 0;
+      //   }
+      //}
+
+
+   }
+
+   &__swiper {}
+
+   @include swiper-button;
+}
+
+.swiper {}

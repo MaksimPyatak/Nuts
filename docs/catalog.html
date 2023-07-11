@@ -11,11 +11,11 @@
   разного объема."
   />
 
-  <link rel="stylesheet" href="css/catalog.min.css?_v=20230702230628" />
-  <!--<link rel="preload" href="css/catalog.min.css-preload?_v=20230702230628" as="style" onload="this.onload=null;this.rel='stylesheet'" />-->
+  <link rel="stylesheet" href="css/catalog.min.css?_v=20230711123428" />
+  <!--<link rel="preload" href="css/catalog.min.css-preload?_v=20230711123428" as="style" onload="this.onload=null;this.rel='stylesheet'" />-->
 
-  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230702230628" />-->
-  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230702230628" />-->
+  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230711123428" />-->
+  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230711123428" />-->
   <title>Каталог продукции - Орех Причерноморья</title>
 </head>
 
@@ -172,24 +172,50 @@
       <section class="catalog__productions">
         <div class="catalog__productions-container">
           <div class="filters">
-  <!--<select name="taste" id="taste">
-    <option value="">Вкусный</option>
-    <option value="">Очуеь вкусный</option>
-    <option value="">Самый вкусный</option>
-  </select>-->
-  <!--<select class="select" name="language">
-    <option disabled>Выбрать</option>
-    <option value="HTML">HTML</option>
-    <option value="JavaScript">JavaScript</option>
-    <option value="PHP">PHP</option>
-  </select>-->
-  <select class="select" name="language">
+  <div class="filters__filters-icon-block">
+    <div class="filters__filters-icon-title">Фильтр</div>
+    <div class="filters__filters-icon-box">
+      <i class="filters__filters-icon icon"> &#xe820; </i>
+    </div>
+  </div>
+  <div class="filters__sorting-block">
+    <div class="filters__taste-select"><select class="select" name="Вкус">
   <option disabled>Вкус</option>
-  <option value="HTML">Вкусный</option>
-  <option value="JavaScript">Очуеь вкусный</option>
-  <option value="PHP">Самый вкусный</option>
+  <option value="Вкусный">Вкусный</option>
+  <option value="Очуеь вкусный">Очуеь вкусный</option>
+  <option value="Самый вкусный">Самый вкусный</option>
 </select>
-
+</div>
+    <div class="filters__weight-select"><select class="select" name="Масса ">
+  <option disabled>Масса </option>
+  <option value="40г">40г</option>
+  <option value="100г">100г</option>
+  <option value="250г">250г</option>
+</select>
+</div>
+    <div class="filters__sorting"><div class="sorting">
+  <div class="sorting__title">Стоимость</div>
+  <label class="sorting__radio">
+    <input class="sorting__radio-input" type="radio" name="sorting" value="smaller" />
+    <i class="sorting__radio-icon icon"> &#xe801; </i>
+  </label>
+  <label class="sorting__radio">
+    <input class="sorting__radio-input" type="radio" name="sorting" value="more" checked />
+    <i class="sorting__radio-icon icon"> &#xe81f; </i>
+  </label>
+</div>
+</div>
+  </div>
+  <div class="filters__button-block">
+    <div class="filters__button">
+      <div class="filters__button-text">Применить</div>
+    </div>
+    <div class="filters__reset"><button class="reset" type="reset">
+  <i class="reset__close-button-icon icon"> &#xe805; </i>
+  Сбросить
+</button>
+</div>
+  </div>
 </div>
 
           <!--  -->
@@ -734,8 +760,69 @@
 </div>
 </div>
 
+          <button class="catalog__productions-button">
+            <div class="catalog__productions-button-text">Загрузить еще</div>
+          </button>
         </div>
       </section>
+      <section class="catalog__nuts-description"><div class="nuts-description">
+  <div class="nuts-description__container">
+    <div class="nuts-description__content">
+      <h2 class="nuts-description__title">Экологически чистый грецкий орех</h2>
+      <div class="nuts-description__subtitle">Оптом, и в розницу</div>
+
+      <div class="nuts-description__text p16"><div class="catalog-swiper swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide p16">
+      <p>Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” выращивает смешанные сады ореха грецкого с фундуком, а также ореха грецкого с шиповником, на площади более 150 гектаров.</p>
+      <p>Помимо этого кооператив занимается выращиванием посадочного материала, саженцов привитого и непривитого грецкого ореха, фундука и шиповника.</p>
+      <p>Орех Причерноморья – это первый и единственный в Украине сад по совместному выращиванию фундука и грецкого ореха</p>
+      <p>Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” выращивает смешанные сады ореха грецкого с фундуком, а также ореха грецкого с шиповником, на площади более 150 гектаров.</p>
+      <p>Помимо этого кооператив занимается выращиванием посадочного материала, саженцов привитого и непривитого грецкого ореха, фундука и шиповника.</p>
+      <p>Орех Причерноморья – это первый и единственный в Украине сад по совместному выращиванию фундука и грецкого ореха</p>
+      <p>Sed tincidunt diam a massa pharetra faucibus. Praesent condimentum id arcu nec fringilla. Maecenas faucibus, ante et venenatis interdum, erat mi eleifend dui, at convallis nisl est nec arcu. Duis vitae arcu rhoncus, faucibus magna ut, tempus metus. Cras in nibh sed ipsum consequat rhoncus. Proin fringilla nulla ut augue tempor fermentum. Nunc hendrerit non nisi vitae finibus. Donec eget ornare libero. Aliquam auctor erat enim, a semper risus semper at. In ut dui in metus tincidunt euismod eget et lacus. Aenean et dictum urna, sed rhoncus lorem. Duis pharetra sagittis odio. Etiam a libero ut nisi feugiat tincidunt vel vitae turpis. Maecenas vel orci sit amet lorem hendrerit venenatis sollicitudin ut dui. Quisque rhoncus nibh in massa pretium scelerisque.</p>
+    </div>
+  </div>
+  <div class="swiper-scrollbar"></div>
+</div>
+</div>
+    </div>
+    <!--<div class="nuts-description__swiper swiper">-->
+    <div class="about-manufacturer__swiper swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="about-manufacturer__play-icon-box play-video" data-content="https://www.youtube.com/embed/Aa2MI0obgvg">
+        <i class="about-manufacturer__play-icon icon"> &#xe81b; </i>
+      </div>
+      <picture><source srcset="img/about-manufacturer-swiper/1.webp" type="image/webp"><img src="img/about-manufacturer-swiper/1.jpg" alt="image" /></picture>
+    </div>
+    <div class="swiper-slide">
+      <div class="about-manufacturer__play-icon-box play-video" data-content="https://www.youtube.com/embed/Aa2MI0obgvg">
+        <i class="about-manufacturer__play-icon icon"> &#xe81b; </i>
+      </div>
+      <picture><source srcset="img/about-manufacturer-swiper/2.webp" type="image/webp"><img src="img/about-manufacturer-swiper/2.jpg" alt="image" /></picture>
+    </div>
+    <div class="swiper-slide">
+      <div class="about-manufacturer__play-icon-box play-video" data-content="https://www.youtube.com/embed/Aa2MI0obgvg">
+        <i class="about-manufacturer__play-icon icon"> &#xe81b; </i>
+      </div>
+      <picture><source srcset="img/about-manufacturer-swiper/3.webp" type="image/webp"><img src="img/about-manufacturer-swiper/3.jpg" alt="image" /></picture>
+    </div>
+  </div>
+  <div class="swiper-button-prev">
+  <i class="swiper-button-prev__icon icon"> &#xe827; </i>
+</div>
+<div class="swiper-button-next">
+  <i class="swiper-button-prev__icon icon"> &#xe803; </i>
+</div>
+
+  <!--<div class="swiper-scrollbar"></div>-->
+</div>
+
+    <!--</div>-->
+  </div>
+</div>
+</section>
       <section class="catalog__contacts"><div class="contacts">
   <div class="contacts__container">
     <div class="contacts__content">
@@ -853,13 +940,7 @@
 </footer>
 
     <!--  -->
-    <div class="video-modal">
-  <div class="video-modal__container"></div>
-  <div class="video-modal__icon-box">
-    <i class="video-modal__close-icon icon"> &#xe805; </i>
-  </div>
-</div>
-
-    <script src="js/app.min.js?_v=20230702230628"></script>
+    
+    <script src="js/app.min.js?_v=20230711123428"></script>
   </body>
 </html>

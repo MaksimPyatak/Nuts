@@ -15,13 +15,17 @@
           @@include('html/components/catalog/filters.html',{})
           <!--  -->
           @@include('html/components/production.html',{})
+          <button class="catalog__productions-button">
+            <div class="catalog__productions-button-text">Загрузить еще</div>
+          </button>
         </div>
       </section>
+      <section class="catalog__nuts-description">@@include('html/components/catalog/nuts-description.html',{})</section>
       <section class="catalog__contacts">@@include('html/components/contacts.html',{})</section>
     </main>
     @@include('html/footer.html',{})
     <!--  -->
-    @@include('./html/components/video-modal.html',{})
+    <!--@@include('./html/components/video-modal.html',{})-->
     <script src="js/app.min.js"></script>
   </body>
 </html>
