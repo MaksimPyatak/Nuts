@@ -1,0 +1,90 @@
+@import "./components/nullstyle";
+
+@import "fonts/fonts";
+@import "./fonts/nut.scss";
+
+//Те що часто використовується
+@import "./components/often";
+
+// Variable
+@import "./components/variable";
+
+// Загальні стилі
+@import "./components/global";
+
+body {
+   font-family: "Raleway";
+   font-weight: 800;
+   font-size: 14px;
+   color: #1A2F3F;
+   background: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+}
+
+._lock {
+   overflow: hidden;
+}
+
+
+main {
+   margin: 179px 0 0 0;
+   flex: 1 1 auto;
+
+   @media screen and (max-width: 1024px) {
+      margin: 117px 0 0 0;
+   }
+
+}
+
+.payment-delivery {
+   position: relative;
+
+   .breadcrumbs {
+      z-index: 2;
+   }
+
+   &__tabs {
+      padding: 97px 0 96px 0;
+
+      @media (max-width: 1024px) {
+         padding: 60px 0 70px 0;
+      }
+
+      @media (max-width: 768px) {
+         padding: 35px 0 0px 0;
+      }
+   }
+
+   &__statistics {
+      .statistics {
+         margin: 51px 0 0 0;
+      }
+   }
+
+   //&__banner-with-video {
+   //}
+
+   &__contacts {
+      padding: 90px 0 0 0;
+
+      @media (max-width: 1024px) {
+         padding: 70px 0 0 0;
+      }
+
+      @media (max-width: 768px) {
+         padding: 40px 0 0 0;
+      }
+   }
+}
+
+@import "./components/header.scss";
+@import "./components/footer";
+
+@import "./components/breadcrumbs.scss";
+@import "./components/small-banner.scss";
+@import "./components/payment-delivery/tabs.scss";
+@import "./components/statistics.scss";
+@import "./components/banner_with_video.scss";
+@import "./components/contacts.scss";
+@import "./components/video-modal.scss";

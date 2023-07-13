@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title":"Оплата и доставка - Орех Причерноморья" })
-
+  @@include('html/head.html',{ "title":"Оплата и доставка - Орех Причерноморья", "style": "css/payment-delivery.min.css" })
   <body>
-    <!--@@include('html/elements/preloader.html',{})-->
-    <div class="wrapper">
-      <!--@@include('html/header.html',{})-->
-      <main>
-        <h1 style="color: red; font-size: 48px">Оплата и доставка</h1>
-      </main>
-      <!--@@include('html/footer.html',{})-->
-    </div>
-    <!--@@include('html/elements/pop-up.html',{})
-    @@include('html/elements/pop-up2.html',{})-->
+    @@include('html/header.html',{})
+    <main class="payment-delivery">
+      <section class="payment-delivery__banner">
+        @@include('html/components/breadcrumbs.html',{"second-link": "/", "second-page": "", "page-now": "Оплата и доставка "})
+        <!--  -->
+        @@include('html/components/small-banner.html',{"title": "Оплата и доставка", "img": "@img/payment-delivery/banner.jpg"})
+      </section>
+      <section class="payment-delivery__tabs">@@include('html/components/payment-delivery/tabs.html',{})</section>
+      <section class="payment-delivery__statistics">@@include('html/components/statistics.html',{})</section>
+      <section class="payment-delivery__banner-with-video">@@include('html/components/banner-with-video.html',{})</section>
+      <section class="payment-delivery__contacts">@@include('html/components/contacts.html',{})</section>
+    </main>
+    @@include('html/footer.html',{})
+    <!--  -->
+    @@include('./html/components/video-modal.html',{})
     <script src="js/app.min.js"></script>
   </body>
 </html>

@@ -55,6 +55,14 @@
 }
 
 @font-face {
+   font-family: 'Raleway';
+   src: local('Raleway SemiBold Italic'), local('Raleway-SemiBoldItalic'), url("../fonts/Raleway-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Raleway-SemiBoldItalic.woff") format("woff");
+   font-weight: 600;
+   font-style: italic;
+   font-display: swap;
+}
+
+@font-face {
    font-family: 'Montserrat';
    src: url('../fonts/Montserrat-Medium.eot');
    src: local('Montserrat Medium Italic'), local('Montserrat-Medium'),
