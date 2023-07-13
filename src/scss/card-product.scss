@@ -53,8 +53,20 @@ main {
       }
    }
 
-   &__productions {
-      padding: 0 0 96px 0;
+   &__product {
+      padding: 61px 0 89px 0;
+
+      @media (max-width: 1024px) {
+         padding: 30px 0 70px 0;
+      }
+
+      @media (max-width: 768px) {
+         padding: 15px 0 60px 0;
+      }
+   }
+
+   &__tubs-section {
+      padding: 0 0 86px 0;
 
       @media (max-width: 1024px) {
          padding: 0 0 70px 0;
@@ -65,64 +77,29 @@ main {
       }
    }
 
-   &__productions-container {
-      @include container;
-   }
-
-   &__productions-button {
-      @include button-empty;
-      width: 200px;
-      height: 52px;
-      margin: 69px auto 0 auto;
-      //padding: 71px 0 96px 0;
-      font-size: 15px;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 0.3px;
-   }
-
-   &__nuts-description {
-      padding: 100px 0 90px 0;
+   &__contacts {
+      padding: 102px 0 54px 0;
       background: #FBFBFB;
 
       @media (max-width: 1024px) {
-         padding: 70px 0 70px 0;
+         padding: 70px 0 54px 0;
       }
 
       @media (max-width: 768px) {
-         padding: 60px 0 60px 0;
-      }
-
-      .nuts-description {
-         margin: 0;
-      }
-   }
-
-   &__contacts {
-      padding: 90px 0 0 0;
-
-      @media (max-width: 1024px) {
-         padding: 70px 0 0 0;
-      }
-
-      @media (max-width: 768px) {
-         padding: 40px 0 0 0;
+         padding: 40px 0 54px 0;
       }
    }
 }
 
 @import "../../node_modules/swiper/swiper.scss";
 @import '../../node_modules/swiper/modules/navigation/navigation.scss';
-//@import '../../node_modules/swiper/modules/pagination/pagination.scss';
-@import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 
 @import "./components/header.scss";
 @import "./components/footer";
 
 @import "./components/breadcrumbs.scss";
-@import "./components/small-banner.scss";
-@import "./components/catalog/filters.scss";
-@import "./components/productions.scss";
-@import "./components/product-card.scss";
-@import "./components/catalog/nuts-description.scss";
+//@import "./components/product-card.scss";
+@import "./components/card-product/product.scss";
+@import "./components/card-product/tubs-section.scss";
+@import "./components/video-modal.scss";
 @import "./components/contacts.scss";
