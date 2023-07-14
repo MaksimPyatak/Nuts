@@ -1,0 +1,113 @@
+@import "./components/nullstyle";
+
+@import "fonts/fonts";
+@import "./fonts/nut.scss";
+
+//Те що часто використовується
+@import "./components/often";
+
+// Variable
+@import "./components/variable";
+
+// Загальні стилі
+@import "./components/global";
+
+@import "./components/header.scss";
+@import "./components/footer";
+
+@import "./components/breadcrumbs.scss";
+@import "./components/banner.scss";
+@import "./components/corporate-clients/for-clients.scss";
+@import "./components/corporate-clients/tabs.scss";
+@import "./components/statistics.scss";
+@import "./components/eco-banner.scss";
+@import "./components/contacts.scss";
+
+body {
+   font-family: "Raleway";
+   font-weight: 800;
+   font-size: 14px;
+   color: #1A2F3F;
+   background: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+}
+
+._lock {
+   overflow: hidden;
+}
+
+
+main {
+   margin: 179px 0 0 0;
+   flex: 1 1 auto;
+
+   @media screen and (max-width: 1024px) {
+      margin: 117px 0 0 0;
+   }
+
+}
+
+.corporate-clients {
+
+   &__banner {
+      position: relative;
+
+      @media screen and (max-width: 1024px) {
+         margin-bottom: 75px;
+      }
+
+      @media screen and (max-width: 768px) {
+         margin-bottom: 40px;
+      }
+
+      .banner {
+         &__shading {
+            background: rgba(0, 0, 0, 0.45);
+         }
+
+         &__text {
+            margin-bottom: 7px;
+         }
+
+         &__play-icon-box {
+            display: none;
+         }
+      }
+   }
+
+   &__for-clients {
+      margin: 81px 0 0 0;
+   }
+
+   &__tabs {
+      padding: 151px 0 91px 0;
+   }
+
+   &__statistics {
+      padding: 72px 0 85px 0;
+      background: #FBFBFB;
+
+      .statistics {
+         margin: 0px 0 0 0;
+      }
+   }
+
+   &__eco-banner {
+      .eco-banner {
+         background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("@img/corporate-clients/eco-banner.jpg");
+
+         &__eco-icon-box {
+            margin: -5px 0 22px 2px;
+         }
+
+         &__title {
+            margin: 0 19px 23px 0;
+         }
+      }
+   }
+
+   &__contacts {
+      padding: 101px 0 0 0;
+   }
+}

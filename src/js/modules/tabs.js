@@ -12,13 +12,37 @@ if (tabs.length > 0) {
    openingBox.addEventListener("click", showTabs);
 }
 
+//function showCard(e) {
+//   let valueDisplay = window.getComputedStyle(openingBox).getPropertyValue('display');
+//   if (valueDisplay != "none") {
+//      tabsList.style.display = "none";
+//      openingBox.classList.remove('on');
+//   }
+//   let target = e.target;
+//   for (let i = 0; i < tabs.length; i++) {
+//      tabs[i].classList.remove('active-tab');
+//   }
+//   target.classList.add('active-tab');
+//   let innerTarget = target.innerHTML;
+//   selectTab.innerHTML = innerTarget;
+//   const whichCard = target.getAttribute('id');
+//   for (let i = 0; i < cards.length; i++) {
+//      const howContent = cards[i].dataset.howContent
+//      if (howContent == whichCard) {
+//         cards[i].style.display = "grid";
+//      } else {
+//         cards[i].style.display = "none";
+//      }
+//   }
+//}
+
 function showCard(e) {
    let valueDisplay = window.getComputedStyle(openingBox).getPropertyValue('display');
    if (valueDisplay != "none") {
       tabsList.style.display = "none";
       openingBox.classList.remove('on');
    }
-   let target = e.target;
+   let target = this; // Змінено з e.target на this
    for (let i = 0; i < tabs.length; i++) {
       tabs[i].classList.remove('active-tab');
    }
