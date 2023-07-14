@@ -2584,6 +2584,10 @@ main {
   .corporate-clients__banner {
     margin-bottom: 75px;
   }
+
+  .corporate-clients__tabs {
+    padding: 50px 0 91px 0;
+  }
 }
 
 @media (max-width: 1024px) {

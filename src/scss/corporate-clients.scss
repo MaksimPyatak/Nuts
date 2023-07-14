@@ -82,6 +82,10 @@ main {
 
    &__tabs {
       padding: 151px 0 91px 0;
+
+      @media screen and (max-width: 1024px) {
+         padding: 50px 0 91px 0;
+      }
    }
 
    &__statistics {
