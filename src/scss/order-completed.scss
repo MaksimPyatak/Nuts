@@ -1,0 +1,107 @@
+@import "./components/nullstyle";
+
+@import "fonts/fonts";
+@import "./fonts/nut.scss";
+
+//Те що часто використовується
+@import "./components/often";
+
+// Variable
+@import "./components/variable";
+
+// Загальні стилі
+@import "./components/global";
+
+
+@import "./components/header.scss";
+@import "./components/footer";
+@import "./components/banner.scss";
+@import "./components/contacts.scss";
+
+body {
+   font-family: "Raleway";
+   font-weight: 800;
+   font-size: 14px;
+   color: #1A2F3F;
+   background: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+}
+
+._lock {
+   overflow: hidden;
+}
+
+
+main {
+   margin: 179px 0 0 0;
+   flex: 1 1 auto;
+
+   @media screen and (max-width: 1024px) {
+      margin: 117px 0 0 0;
+   }
+
+}
+
+.order-completed {
+
+   &__banner {
+
+      //@media screen and (max-width: 1024px) {
+      //   margin-bottom: 75px;
+      //}
+
+      //@media screen and (max-width: 768px) {
+      //   margin-bottom: 40px;
+      //}
+
+      .banner {
+         height: 518px;
+
+         &__content {
+            margin: 65px 0 0 0;
+         }
+
+         &__title {
+            margin-bottom: 19px;
+            font-size: 45px;
+            line-height: normal;
+            letter-spacing: 0.01em;
+         }
+
+         &__shading {
+            background: rgba(0, 0, 0, 0.4);
+         }
+
+         &__text {
+            max-width: 425px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 125%;
+            letter-spacing: 0.01em;
+         }
+
+         //background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+         //url('@img/about-company-page/banner.jpg');
+
+      }
+
+      .play-video {
+         display: none;
+      }
+   }
+
+   &__contacts {
+      padding: 101px 0 90px 0;
+      background: #FBFBFB;
+
+      .contacts {
+         margin-bottom: 0;
+      }
+   }
+}
+
+footer {
+   padding: 41px 0 0 0;
+}
