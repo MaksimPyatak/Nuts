@@ -1,0 +1,35 @@
+.sidebar {
+   margin: -13px 0 0 0;
+
+   &__block {
+      &:not(:last-child) {
+         margin: 0 0 34px 0;
+      }
+   }
+
+   &__block-tittle {
+      margin: 0 0 13px 0;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 177.778%;
+      letter-spacing: 0.02em;
+   }
+
+   &__block-list {}
+
+   &__block-item {
+      width: max-content;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 130%;
+      letter-spacing: 0.02em;
+
+      &:not(:last-child) {
+         margin: 0 0 7px 0;
+      }
+   }
+}
+
+.block {
+   &__account {}
+}

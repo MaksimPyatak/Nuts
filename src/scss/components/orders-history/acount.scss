@@ -1,0 +1,46 @@
+.account {
+   margin: 45px 0 0 0;
+
+   &__container {
+      @include container;
+      display: grid;
+      grid-template-columns: minmax(max-content, 298px) auto;
+      row-gap: 49px;
+   }
+
+   &__sidebar-title {
+      //max-width: 298px;
+      //width: 100%;
+      min-width: max-content;
+      line-height: 100%;
+      letter-spacing: 0.02em;
+   }
+
+   &__manager {
+      margin: 6px 0 0px 29px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 134%;
+      letter-spacing: 0.02em;
+   }
+
+   &__tell-box {
+      margin: 0px 8px 0 1px;
+      color: #337D5A;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 228.571%;
+      letter-spacing: 0.01em;
+   }
+
+   &__tell-icon {
+      margin: 0 5px 0 0;
+      font-size: 11px;
+   }
+
+   &__table {
+      width: auto;
+      overflow-x: auto;
+   }
+}

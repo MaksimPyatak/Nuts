@@ -129,42 +129,46 @@
 
 }
 
+@mixin active-account-item {
+   border-bottom: 2px solid #337D5A;
+   color: #337D5A;
+}
 
 // Текст з двома лініями з двох боків -ТЕКСТ----
 //Додаємо в основний блок
-@mixin discover-more($color: inherit, $background: rgba(255, 255, 255, 0.4)) {
-   width: fit-content;
-   height: 13px;
+//@mixin discover-more($color: inherit, $background: rgba(255, 255, 255, 0.4)) {
+//   width: fit-content;
+//   height: 13px;
 
-   .discover-more__link {
-      position: relative;
-      font-size: 10px;
-      line-height: 120%;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: $color;
-      display: flex;
-      padding: 0 65px 0 16px;
+//   .discover-more__link {
+//      position: relative;
+//      font-size: 10px;
+//      line-height: 120%;
+//      letter-spacing: 0.12em;
+//      text-transform: uppercase;
+//      color: $color;
+//      display: flex;
+//      padding: 0 65px 0 16px;
 
-      &::before,
-      &::after {
-         content: " ";
-         position: absolute;
-         top: 35%;
-         display: block;
-         background: $background;
-      }
+//      &::before,
+//      &::after {
+//         content: " ";
+//         position: absolute;
+//         top: 35%;
+//         display: block;
+//         background: $background;
+//      }
 
-      &::before {
-         left: 0;
-         width: 8px;
-         height: 1px;
-      }
+//      &::before {
+//         left: 0;
+//         width: 8px;
+//         height: 1px;
+//      }
 
-      &::after {
-         right: 0;
-         width: 56px;
-         height: 1px;
-      }
-   }
-}
+//      &::after {
+//         right: 0;
+//         width: 56px;
+//         height: 1px;
+//      }
+//   }
+//}
