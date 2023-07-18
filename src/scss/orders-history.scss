@@ -62,6 +62,8 @@ main {
    }
 
    &__account {
+      padding: 0px 0 96px 0;
+
       .sidebar {
          .block-item__orders-history {
             @include active-account-item;
