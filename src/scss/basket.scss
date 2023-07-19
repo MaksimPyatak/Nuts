@@ -1,0 +1,132 @@
+@import "./components/nullstyle";
+
+@import "fonts/fonts";
+@import "./fonts/nut.scss";
+
+//Те що часто використовується
+@import "./components/often";
+
+// Variable
+@import "./components/variable";
+
+// Загальні стилі
+@import "./components/global";
+
+body {
+   font-family: "Raleway";
+   font-weight: 800;
+   font-size: 14px;
+   color: #1A2F3F;
+   background: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+}
+
+._lock {
+   overflow: hidden;
+}
+
+
+main {
+   margin: 179px 0 0 0;
+   flex: 1 1 auto;
+
+   @media screen and (max-width: 1024px) {
+      margin: 117px 0 0 0;
+   }
+
+}
+
+.basket {
+   //position: relative;
+
+   &__breadcrumbs {
+      height: 64px;
+      position: relative;
+
+      .breadcrumbs {
+         top: 37px;
+
+         &__container {
+            color: #8A8A8A;
+         }
+      }
+   }
+
+   &__account {
+      padding: 0px 0 88px 0;
+
+      @media (max-width: 768px) {
+         padding: 0px 0 50px 0;
+      }
+
+      .account__container {
+         @media (min-width: 768px) {
+            grid-template-columns: minmax(max-content, 298px) 1fr;
+            row-gap: 30px;
+         }
+
+         @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+         }
+      }
+
+      .account__sidebar-title {
+         @media (max-width: 1024px) {
+            grid-column: 1/2;
+         }
+      }
+
+      .account__manager {
+         @media (max-width: 1024px) {
+            grid-column: 2/3;
+            grid-row: 1/2;
+         }
+
+         @media (max-width: 768px) {
+            grid-column: 1/2;
+            grid-row: 2/3;
+         }
+      }
+
+      .account__table {
+         grid-column: 1/3;
+         //grid-row: 2/3;
+         overflow-x: visible;
+
+         @media (max-width: 768px) {
+            //grid-column: 1/2;
+            grid-row: 3/4;
+         }
+      }
+
+      //.sidebar {
+
+      //}
+   }
+
+   &__contacts {
+      padding: 102px 0 15px 0;
+      background: #FBFBFB;
+
+      @media (max-width: 1024px) {
+         padding: 70px 0 15px 0;
+      }
+
+      @media (max-width: 768px) {
+         padding: 40px 0 15px 0;
+      }
+   }
+}
+
+footer {
+   padding: 39px 0 0 0;
+}
+
+@import "./components/header.scss";
+@import "./components/footer";
+
+@import "./components/breadcrumbs.scss";
+@import "./components/orders-history/acount.scss";
+@import "./components/basket/basket-table.scss";
+@import "./components/contacts.scss";
