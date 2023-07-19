@@ -1,0 +1,118 @@
+.transaction-history-table {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(max-content, 1fr));
+
+   &__view-icon-block {
+      position: relative;
+      margin: 0px 0px 0 10px;
+      font-size: 24px;
+      color: #8A8A8A;
+      cursor: pointer;
+
+      &:hover {
+         color: #337D5A;
+      }
+   }
+
+   &__tip-block {
+      display: none;
+      position: absolute;
+      top: 0;
+      //right: 50%;
+      //transform: translate(50%, -100%);
+      right: 0%;
+      transform: translate(0%, -100%);
+
+   }
+
+   .icon:hover+&__tip-block {
+      display: block;
+   }
+}
+
+.transaction-history-table__item {
+   position: relative;
+   height: 62px;
+   padding: 6px 10px 0 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: Montserrat;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 228.571%;
+
+   &:nth-child(1) {
+      padding: 6px 10px 0 49px;
+      justify-content: flex-start;
+
+      @media (max-width: 768px) {
+         padding: 6px 10px 0 10px;
+      }
+   }
+
+   &:nth-child(3) {
+      padding: 6px 44px 0 10px;
+      justify-content: flex-end;
+
+      @media (max-width: 768px) {
+         padding: 6px 10px 0 10px;
+      }
+   }
+
+   &:nth-child(3n+4) {
+      padding: 6px 10px 0 62px;
+      justify-content: flex-start;
+
+      @media (max-width: 768px) {
+         padding: 6px 10px 0 10px;
+      }
+   }
+
+   &:nth-child(3n+6) {
+      padding: 6px 24px 0 10px;
+      justify-content: flex-end;
+
+      @media (max-width: 768px) {
+         padding: 6px 10px 0 10px;
+      }
+   }
+}
+
+.transaction-history-table__item:nth-child(1),
+.transaction-history-table__item:nth-child(2),
+.transaction-history-table__item:nth-child(3) {
+   height: 68px;
+   font-family: Raleway;
+   background: #FBFBFB;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 200%;
+}
+
+.transaction-history-table__item:nth-child(3n+7),
+.transaction-history-table__item:nth-child(3n+8),
+.transaction-history-table__item:nth-child(3n+9) {
+   background: rgba(51, 125, 90, 0.10);
+}
+
+
+.transaction-history-tabl__icon {
+   margin-right: 4px;
+}
+
+.arrow {
+   display: inline-block;
+   width: 8px;
+   height: 8px;
+   border-style: solid;
+   border-width: 2px;
+   border-color: transparent transparent #8A8A8A #8A8A8A;
+   margin: 3px 0 0 8px;
+   transform: translateY(-50%) rotate(-45deg);
+   transition: transform 0.3s;
+}
+
+.active {
+   border-color: transparent transparent #93B474 #93B474;
+}

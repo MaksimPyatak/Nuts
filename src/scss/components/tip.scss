@@ -1,0 +1,24 @@
+.tip {
+   position: relative;
+   width: min-content;
+   padding: 8px 9px 9px 9px;
+   background: rgb(51 125 90 / 90%);
+   color: #FFF;
+   text-align: center;
+   font-size: 13px;
+   font-weight: 700;
+   line-height: 107.692%;
+
+   &__text {}
+
+   span {
+      position: absolute;
+      bottom: -6px;
+      right: 4.9%;
+      width: 0;
+      height: 0;
+      border-left: 6.5px solid transparent;
+      border-right: 6.5px solid transparent;
+      border-top: 7px solid rgba(51, 125, 90, 0.9);
+   }
+}

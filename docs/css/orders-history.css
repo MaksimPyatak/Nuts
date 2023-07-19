@@ -1453,6 +1453,7 @@ main {
   margin: 0 auto;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  white-space: nowrap;
   color: #FFF;
   font-size: 14px;
   font-family: Raleway;
@@ -1576,10 +1577,20 @@ main {
 .order-history-table__view-icon {
   margin: 0px 13px 0 -4px;
   font-size: 24px;
+  color: #8A8A8A;
+}
+
+.order-history-table__view-icon:hover {
+  color: #337D5A;
 }
 
 .order-history-table__copy-icon {
   font-size: 22px;
+  color: #8A8A8A;
+}
+
+.order-history-table__copy-icon:hover {
+  color: #337D5A;
 }
 
 .order-history-table__item {
@@ -2394,6 +2405,12 @@ main {
 
   .orders-history__contacts {
     padding: 40px 0 54px 0;
+  }
+
+  .breadcrumbs__container {
+    margin: 0 var(--pdng-conteiner) 0px var(--pdng-conteiner);
+    padding: 0 0 20px 0;
+    overflow-x: auto;
   }
 
   .account__manager {

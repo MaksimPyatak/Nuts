@@ -1392,6 +1392,7 @@ h6 {
   margin: 0 auto;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  white-space: nowrap;
   color: #FFF;
   font-size: 14px;
   font-family: Raleway;
@@ -2911,6 +2912,12 @@ main {
 
   .p16 {
     font-size: 14px;
+  }
+
+  .breadcrumbs__container {
+    margin: 0 var(--pdng-conteiner) 0px var(--pdng-conteiner);
+    padding: 0 0 20px 0;
+    overflow-x: auto;
   }
 
   .tabs-section__content {

@@ -7,11 +7,18 @@
 
    &__container {
       @include container;
+      white-space: nowrap;
       color: #FFF;
       font-size: 14px;
       font-family: Raleway;
       font-weight: 600;
       letter-spacing: 0.28px;
+
+      @media (max-width: 768px) {
+         margin: 0 var(--pdng-conteiner) 0px var(--pdng-conteiner);
+         padding: 0 0 20px 0;
+         overflow-x: auto;
+      }
    }
 
    &__link {
