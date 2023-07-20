@@ -1,0 +1,17 @@
+<div class="account">
+  <div class="account__container">
+    <h3 class="account__sidebar-title">Оформление заказа</h3>
+    <div class="account__manager">
+      <p>Ваш личный менеджер Олег</p>
+      <div class="account__tell-box">
+        <i class="account__tell-icon icon"> &#xe832; </i>
+        <a href="tel:+380677771412">+38 067 777 14 12</a>
+      </div>
+    </div>
+    <form class="account__table">
+      @@include('../basket/basket-table.html',{})
+      <!--  -->
+      @@include('../placing-order/contact-details.html',{})
+    </form>
+  </div>
+</div>

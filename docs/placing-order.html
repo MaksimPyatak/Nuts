@@ -11,25 +11,430 @@
   разного объема."
   />
 
-  <link rel="stylesheet" href="@@style?_v=20230720124059" />
-  <!--<link rel="preload" href="@@style-preload?_v=20230720124059" as="style" onload="this.onload=null;this.rel='stylesheet'" />-->
+  <link rel="stylesheet" href="css/placing-order.min.css?_v=20230720190624" />
+  <!--<link rel="preload" href="css/placing-order.min.css-preload?_v=20230720190624" as="style" onload="this.onload=null;this.rel='stylesheet'" />-->
 
-  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230720124059" />-->
-  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230720124059" />-->
+  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230720190624" />-->
+  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230720190624" />-->
   <title>Оформление заказа - Орех Причерноморья</title>
 </head>
 
 
   <body>
-    
-    <div class="wrapper">
-      
-      <main>
-        <h1 style="color: red; font-size: 48px">Оформление заказа</h1>
-      </main>
-      
+    <header class="header">
+  <div class="header__zero"></div>
+  <div class="header__top-header top-header">
+    <div class="top-header__container">
+      <div class="top-header__social"><ul class="social">
+  <li class="social__facebook">
+    <i class="social__icon icon"> &#xe809; </i>
+  </li>
+  <li class="social__insta">
+    <i class="social__icon icon"> &#xe812; </i>
+  </li>
+  <li class="social__youtube">
+    <i class="social__icon icon"> &#xe83c; </i>
+  </li>
+</ul>
+</div>
+      <div class="top-header__discount">Ваша персональная скидка - 5%</div>
+      <div class="top-header__user-navigation">
+        <div class="top-header__login-box">
+          <a class="top-header__login" href="../Login.html">
+            <i class="top-header__icon icon"> &#xe817; </i>
+            <span>Вход</span>
+          </a>
+          <a href="../registration.html" class="top-header__registration">Регистрация</a>
+        </div>
+        <div class="top-header__lang"><div class="lang-select">
+  <!--class="top-header__select"-->
+  <select name="language">
+    <option value="ru">Ru</option>
+    <option value="ua">Ua</option>
+    <option value="en">En</option>
+  </select>
+</div>
+</div>
+      </div>
     </div>
-    
-    <script src="js/app.min.js?_v=20230720124059"></script>
+  </div>
+  <div class="header__middle-header middle-header">
+    <div class="middle-header__container">
+      <div class="middle-header__logo-section">
+        <div class="middle-header__burger-icon">
+          <span></span>
+        </div>
+        <a href="index.html" class="middle-header__logo-box">
+          <img src="img/logo.svg" alt="logo" class="middle-header__icon" />
+          <p class="middle-header__logo-text">ОРЕХ ПРИЧЕРНОМОРЬЯ</p>
+        </a>
+        <div class="middle-header__basket-icon" id="logo-basket"><a href="../../basket.html" class="basket-icon">
+  <i class="basket-icon__icon icon"> &#xe826; </i>
+  <div class="basket-icon__counter"><p>0</p></div>
+</a>
+</div>
+      </div>
+      <div class="middle-header__comunication-section">
+        <div class="middle-header__contacts-box">
+          <div class="middle-header__messengers-box"><ul class="messengers">
+  <li class="messengers__icon-box">
+    <i class="messengers__icon icon"> &#xe835; </i>
+  </li>
+  <li class="messengers__icon-box">
+    <i class="messengers__icon icon"> &#xe824; </i>
+  </li>
+  <li class="messengers__icon-box">
+    <i class="messengers__icon icon"> &#xe83a; </i>
+  </li>
+</ul>
+</div>
+          <div class="middle-header__tells-box">
+            <div class="middle-header__tell-icon-box">
+              <i class="middle-header__tell-icon icon"> &#xe82a; </i>
+            </div>
+            <div class="middle-header__tells">
+              <a href="tel:+38(044)750-50-11" class="middle-header__tell"> <span>+38 (044)</span>750-50-11 </a>
+              <a href="tel:+380447505051" class="middle-header__tell"> <span>+38 (097)</span>775-50-51 </a>
+            </div>
+          </div>
+        </div>
+        <div class="middle-header__button-box">
+          <div class="middle-header__button">
+            <p class="middle-header__button-text">Заказать звонок</p>
+          </div>
+          <div class="middle-header__coment">Ждем Вашего звонка ежедневно с 9 до 18</div>
+        </div>
+        <div class="middle-header__basket-icon" id="comunication-basket"><a href="../../basket.html" class="basket-icon">
+  <i class="basket-icon__icon icon"> &#xe826; </i>
+  <div class="basket-icon__counter"><p>0</p></div>
+</a>
+</div>
+
+        <div class="middle-header__lang-select-wrapper"><div class="lang-select">
+  <!--class="top-header__select"-->
+  <select name="language">
+    <option value="ru">Ru</option>
+    <option value="ua">Ua</option>
+    <option value="en">En</option>
+  </select>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="header__lower-header lower-header">
+    <ul class="lower-header__container">
+      <li class="lower-header__item-box menu-item">
+        <a href="./catalog.html" class="lower-header__item">Магазин</a>
+      </li>
+      <li class="lower-header__item-box menu-item">
+        <a href="./about-company.html" class="lower-header__item">О производстве </a>
+      </li>
+      <li class="lower-header__item-box menu-item">
+        <a href="./payment-delivery.html" class="lower-header__item">Оплата и доставка</a>
+      </li>
+      <li class="lower-header__item-box menu-item">
+        <a href="./corporate-clients.html" class="lower-header__item">Оптовым и корпоративным клиентам</a>
+      </li>
+      <li class="lower-header__item-box menu-item">
+        <a href="./news.html" class="lower-header__item">Новости и статьи</a>
+      </li>
+      <li class="lower-header__item-box menu-item">
+        <a href="#contacts" class="lower-header__item">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+    <main class="placing-order">
+      <section class="placing-order__breadcrumbs"><div class="breadcrumbs">
+  <div class="breadcrumbs__container">
+    <a href="/" class="breadcrumbs__link">Главная</a>
+    <i class="breadcrumbs__right-arrow-icon icon"> &#xe81d; </i>
+    <a href="/basket.html" class="breadcrumbs__link">Корзина</a>
+    <i class="breadcrumbs__right-arrow-icon icon"> &#xe81d; </i>
+    <span class="breadcrumbs__page-now">Оформление заказа</span>
+  </div>
+</div>
+</section>
+      <section class="placing-order__account"><div class="account">
+  <div class="account__container">
+    <h3 class="account__sidebar-title">Оформление заказа</h3>
+    <div class="account__manager">
+      <p>Ваш личный менеджер Олег</p>
+      <div class="account__tell-box">
+        <i class="account__tell-icon icon"> &#xe832; </i>
+        <a href="tel:+380677771412">+38 067 777 14 12</a>
+      </div>
+    </div>
+    <form class="account__table">
+      <div class="table-wrapper">
+  <table class="basket-table">
+    <colgroup>
+      <col class="basket-table__commodity-col" />
+      <col class="basket-table__number-col" />
+      <col class="basket-table__price-col" />
+      <col class="basket-table__total-col" />
+    </colgroup>
+    <thead>
+      <tr>
+        <th>
+          Товар
+          <span class="basket-table__opening-icon arrow active"></span>
+        </th>
+        <th>
+          Кол - во
+          <span class="basket-table__opening-icon arrow"></span>
+        </th>
+        <th>
+          Цена за товар
+          <span class="basket-table__opening-icon arrow"></span>
+        </th>
+        <th>
+          Итоговая стоимость
+          <span class="basket-table__opening-icon arrow"></span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="first">Орех соленый 80г.</td>
+        <td>
+          <i class="basket-table__decrease-icon icon"> &#xe833; </i>
+          <input type="number" class="basket-table__number" aria-label="first" name="first" value="4" min="0" />
+          <i class="basket-table__increase-icon icon"> &#xe834; </i>
+        </td>
+        <td>25 грн.</td>
+        <td>100 грн.</td>
+      </tr>
+      <tr>
+        <td id="second">Орех соленый 80г.</td>
+        <td>
+          <i class="basket-table__decrease-icon icon"> &#xe833; </i>
+          <input type="number" class="basket-table__number" name="second" aria-label="second" value="1" min="0" />
+          <i class="basket-table__increase-icon icon"> &#xe834; </i>
+        </td>
+        <td>25 грн.</td>
+        <td>25 грн.</td>
+      </tr>
+      <tr>
+        <td id="third">Орех соленый 80г.</td>
+        <td>
+          <i class="basket-table__decrease-icon icon"> &#xe833; </i>
+          <input type="number" class="basket-table__number" name="third" aria-label="third" value="1" min="0" />
+          <i class="basket-table__increase-icon icon"> &#xe834; </i>
+        </td>
+        <td>25 грн.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="fourth">Орех соленый 80г.</td>
+        <td>
+          <i class="basket-table__decrease-icon icon"> &#xe833; </i>
+          <input type="number" class="basket-table__number" name="fourth" aria-label="fourth" value="1" min="0" />
+          <i class="basket-table__increase-icon icon"> &#xe834; </i>
+        </td>
+        <td>25 грн.</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="basket-table__order-block">
+  <a href="catalog.html" class="basket-table__to-shopping">
+    <div>
+      <i class="basket-table__arrow-icon icon"> &#xe827; </i>
+      Продолжить покупки
+    </div>
+  </a>
+  <div class="basket-table__place-order-block">
+    <div class="basket-table__total-block total-block">
+      <div class="total-block__text">Всего</div>
+      <div class="total-block__total">175</div>
+      <div class="total-block__currency">грн.</div>
+    </div>
+    <a href="placing-order.html" class="basket-table__placing-order">
+      <div>Оформить заказ</div>
+    </a>
+  </div>
+</div>
+<div class="basket-table__for-order-block">
+  <div class="basket-table__for-order-title">Для оформления заказа необходимо</div>
+  <p class="basket-table__for-order-lincks"><a href="Login.html">Авторизоваться</a> или <a href="registration.html">Зарегистрироваться</a></p>
+</div>
+
+      <!--  -->
+      <ul class="contact-details">
+  <li class="contact-details__item">
+    <div class="contact-details__title">1. Контактные данные</div>
+    <input class="input-text" type="text" name="fio" placeholder="ФИО*" required /><br />
+<input class="input-text" type="email" name="email" placeholder="Email*" required /><br />
+<input class="input-text" type="tel" name="phone" placeholder="Телефон*" required /><br />
+
+  </li>
+  <li class="contact-details__item">
+    <div class="contact-details__title">2. Способ доставки</div>
+    <input type="radio" name="delivery" id="nova_poshta" value="Новая почта (по Украине оплата за счет Клиента)" />
+    <label for="nova_poshta">Новая почта (по Украине оплата за счет Клиента)</label><br />
+    <div class="filters__taste-select"><select class="select" name="Страна">
+  <option disabled>Страна</option>
+  <option value="Украина">Украина</option>
+  <option value="Польша">Польша</option>
+  <option value="Чехия">Чехия</option>
+</select>
+</div>
+<div class="filters__taste-select"><select class="select" name="Область">
+  <option disabled>Область</option>
+  <option value="Хорошая">Хорошая</option>
+  <option value="Очуеь хорошая">Очуеь хорошая</option>
+  <option value="Самый хорошая">Самый хорошая</option>
+</select>
+</div>
+<input class="input-text" type="text" name="city" placeholder="Город*" required /><br />
+<input class="input-text" type="text" name="address" placeholder="Адрес" required /><br />
+
+
+    <input type="radio" name="delivery" id="courier" value="Курьер по Одессе" />
+    <label for="courier">Курьер по Одессе</label><br />
+    <input class="input-text" type="text" name="address" placeholder="Адрес*" required /><br />
+
+    <input type="radio" name="delivery" id="pickup" value="Самовывоз со склада" />
+    <label for="pickup">Самовывоз со склада</label><br />
+  </li>
+  <li class="contact-details__item">
+    <div class="contact-details__title">3. Способ оплаты</div>
+    <input type="radio" name="payment" id="cashless-payments" value="Cashless payments" />
+    <label for="cashless-payments">Безналичный расчет</label><br />
+    <input type="radio" name="payment" id="LiqPay" value="LiqPay" />
+    <label for="LiqPay">LiqPay / Приват24</label><br />
+    <input type="radio" name="payment" id="cash" value="Cash on delivery" />
+    <label for="cash">Наличными при получении (Наложенным платежом)</label><br />
+  </li>
+</ul>
+<button type="submit" class="contact-details__submit-button">
+  <div>Відправити</div>
+</button>
+
+    </form>
+  </div>
+</div>
+</section>
+      <section class="placing-order__contacts"><div class="contacts">
+  <div class="contacts__container">
+    <div class="contacts__content">
+      <h2 class="contacts__header">Контакты</h2>
+      <div class="contacts__data-box">
+        <div class="contacts__phone-contacts-box">
+          <div class="contacts__phone-icon-box">
+            <i class="contacts__phone-icon icon"> &#xe82a; </i>
+          </div>
+          <div class="contacts__phone-box">
+            <a href="tel:+38 (095) 711 11 11" class="contacts__tell">+38 (095) 711 11 11</a><br />
+            <a href="tel:+38 (095) 711 11 11" class="contacts__tell">+38 (095) 711 11 11</a>
+          </div>
+          <div class="contacts__social"><ul class="messengers">
+  <li class="messengers__icon-box">
+    <i class="messengers__icon icon"> &#xe835; </i>
+  </li>
+  <li class="messengers__icon-box">
+    <i class="messengers__icon icon"> &#xe824; </i>
+  </li>
+  <li class="messengers__icon-box">
+    <i class="messengers__icon icon"> &#xe83a; </i>
+  </li>
+</ul>
+</div>
+        </div>
+        <div class="contacts__email-box">
+          <div class="contacts__email-icon-box">
+            <i class="contacts__email-icon icon"> &#xe80e; </i>
+          </div>
+          <a href="mailto:nuts@nbsc.com.ua" class="contacts__email"> nuts@nbsc.com.ua </a>
+        </div>
+        <div class="contacts__office-address address-box">
+          <div class="address-box__office-icon-box">
+            <i class="address-box__office-icon icon"> &#xe82b; </i>
+          </div>
+          <div class="address-box__box">
+            <div class="address-box__header">Офис и отдел продаж</div>
+            <div class="address-box__data">
+              Украина, г. Одесса, <br />
+              ул. Космонавтов, 32
+            </div>
+          </div>
+        </div>
+        <div class="contacts__manufacturing-address address-box">
+          <div class="address-box__manufacturing-icon-box">
+            <i class="address-box__manufacturing-icon icon"> &#xe82c; </i>
+          </div>
+          <div class="address-box__box">
+            <div class="address-box__header">Производство</div>
+            <div class="address-box__data">
+              Украина, Одесская обл, <br />
+              с. Яськи, ул. Центральная, 232
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contacts__map">
+      <iframe title="contacts map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2749.887908208149!2d30.71212577541449!3d46.43110126841016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633a7b20ed43b%3A0xfaab4e45d64743a!2z0LLRg9C70LjRhtGPINCa0L7RgdC80L7QvdCw0LLRgtGW0LIsIDMyLCDQntC00LXRgdCwLCDQntC00LXRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1suk!2sua!4v1686821342737!5m2!1suk!2sua" width="800" height="600" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="footer__top-footer top-footer">
+    <div class="top-footer__container">
+      <a href="../index.html" class="top-footer__logo-box">
+        <img src="img/logo.svg" alt="logo" class="top-footer__icon" />
+        <p class="top-footer__logo-text">ОРЕХ ПРИЧЕРНОМОРЬЯ</p>
+      </a>
+      <ul class="top-footer__menu-footer menu-footer">
+        <li class="menu-footer__item-box menu-item">
+          <a href="../catalog.html" class="menu-footer__item">Магазин</a>
+        </li>
+        <li class="menu-footer__item-box menu-item">
+          <a href="../corporate-clients.html" class="menu-footer__item">Корпоративным клиентам</a>
+        </li>
+        <li class="menu-footer__item-box menu-item">
+          <a href="../payment-delivery.html" class="menu-footer__item">Оплата и доставка</a>
+        </li>
+        <li class="menu-footer__item-box menu-item">
+          <a href="../about-company.html" class="menu-footer__item">О производстве </a>
+        </li>
+        <li class="menu-footer__item-box menu-item">
+          <a href="../news.html" class="menu-footer__item">Новости и статьи</a>
+        </li>
+        <li class="menu-footer__item-box menu-item">
+          <a href="../gallery.html" class="menu-footer__item">Галерея</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__down-footer down-footer">
+    <div class="down-footer__container">
+      <div class="down-footer__developed">
+        Разработано <span><span>AVADA</span> MEDIA</span>
+      </div>
+      <div class="down-footer__copyright-notice">Copyright © 2019. Все права защищены</div>
+      <div class="down-footer__social"><ul class="social">
+  <li class="social__facebook">
+    <i class="social__icon icon"> &#xe809; </i>
+  </li>
+  <li class="social__insta">
+    <i class="social__icon icon"> &#xe812; </i>
+  </li>
+  <li class="social__youtube">
+    <i class="social__icon icon"> &#xe83c; </i>
+  </li>
+</ul>
+</div>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/app.min.js?_v=20230720190624"></script>
   </body>
 </html>

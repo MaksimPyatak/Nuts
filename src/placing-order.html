@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title":"Оформление заказа - Орех Причерноморья" })
+  @@include('html/head.html',{ "title":"Оформление заказа - Орех Причерноморья", "style": "css/placing-order.min.css" })
 
   <body>
-    <!--@@include('html/elements/preloader.html',{})-->
-    <div class="wrapper">
-      <!--@@include('html/header.html',{})-->
-      <main>
-        <h1 style="color: red; font-size: 48px">Оформление заказа</h1>
-      </main>
-      <!--@@include('html/footer.html',{})-->
-    </div>
-    <!--@@include('html/elements/pop-up.html',{})
-    @@include('html/elements/pop-up2.html',{})-->
+    @@include('html/header.html',{})
+    <main class="placing-order">
+      <section class="placing-order__breadcrumbs">@@include('html/components/breadcrumbs.html',{"second-link": "/basket.html", "second-page": "Корзина", "page-now": "Оформление заказа"})</section>
+      <section class="placing-order__account">@@include('html/components/placing-order/account.html',{})</section>
+      <section class="placing-order__contacts">@@include('html/components/contacts.html',{})</section>
+    </main>
+    @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>
   </body>
 </html>

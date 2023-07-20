@@ -1,0 +1,31 @@
+<ul class="contact-details">
+  <li class="contact-details__item">
+    <div class="contact-details__title">1. Контактные данные</div>
+    @@include('../contact-details.html', {})
+  </li>
+  <li class="contact-details__item">
+    <div class="contact-details__title">2. Способ доставки</div>
+    <input type="radio" name="delivery" id="nova_poshta" value="Новая почта (по Украине оплата за счет Клиента)" />
+    <label for="nova_poshta">Новая почта (по Украине оплата за счет Клиента)</label><br />
+    @@include('../adress.html', {})
+
+    <input type="radio" name="delivery" id="courier" value="Курьер по Одессе" />
+    <label for="courier">Курьер по Одессе</label><br />
+    <input class="input-text" type="text" name="address" placeholder="Адрес*" required /><br />
+
+    <input type="radio" name="delivery" id="pickup" value="Самовывоз со склада" />
+    <label for="pickup">Самовывоз со склада</label><br />
+  </li>
+  <li class="contact-details__item">
+    <div class="contact-details__title">3. Способ оплаты</div>
+    <input type="radio" name="payment" id="cashless-payments" value="Cashless payments" />
+    <label for="cashless-payments">Безналичный расчет</label><br />
+    <input type="radio" name="payment" id="LiqPay" value="LiqPay" />
+    <label for="LiqPay">LiqPay / Приват24</label><br />
+    <input type="radio" name="payment" id="cash" value="Cash on delivery" />
+    <label for="cash">Наличными при получении (Наложенным платежом)</label><br />
+  </li>
+</ul>
+<button type="submit" class="contact-details__submit-button">
+  <div>Відправити</div>
+</button>
