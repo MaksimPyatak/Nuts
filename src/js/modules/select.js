@@ -27,9 +27,6 @@ selectElements.forEach(function (selectElement) {
        <span class="new-select__arrow arrow"></span>
        ${selectHead.innerHTML}
    `;
-   //selectHead.addEventListener('click', function () {
-   //   selectHead.classList.toggle('on');
-   //});
 
    for (let i = 1; i < selectOptionLength; i++) {
       const newSelectItem = document.createElement('div');
@@ -43,19 +40,6 @@ selectElements.forEach(function (selectElement) {
 
    const selectItem = selectList.querySelectorAll('.new-select__item');
    selectList.style.display = 'none';
-
-   //newSelect.addEventListener("click", function (event) {
-   //   // Перевірити, чи елемент, на якому відбувся клік, є selectHead або є його дочірнім елементом
-   //   let isClickInsideSelectHead = selectHead.contains(event.target) || event.target === selectHead;
-
-   //   if (isClickInsideSelectHead) {
-   //      // Клік відбувся на або всередині елемента selectHead
-   //      console.log("Клік на або всередині елемента selectHead");
-   //   } else {
-   //      // Клік відбувся за межами елемента selectHead
-   //      console.log("Клік за межами елемента selectHead");
-   //   }
-   //});
    selectHead.addEventListener('click', function () {
       if (!selectHead.classList.contains('on')) {
          selectHead.classList.add('on');
@@ -78,7 +62,6 @@ selectElements.forEach(function (selectElement) {
                let chooseItem = item.getAttribute('data-value');
 
                _this.value = chooseItem; // Встановлюємо вибраний елемент в селекті
-               //selectHead.textContent = item.querySelector('span').textContent + ;
 
                selectHead.innerHTML = ` <span class="new-select__arrow arrow"></span>   ${item.querySelector('span').textContent}`;
 
