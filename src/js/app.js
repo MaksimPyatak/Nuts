@@ -12,6 +12,7 @@ import "./modules/news.js"
 import "./modules/select.js"
 import "./modules/scroll-container.js"
 import "./modules/tabs.js"
+import "./modules/table.js"
 
 //!!Підключення файлу з бургер-меню
 //flsFunctions.burgerMenu();
