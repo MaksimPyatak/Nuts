@@ -17,7 +17,6 @@ if (table) {
    }
 
    function calculateAmount(i) {
-      console.log(i);
       const row = rows[i];
       const input = row.querySelector('.basket-table__number');
       const quantity = input.value; // Отримуємо кількість з другої комірки
