@@ -1898,7 +1898,7 @@ footer {
 }
 
 .contact-details {
-  width: 474px;
+  max-width: 474px;
   padding: 17px 0 0 0;
 }
 
@@ -1914,6 +1914,18 @@ footer {
   margin: 0 0 17px 0;
 }
 
+.contact-details__item:nth-child(2) .contact-details__nova-poshta {
+  margin-bottom: 9px;
+}
+
+.contact-details__item:nth-child(3) .contact-details__title {
+  margin: 0 0 19px 0;
+}
+
+.contact-details__item:nth-child(3) input[type=radio] + label {
+  margin: 0 0 11px 0;
+}
+
 .contact-details__title {
   margin: 0 0 20px 0;
   font-family: Montserrat;
@@ -1922,6 +1934,76 @@ footer {
   font-weight: 700;
   line-height: 188.235%;
   letter-spacing: 0.01em;
+}
+
+.contact-details__submit-button {
+  background: #337D5A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 249px;
+  height: 50px;
+  margin: -7px 0 0 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 106.25%;
+}
+
+.contact-details__submit-button:hover {
+  background: transparent;
+  border: 1.5px solid #337D5A;
+  color: #337D5A;
+}
+
+.contact-details input[type=radio] + label {
+  margin: 0 0 13px 0;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 121.429%;
+}
+
+.contact-details__address {
+  display: none;
+}
+
+.contact-details__address > *:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+
+.contact-details input[type=text] {
+  margin: 0 0 15px 0;
+}
+
+.contact-details__label-icon-box {
+  position: relative;
+  top: -1px;
+  width: 96px;
+  height: 31px;
+  margin: 0 0 0 9px;
+  background-image: url("../img/account/label-free.svg");
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: left;
+  background-size: contain;
+  display: inline-block;
+}
+
+.contact-details__label-text {
+  margin: 8px 0 0 10px;
+  color: #FFF;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.6px;
 }
 
 .select {
@@ -2082,6 +2164,7 @@ input[type=radio] {
 
 input[type=radio] + label {
   position: relative;
+  padding: 0 0 0 26px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2095,10 +2178,13 @@ input[type=radio] + label {
 }
 
 input[type=radio] + label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 0;
@@ -2106,13 +2192,8 @@ input[type=radio] + label::before {
           flex-grow: 0;
   border: 2px solid #337D5A;
   border-radius: 50%;
-  margin-right: 0.5em;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
-  background-clip: padding-box;
-  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-right: 11px;
+  cursor: pointer;
 }
 
 input[type=radio] + label::after {
@@ -2121,51 +2202,28 @@ input[type=radio] + label::after {
   content: "";
   width: 7px;
   height: 7px;
-  top: 7px;
-  left: 7px;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 6px;
+  left: 6px;
+  -webkit-transform: translate(-58%, -58%);
+      -ms-transform: translate(-58%, -58%);
+          transform: translate(-58%, -58%);
   background-color: #337D5A;
   border-radius: 50%;
-  /* додатковий відступ від бордера */
   margin: 2px;
+  cursor: pointer;
 }
 
 input[type=radio]:checked + label::after {
   display: block;
 }
 
-/* для элемента label связанного с .custom-radio */
-
-.custom-radio .custom-radio + label .custom-radio:not(:disabled):not(:checked) + label:hover::before {
-  border-color: #b3d7ff;
+input[type=radio]:focus + label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(51, 125, 90, 0.2117647059);
+          box-shadow: 0 0 0 0.2rem rgba(51, 125, 90, 0.2117647059);
 }
 
-/* стили для активной радиокнопки (при нажатии на неё) */
-
-.custom-radio:not(:disabled):active + label::before {
-  background-color: #b3d7ff;
-  border-color: #b3d7ff;
-}
-
-/* стили для радиокнопки, находящейся в фокусе */
-
-.custom-radio:focus + label::before {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
-
-.custom-radio:focus:not(:checked) + label::before {
-  border-color: #80bdff;
-}
-
-/* стили для радиокнопки, находящейся в состоянии checked */
-
-.custom-radio .custom-radio:disabled + label::before {
-  background-color: #e9ecef;
+input[type=radio]:not(:disabled):not(:checked) + label:hover::before {
+  border-color: rgba(51, 125, 90, 0.5);
 }
 
 .contacts {

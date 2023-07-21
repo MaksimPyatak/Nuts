@@ -1,5 +1,5 @@
 .contact-details {
-   width: 474px;
+   max-width: 474px;
    padding: 17px 0 0 0;
 
    &__item {
@@ -14,9 +14,30 @@
       }
 
       &:nth-child(2) {
+         .contact-details {
+            &__title {
+
+               margin: 0 0 17px 0;
+            }
+
+            &__nova-poshta {
+               margin-bottom: 9px;
+            }
+         }
+
+      }
+
+      &:nth-child(3) {
          .contact-details__title {
 
-            margin: 0 0 17px 0;
+            margin: 0 0 19px 0;
+         }
+
+         input[type="radio"] {
+
+            &+label {
+               margin: 0 0 11px 0;
+            }
          }
       }
    }
@@ -31,5 +52,59 @@
       letter-spacing: 0.01em;
    }
 
-   &__submit-button {}
+   &__submit-button {
+      @include button;
+      width: 249px;
+      height: 50px;
+      margin: -7px 0 0 0;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 106.25%;
+   }
+
+   input[type="radio"] {
+
+      &+label {
+         margin: 0 0 13px 0;
+         font-family: Montserrat;
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 121.429%;
+      }
+   }
+
+   &__address {
+      display: none;
+
+      &>*:not(:last-child) {
+         margin: 0 0 15px 0;
+      }
+   }
+
+   input[type="text"] {
+      margin: 0 0 15px 0;
+   }
+
+   &__label-icon-box {
+      position: relative;
+      top: -1px;
+      width: 96px;
+      height: 31px;
+      margin: 0 0 0 9px;
+      background-image: url('@img/account/label-free.svg');
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      background-position: left;
+      background-size: contain;
+      display: inline-block;
+   }
+
+   &__label-text {
+      margin: 8px 0 0 10px;
+      color: #FFF;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: normal;
+      letter-spacing: 0.6px;
+   }
 }

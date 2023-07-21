@@ -1,0 +1,11 @@
+.address {
+   &>*:not(:last-child) {
+      margin: 0 15px;
+   }
+
+   &__country-select {}
+
+   &__region-select {}
+}
+
+.input-text {}

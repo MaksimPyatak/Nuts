@@ -6,11 +6,15 @@
   <li class="contact-details__item">
     <div class="contact-details__title">2. Способ доставки</div>
     <input type="radio" name="delivery" id="nova_poshta" value="Новая почта (по Украине оплата за счет Клиента)" />
-    <label for="nova_poshta">Новая почта (по Украине оплата за счет Клиента)</label><br />
-    @@include('../adress.html', {})
+    <label class="contact-details__nova-poshta" for="nova_poshta">Новая почта (по Украине оплата за счет Клиента)</label><br />
+    <div class="contact-details__address">@@include('../adress.html', {})</div>
 
     <input type="radio" name="delivery" id="courier" value="Курьер по Одессе" />
-    <label for="courier">Курьер по Одессе</label><br />
+    <label for="courier">Курьер по Одессе</label>
+    <div class="contact-details__label-icon-box">
+      <p class="contact-details__label-text">БЕСПЛАТНО</p>
+    </div>
+    <br />
     <input class="input-text" type="text" name="address" placeholder="Адрес*" required /><br />
 
     <input type="radio" name="delivery" id="pickup" value="Самовывоз со склада" />
@@ -27,5 +31,5 @@
   </li>
 </ul>
 <button type="submit" class="contact-details__submit-button">
-  <div>Відправити</div>
+  <div>Продолжить</div>
 </button>

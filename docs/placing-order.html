@@ -11,11 +11,11 @@
   разного объема."
   />
 
-  <link rel="stylesheet" href="css/placing-order.min.css?_v=20230720190624" />
-  <!--<link rel="preload" href="css/placing-order.min.css-preload?_v=20230720190624" as="style" onload="this.onload=null;this.rel='stylesheet'" />-->
+  <link rel="stylesheet" href="css/placing-order.min.css?_v=20230721095854" />
+  <!--<link rel="preload" href="css/placing-order.min.css-preload?_v=20230721095854" as="style" onload="this.onload=null;this.rel='stylesheet'" />-->
 
-  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230720190624" />-->
-  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230720190624" />-->
+  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230721095854" />-->
+  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230721095854" />-->
   <title>Оформление заказа - Орех Причерноморья</title>
 </head>
 
@@ -275,15 +275,15 @@
   <li class="contact-details__item">
     <div class="contact-details__title">2. Способ доставки</div>
     <input type="radio" name="delivery" id="nova_poshta" value="Новая почта (по Украине оплата за счет Клиента)" />
-    <label for="nova_poshta">Новая почта (по Украине оплата за счет Клиента)</label><br />
-    <div class="filters__taste-select"><select class="select" name="Страна">
+    <label class="contact-details__nova-poshta" for="nova_poshta">Новая почта (по Украине оплата за счет Клиента)</label><br />
+    <div class="contact-details__address"><div class="address__country-select"><select class="select" name="Страна">
   <option disabled>Страна</option>
   <option value="Украина">Украина</option>
   <option value="Польша">Польша</option>
   <option value="Чехия">Чехия</option>
 </select>
 </div>
-<div class="filters__taste-select"><select class="select" name="Область">
+<div class="address__region-select"><select class="select" name="Область">
   <option disabled>Область</option>
   <option value="Хорошая">Хорошая</option>
   <option value="Очуеь хорошая">Очуеь хорошая</option>
@@ -292,10 +292,14 @@
 </div>
 <input class="input-text" type="text" name="city" placeholder="Город*" required /><br />
 <input class="input-text" type="text" name="address" placeholder="Адрес" required /><br />
-
+</div>
 
     <input type="radio" name="delivery" id="courier" value="Курьер по Одессе" />
-    <label for="courier">Курьер по Одессе</label><br />
+    <label for="courier">Курьер по Одессе</label>
+    <div class="contact-details__label-icon-box">
+      <p class="contact-details__label-text">БЕСПЛАТНО</p>
+    </div>
+    <br />
     <input class="input-text" type="text" name="address" placeholder="Адрес*" required /><br />
 
     <input type="radio" name="delivery" id="pickup" value="Самовывоз со склада" />
@@ -312,7 +316,7 @@
   </li>
 </ul>
 <button type="submit" class="contact-details__submit-button">
-  <div>Відправити</div>
+  <div>Продолжить</div>
 </button>
 
     </form>
@@ -435,6 +439,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20230720190624"></script>
+    <script src="js/app.min.js?_v=20230721095854"></script>
   </body>
 </html>
