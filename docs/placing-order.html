@@ -11,11 +11,11 @@
   разного объема."
   />
 
-  <link rel="stylesheet" href="css/placing-order.min.css?_v=20230721095854" />
-  <!--<link rel="preload" href="css/placing-order.min.css-preload?_v=20230721095854" as="style" onload="this.onload=null;this.rel='stylesheet'" />-->
+  <link rel="stylesheet" href="css/placing-order.min.css" />
+  <!--<link rel="preload" href="css/placing-order.min.css-preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />-->
 
-  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230721095854" />-->
-  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230721095854" />-->
+  <!--<link rel="stylesheet" href="css/style.min.css" />-->
+  <!--<link rel="stylesheet" href="css/style.min.css" />-->
   <title>Оформление заказа - Орех Причерноморья</title>
 </head>
 
@@ -274,25 +274,9 @@
   </li>
   <li class="contact-details__item">
     <div class="contact-details__title">2. Способ доставки</div>
-    <input type="radio" name="delivery" id="nova_poshta" value="Новая почта (по Украине оплата за счет Клиента)" />
+    <input type="radio" name="delivery" id="nova_poshta" value="Новая почта (по Украине оплата за счет Клиента)" checked />
     <label class="contact-details__nova-poshta" for="nova_poshta">Новая почта (по Украине оплата за счет Клиента)</label><br />
-    <div class="contact-details__address"><div class="address__country-select"><select class="select" name="Страна">
-  <option disabled>Страна</option>
-  <option value="Украина">Украина</option>
-  <option value="Польша">Польша</option>
-  <option value="Чехия">Чехия</option>
-</select>
-</div>
-<div class="address__region-select"><select class="select" name="Область">
-  <option disabled>Область</option>
-  <option value="Хорошая">Хорошая</option>
-  <option value="Очуеь хорошая">Очуеь хорошая</option>
-  <option value="Самый хорошая">Самый хорошая</option>
-</select>
-</div>
-<input class="input-text" type="text" name="city" placeholder="Город*" required /><br />
-<input class="input-text" type="text" name="address" placeholder="Адрес" required /><br />
-</div>
+    
 
     <input type="radio" name="delivery" id="courier" value="Курьер по Одессе" />
     <label for="courier">Курьер по Одессе</label>
@@ -307,7 +291,7 @@
   </li>
   <li class="contact-details__item">
     <div class="contact-details__title">3. Способ оплаты</div>
-    <input type="radio" name="payment" id="cashless-payments" value="Cashless payments" />
+    <input type="radio" name="payment" id="cashless-payments" value="Cashless payments" checked />
     <label for="cashless-payments">Безналичный расчет</label><br />
     <input type="radio" name="payment" id="LiqPay" value="LiqPay" />
     <label for="LiqPay">LiqPay / Приват24</label><br />
@@ -439,6 +423,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20230721095854"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

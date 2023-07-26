@@ -5,9 +5,9 @@
   </li>
   <li class="contact-details__item">
     <div class="contact-details__title">2. Способ доставки</div>
-    <input type="radio" name="delivery" id="nova_poshta" value="Новая почта (по Украине оплата за счет Клиента)" />
+    <input type="radio" name="delivery" id="nova_poshta" value="Новая почта (по Украине оплата за счет Клиента)" checked />
     <label class="contact-details__nova-poshta" for="nova_poshta">Новая почта (по Украине оплата за счет Клиента)</label><br />
-    <div class="contact-details__address">@@include('../adress.html', {})</div>
+    <!--<div class="contact-details__address">@@include('../adress.html', {})</div>-->
 
     <input type="radio" name="delivery" id="courier" value="Курьер по Одессе" />
     <label for="courier">Курьер по Одессе</label>
@@ -22,7 +22,7 @@
   </li>
   <li class="contact-details__item">
     <div class="contact-details__title">3. Способ оплаты</div>
-    <input type="radio" name="payment" id="cashless-payments" value="Cashless payments" />
+    <input type="radio" name="payment" id="cashless-payments" value="Cashless payments" checked />
     <label for="cashless-payments">Безналичный расчет</label><br />
     <input type="radio" name="payment" id="LiqPay" value="LiqPay" />
     <label for="LiqPay">LiqPay / Приват24</label><br />

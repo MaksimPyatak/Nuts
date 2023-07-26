@@ -1,0 +1,48 @@
+<form class="registration-form">
+  <h3 class="registration-form__title">Регистрация</h3>
+  <div class="registration-form__item-heading">1. Контактные данные</div>
+  <div class="registration-form__grid">
+    <div class="registration-form__photo">
+      <input type="file" name="photo" id="photo" />
+      <label for="photo">
+        <img src="@img/account/empty-photo.svg" alt="Photo" class="registration-form__photo-img" />
+        <div class="registration-form__photo-lable">
+          <div>Загрузить фото</div>
+        </div> </label
+      ><br />
+      <input type="checkbox" name="fop" id="fop" />
+      <label for="fop">Являюсь ФОП</label>
+    </div>
+    <ol class="registration-form__reg-list">
+      <ul class="registration-form__list">
+        <li class="registration-form__tab">
+          <input type="radio" name="tabs" id="individual" value="individual" checked />
+          <label for="individual">Физическое лицо</label>
+        </li>
+        <li class="registration-form__tab">
+          <input type="radio" name="tabs" id="entity" value="entity" />
+          <label for="entity">Юридическое лицо</label>
+        </li>
+      </ul>
+      <li class="registration-form__item">
+        <!--<div class="registration-form__text-inputs">-->
+        @@include('../contact-details.html')
+        <!--</div>-->
+      </li>
+      <li class="registration-form__item">
+        <div class="registration-form__item-heading">2. Адрес</div>
+        @@include('../adress.html')
+      </li>
+      <li class="registration-form__item">
+        <div class="registration-form__item-heading">3. Пароль</div>
+        <input class="input-text" type="password" name="password" placeholder="Пароль*" required /><br />
+        <input class="input-text" type="password" name="password-check" placeholder="Подтвердите пароль*" required /><br />
+        <input class="registration-form__conditions" type="checkbox" name="agreement" id="agreement" required />
+        <label for="agreement">Я согласен с &nbsp;<a href="#"> Условиями регистрации</a></label>
+      </li>
+      <button class="registration-form__submit" type="submit">
+        <div>Продолжить</div>
+      </button>
+    </ol>
+  </div>
+</form>

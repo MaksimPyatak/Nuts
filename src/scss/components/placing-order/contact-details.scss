@@ -76,6 +76,10 @@
    &__address {
       display: none;
 
+      & * {
+         display: none !important;
+      }
+
       &>*:not(:last-child) {
          margin: 0 0 15px 0;
       }
