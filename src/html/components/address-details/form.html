@@ -1,0 +1,25 @@
+<form class="address-form">
+  <ol class="address-form__list">
+    <li class="address-form__item">
+      <div class="address-form__item-heading">1. Реквизиты</div>
+      <input class="input-text" type="text" name="okpo" id="okpo" placeholder="ОКПО" />
+    </li>
+    <li class="address-form__item">
+      <div class="address-form__item-heading">2. Адрес</div>
+      @@include('../adress.html')
+    </li>
+    <li class="address-form__item">
+      <div class="address-form__item-heading">3. Юридический адрес</div>
+      @@include('../adress.html')
+      <input class="input-text" type="text" name="okpo" id="okpo" placeholder="Индекс" pattern="[0-9]*" />
+      <button class="address-form__submit" type="submit">Сохранить</button>
+    </li>
+  </ol>
+  <div class="address-form__img-block">
+    <img src="@img/account/address-img.jpg" alt="Горіховий сад" class="address-form__img" />
+    <div class="address-form__content">
+      <div class="address-form__img-title">Орех Причерноморья</div>
+      <div class="address-form__img-subtitle">Единственный в Украине сад совместного выращивания фундука и грецкого ореха</div>
+    </div>
+  </div>
+</form>

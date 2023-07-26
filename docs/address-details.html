@@ -11,11 +11,11 @@
   разного объема."
   />
 
-  <link rel="stylesheet" href="css/address-details.min.css?_v=20230726192912" />
-  <!--<link rel="preload" href="css/address-details.min.css-preload?_v=20230726192912" as="style" onload="this.onload=null;this.rel='stylesheet'" />-->
+  <link rel="stylesheet" href="css/address-details.min.css?_v=20230727001725" />
+  <!--<link rel="preload" href="css/address-details.min.css-preload?_v=20230727001725" as="style" onload="this.onload=null;this.rel='stylesheet'" />-->
 
-  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230726192912" />-->
-  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230726192912" />-->
+  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230727001725" />-->
+  <!--<link rel="stylesheet" href="css/style.min.css?_v=20230727001725" />-->
   <title>Адрес и реквизиты - Орех Причерноморья</title>
 </head>
 
@@ -40,11 +40,11 @@
       <div class="top-header__discount">Ваша персональная скидка - 5%</div>
       <div class="top-header__user-navigation">
         <div class="top-header__login-box">
-          <a class="top-header__login" href="../Login.html">
+          <a class="top-header__login" href="Login.html">
             <i class="top-header__icon icon"> &#xe817; </i>
             <span>Вход</span>
           </a>
-          <a href="../registration.html" class="top-header__registration">Регистрация</a>
+          <a href="registration.html" class="top-header__registration">Регистрация</a>
         </div>
         <div class="top-header__lang"><div class="lang-select">
   <!--class="top-header__select"-->
@@ -146,54 +146,54 @@
   </div>
 </header>
 
-    <main class="registration">
-      <section class="registration__breadcrumbs"><div class="breadcrumbs">
+    <main class="address-details">
+      <section class="address-details__breadcrumbs"><div class="breadcrumbs">
   <div class="breadcrumbs__container">
     <a href="/" class="breadcrumbs__link">Главная</a>
     <i class="breadcrumbs__right-arrow-icon icon"> &#xe81d; </i>
-    <a href="/" class="breadcrumbs__link"></a>
+    <a href="/account.html" class="breadcrumbs__link">Личный кабинет </a>
     <i class="breadcrumbs__right-arrow-icon icon"> &#xe81d; </i>
-    <span class="breadcrumbs__page-now">Регистрация </span>
+    <span class="breadcrumbs__page-now">Адрес и реквизиты </span>
   </div>
 </div>
 </section>
-      <section class="registration__form"><form class="registration-form">
-  <h3 class="registration-form__title">Регистрация</h3>
-  <div class="registration-form__item-heading">1. Контактные данные</div>
-  <div class="registration-form__grid">
-    <div class="registration-form__photo">
-      <input type="file" name="photo" id="photo" />
-      <label for="photo">
-        <img src="img/account/empty-photo.svg" alt="Photo" class="registration-form__photo-img" />
-        <div class="registration-form__photo-lable">
-          <div>Загрузить фото</div>
-        </div> </label
-      ><br />
-      <input type="checkbox" name="fop" id="fop" />
-      <label for="fop">Являюсь ФОП</label>
+      <section class="address-details__account"><div class="account">
+  <div class="account__container">
+    <h3 class="account__sidebar-title">Учетная запись</h3>
+    <div class="account__manager">
+      <p>Ваш личный менеджер Олег</p>
+      <div class="account__tell-box">
+        <i class="account__tell-icon icon"> &#xe832; </i>
+        <a href="tel:+380677771412">+38 067 777 14 12</a>
+      </div>
     </div>
-    <ol class="registration-form__reg-list">
-      <ul class="registration-form__list">
-        <li class="registration-form__tab">
-          <input type="radio" name="tabs" id="individual" value="individual" checked />
-          <label for="individual">Физическое лицо</label>
-        </li>
-        <li class="registration-form__tab">
-          <input type="radio" name="tabs" id="entity" value="entity" />
-          <label for="entity">Юридическое лицо</label>
-        </li>
-      </ul>
-      <li class="registration-form__item">
-        <!--<div class="registration-form__text-inputs">-->
-        <input class="input-text" type="text" name="fio" placeholder="ФИО*" required /><br />
-<input class="input-text" type="email" name="email" placeholder="Email*" required /><br />
-<input class="input-text" type="tel" name="phone" placeholder="Телефон*" required /><br />
+    <aside class="sidebar">
+  <div class="sidebar__block block__order">
+    <div class="sidebar__block-tittle">Мои заказы</div>
+    <ul class="sidebar__block-list">
+      <li class="sidebar__block-item block-item__orders-history"><a href="./orders-history.html">История заказов</a></li>
+      <li class="sidebar__block-item block-item__transaction-history"><a href="./transaction-history.html">История транзакций</a></li>
+    </ul>
+  </div>
+  <div class="sidebar__block block__account">
+    <div class="sidebar__block-tittle">Моя учетная запись</div>
+    <ul class="sidebar__block-list">
+      <li class="sidebar__block-item block-item__contact-information"><a href="./individual-contact-information.html">Контактная информация</a></li>
+      <li class="sidebar__block-item block-item__password"><a href="./password.html">Пароль</a></li>
+      <li class="sidebar__block-item block-item__address"><a href="./address-details.html">Адрес</a></li>
+    </ul>
+  </div>
+</aside>
 
-        <!--</div>-->
-      </li>
-      <li class="registration-form__item">
-        <div class="registration-form__item-heading">2. Адрес</div>
-        <div class="address__country-select"><select class="select" name="Страна">
+    <div class="account__form"><form class="address-form">
+  <ol class="address-form__list">
+    <li class="address-form__item">
+      <div class="address-form__item-heading">1. Реквизиты</div>
+      <input class="input-text" type="text" name="okpo" id="okpo" placeholder="ОКПО" />
+    </li>
+    <li class="address-form__item">
+      <div class="address-form__item-heading">2. Адрес</div>
+      <div class="address__country-select"><select class="select" name="Страна">
   <option disabled>Страна</option>
   <option value="Украина">Украина</option>
   <option value="Польша">Польша</option>
@@ -210,22 +210,43 @@
 <input class="input-text" type="text" name="city" placeholder="Город*" required /><br />
 <input class="input-text" type="text" name="address" placeholder="Адрес" required /><br />
 
-      </li>
-      <li class="registration-form__item">
-        <div class="registration-form__item-heading">3. Пароль</div>
-        <input class="input-text" type="password" name="password" placeholder="Пароль*" required /><br />
-        <input class="input-text" type="password" name="password-check" placeholder="Подтвердите пароль*" required /><br />
-        <input class="registration-form__conditions" type="checkbox" name="agreement" id="agreement" required />
-        <label for="agreement">Я согласен с &nbsp;<a href="#"> Условиями регистрации</a></label>
-      </li>
-      <button class="registration-form__submit" type="submit">
-        <div>Продолжить</div>
-      </button>
-    </ol>
+    </li>
+    <li class="address-form__item">
+      <div class="address-form__item-heading">3. Юридический адрес</div>
+      <div class="address__country-select"><select class="select" name="Страна">
+  <option disabled>Страна</option>
+  <option value="Украина">Украина</option>
+  <option value="Польша">Польша</option>
+  <option value="Чехия">Чехия</option>
+</select>
+</div>
+<div class="address__region-select"><select class="select" name="Область">
+  <option disabled>Область</option>
+  <option value="Хорошая">Хорошая</option>
+  <option value="Очуеь хорошая">Очуеь хорошая</option>
+  <option value="Самый хорошая">Самый хорошая</option>
+</select>
+</div>
+<input class="input-text" type="text" name="city" placeholder="Город*" required /><br />
+<input class="input-text" type="text" name="address" placeholder="Адрес" required /><br />
+
+      <input class="input-text" type="text" name="okpo" id="okpo" placeholder="Индекс" pattern="[0-9]*" />
+      <button class="address-form__submit" type="submit">Сохранить</button>
+    </li>
+  </ol>
+  <div class="address-form__img-block">
+    <picture><source srcset="img/account/address-img.webp" type="image/webp"><img src="img/account/address-img.jpg" alt="Горіховий сад" class="address-form__img" /></picture>
+    <div class="address-form__content">
+      <div class="address-form__img-title">Орех Причерноморья</div>
+      <div class="address-form__img-subtitle">Единственный в Украине сад совместного выращивания фундука и грецкого ореха</div>
+    </div>
   </div>
 </form>
+</div>
+  </div>
+</div>
 </section>
-      <section class="registration__contacts"><div class="contacts">
+      <section class="address-details__contacts"><div class="contacts">
   <div class="contacts__container">
     <div class="contacts__content">
       <h2 class="contacts__header">Контакты</h2>
@@ -341,6 +362,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20230726192912"></script>
+    <script src="js/app.min.js?_v=20230727001725"></script>
   </body>
 </html>

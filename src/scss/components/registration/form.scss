@@ -118,6 +118,13 @@
    &__tab {}
 
    &__item {
+
+      .new-select__header {
+         font-family: Montserrat;
+         font-size: 14px;
+         font-weight: 500;
+      }
+
       &:not(:last-child) {
          margin: 0 0 33px 0;
       }
