@@ -1760,7 +1760,7 @@ footer {
 }
 
 .new-select__header.on {
-  border: 1.5px solid #337D5A;
+  border: 1px solid #337D5A;
 }
 
 .new-select__header.on .arrow {
