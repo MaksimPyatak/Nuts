@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title":"Контактная информ - Орех Причерноморья" })
+  @@include('html/head.html',{ "title":"Контактная информ - Орех Причерноморья", "style": "css/legal-entity-contact-information.min.css" })
 
   <body>
-    <!--@@include('html/elements/preloader.html',{})-->
-    <div class="wrapper">
-      <!--@@include('html/header.html',{})-->
-      <main>
-        <h1 style="color: red; font-size: 48px">Контактная информация</h1>
-      </main>
-      <!--@@include('html/footer.html',{})-->
-    </div>
-    <!--@@include('html/elements/pop-up.html',{})
-    @@include('html/elements/pop-up2.html',{})-->
+    @@include('html/header.html',{})
+    <main class="leg-entity-contact-inf">
+      <section class="leg-entity-contact-inf__breadcrumbs">@@include('html/components/breadcrumbs.html',{"second-link": "/account.html", "second-page": "Личный кабинет ", "page-now": "Контактная информация "})</section>
+      <section class="leg-entity-contact-inf__account">@@include('html/components/legal-entity-contact-information/account.html',{})</section>
+      <section class="leg-entity-contact-inf__contacts">@@include('html/components/contacts.html',{})</section>
+    </main>
+    @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>
   </body>
 </html>

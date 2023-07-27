@@ -1,1 +1,14 @@
-<h1>Account</h1>
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title": "Личный кабинет - Орех Причерноморья", "style": "css/account.min.css" })
+  <body>
+    @@include('html/header.html',{})
+    <main class="personal-account">
+      <section class="personal-account__breadcrumbs">@@include('html/components/breadcrumbs.html',{"second-link": "/", "second-page": "", "page-now": "Личный кабинет"})</section>
+      <section class="personal-account__account">@@include('html/components/personal-account/account.html',{})</section>
+      <section class="personal-account__contacts">@@include('html/components/contacts.html',{})</section>
+    </main>
+    @@include('html/footer.html',{})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

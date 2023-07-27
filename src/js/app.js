@@ -14,6 +14,7 @@ import "./modules/scroll-container.js"
 import "./modules/tabs.js"
 import "./modules/table.js"
 import "./modules/form.js"
+import "./modules/form-redirect.js"
 
 //!!Підключення файлу з бургер-меню
 //flsFunctions.burgerMenu();

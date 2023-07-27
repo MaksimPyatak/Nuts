@@ -1,0 +1,44 @@
+.contact-form {
+   margin: 10px 0 0 0;
+   display: grid;
+   grid-template-columns: minmax(min-content, 474px) 1fr;
+   column-gap: 26px;
+
+   @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      row-gap: 15px;
+   }
+
+   &__text {
+      margin: 4px 0 0 0;
+
+      @media (max-width: 768px) {
+         order: 1;
+      }
+
+      input {
+         margin: 0 0 15px 0;
+      }
+   }
+
+   &__submit {
+      @include button;
+      max-width: 229px;
+      width: 100%;
+      height: 50px;
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 17px;
+   }
+
+   &__photo {
+      @media (max-width: 768px) {
+         order: 0;
+      }
+   }
+
+   &__photo-img {}
+
+   &__photo-lable {}
+}

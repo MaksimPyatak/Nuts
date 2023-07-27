@@ -1,48 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title": "Вхід - Орех Причерноморья" })
+  @@include('html/head.html',{ "title": "Вход - Орех Причерноморья", "style": "css/login.min.css" })
 
   <body>
-    <!--@@include('html/elements/preloader.html',{})-->
-    <div class="wrapper">
-      <!--@@include('html/header.html',{})-->
-      <main>
-        <h1 class="raleway" style="color: red; font-size: 48px">Raleway extrabold 62px</h1>
-        <h1 style="color: red; font-size: 48px">Перевірка Raleway extrabold 62px</h1>
-
-        <div class="row">
-          <div class="span3" title="Code: 0xe811">
-            <i class="demo-icon icon-icon3"> &#xe811; </i>
-            <span class="i-name">icon-icon3</span>
-            <span class="i-code">0xe811</span>
-          </div>
-          <div
-            class="span3"
-            title="Code: 
-          0xe812"
-          >
-            <i class="demo-icon icon-instagram"> &#xe812; </i> <span class="i-name">icon-instagram</span> <span class="i-code">0xe812</span>
-          </div>
-          <div
-            class="span3"
-            title="Code: 
-          0xe813"
-          >
-            <i class="demo-icon icon-left-arrow">&#xe813;</i> <span class="i-name">icon-left-arrow</span><span class="i-code">0xe813</span>
-          </div>
-          <div
-            class="span3"
-            title="Code: 
-          0xe814"
-          >
-            <i class="demo-icon icon-locked">&#xe814;</i> <span class="i-name">icon-locked</span><span class="i-code">0xe814</span>
-          </div>
-        </div>
-      </main>
-      <!--@@include('html/footer.html',{})-->
-    </div>
-    <!--@@include('html/elements/pop-up.html',{})
-    @@include('html/elements/pop-up2.html',{})-->
+    @@include('html/header.html',{})
+    <main class="login">
+      <section class="login__breadcrumbs">@@include('html/components/breadcrumbs.html',{"second-link": "/", "second-page": "", "page-now": "Вход"})</section>
+      <section class="login__content">@@include('html/components/login/content.html',{})</section>
+      <section class="login__contacts">@@include('html/components/contacts.html',{})</section>
+    </main>
+    @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>
   </body>
 </html>

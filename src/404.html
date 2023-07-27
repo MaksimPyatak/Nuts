@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title":"404 - Орех Причерноморья" })
-
+  @@include('html/head.html',{ "title": "404 - Орех Причерноморья", "style": "css/404.min.css" })
   <body>
-    <!--@@include('html/elements/preloader.html',{})-->
-    <div class="wrapper">
-      <!--@@include('html/header.html',{})-->
-      <main>
-        <h1 style="color: red; font-size: 48px">404</h1>
-      </main>
-      <!--@@include('html/footer.html',{})-->
-    </div>
-    <!--@@include('html/elements/pop-up.html',{})
-    @@include('html/elements/pop-up2.html',{})-->
+    @@include('html/header.html',{})
+    <main class="error-404">
+      <section class="error-404__content">
+        <div class="error-404__title">404</div>
+        <p>Страница не найдена</p>
+        <a href="/">
+          <i class="error-404__arrow icon"> &#xe827; </i>
+          Вернуться на Главную страницу
+        </a>
+      </section>
+      <section class="error-404__contacts">@@include('html/components/contacts.html',{})</section>
+    </main>
+    @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>
   </body>
 </html>

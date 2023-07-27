@@ -1,0 +1,18 @@
+<form class="contact-form">
+  <fieldset class="contact-form__text">
+    <input class="input-text" type="text" name="company" placeholder="Компания*" required /><br />
+    <input class="input-text" type="text" name="contact-person" placeholder="Контактное лицо*" required /><br />
+    <input class="input-text" type="email" name="email" placeholder="Email*" required /><br />
+    <input class="input-text" type="tel" name="phone" placeholder="Телефон*" required /><br />
+    <button class="contact-form__submit" type="submit">Сохранить</button>
+  </fieldset>
+  <fieldset class="contact-form__photo">
+    <input type="file" name="photo" id="photo" />
+    <label for="photo">
+      <img src="@img/account/empty-photo.svg" alt="Photo" class="contact-form__photo-img" />
+      <div class="contact-form__photo-lable">
+        <div>Загрузить фото</div>
+      </div>
+    </label>
+  </fieldset>
+</form>
