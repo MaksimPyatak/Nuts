@@ -2651,7 +2651,7 @@ main {
   }
 
   .tabs__opening-box:hover {
-    border: 0.5px solid hsla(0, 0%, 0%, 0.15);
+    border: 1px solid hsla(0, 0%, 0%, 0.15);
     background: rgba(51, 125, 90, 0.1);
   }
 
@@ -2676,7 +2676,7 @@ main {
   }
 
   .tabs__opening-box.on {
-    border: 1.5px solid #337D5A;
+    border: 1px solid #337D5A;
   }
 
   .tabs__opening-box.on .arrow {
@@ -2696,7 +2696,7 @@ main {
     top: 42.5px;
     left: var(--pdng-conteiner);
     border: 1px solid #ced4da;
-    border-top: 1.5px solid #337D5A;
+    border-top: 1px solid #337D5A;
     padding: 0;
     cursor: pointer;
     background: #fff;
