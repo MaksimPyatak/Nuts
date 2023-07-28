@@ -72,17 +72,16 @@ let clickOutsideNewSelect = function (event) {
 }
 
 function showTabs() {
-   console.log('showTabs');
    let valueDisplay = window.getComputedStyle(tabsList).getPropertyValue('display');
-   if (valueDisplay == "none") {
-      tabsList.style.display = "flex";
-      openingBox.classList.add('on');
-      document.addEventListener("click", clickOutsideNewSelect);
-   } else {
-      tabsList.style.display = "none";
-      openingBox.classList.remove('on');
-      document.removeEventListener("click", clickOutsideNewSelect);
-   }
+   //if (valueDisplay == "none") {
+   //   tabsList.style.display = "flex";
+   //   openingBox.classList.add('on');
+   //   document.addEventListener("click", clickOutsideNewSelect);
+   //} else {
+   //   tabsList.style.display = "none";
+   //   openingBox.classList.remove('on');
+   //   document.removeEventListener("click", clickOutsideNewSelect);
+   //}
 }
 
 //Після взаємодії з випадаючим списком tabs та поверненні до ширини вікна де пропадає випадаючий список, tabs не відображаються. Для цього використовую спостерігач подій на відповідність медіазапиту

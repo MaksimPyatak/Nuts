@@ -1733,7 +1733,7 @@ footer {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  color: hsl(0, 0%, 20%);
+  color: #333333;
   z-index: 3;
 }
 
