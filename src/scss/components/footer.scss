@@ -1,11 +1,4 @@
-.footer {
-   //min-height: 163px;
-
-
-   &__top-footer {}
-
-   &__down-footer {}
-}
+.footer {}
 
 .top-footer {
    min-height: 84px;
@@ -19,10 +12,6 @@
    &__container {
       @include container;
       display: flex;
-
-      @media screen and (max-width: 768px) {
-         //flex-direction: column;
-      }
    }
 
    &__logo-box {
@@ -87,9 +76,9 @@
    &__item-box {
       margin-right: 15px;
 
-      &:hover {
-         border-bottom: 3px solid transparent;
-      }
+      //&:hover {
+      //   border-bottom: 3px solid transparent;
+      //}
 
       @media screen and (max-width: 1024px) {
          margin-bottom: 5px;

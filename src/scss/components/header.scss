@@ -18,14 +18,14 @@
       width: 100vw;
       height: 100vh;
       left: 0;
-      transition: all 0.9s ease 0s;
+      transition: all 0.3s ease 0s;
       z-index: 1;
 
       &._active {
          top: 0;
          background: #ffffff;
          opacity: 0.78;
-         transition: all 0.9s ease 0s;
+         transition: all 0.3s ease 0s;
       }
    }
 }
@@ -340,37 +340,31 @@
       max-width: 762px;
       width: 100%;
       justify-content: space-between;
-
       margin: -5px 0 0 0;
       display: flex;
       align-items: center;
 
       @media screen and (max-width: 1024px) {
-         //align-items: stretch;
+         position: relative;
+         right: var(--pdng-conteiner);
          max-width: inherit;
+         width: 100vw;
          height: 48px;
+         margin: 0 0 0 0;
+         padding: 0 var(--pdng-conteiner) 0 var(--pdng-conteiner);
          background: rgba(245, 245, 245, 0.5);
          order: 0;
-
-         width: 100vw;
-         position: relative;
-         //left: -56px;
-         //padding: 0 var(--pdng-conteiner);
-
-         right: var(--pdng-conteiner);
-         padding: 0 0 0 var(--pdng-conteiner);
       }
 
       @media screen and (max-width: 425px) {
          height: 38px;
-         margin: 0 0 0 0;
+         padding: 0 0 0 var(--pdng-conteiner);
       }
    }
 
    &__contacts-box {
       max-width: 272px;
       width: 100%;
-
       margin-right: 12.2055%;
       display: flex;
       align-items: center;
@@ -445,11 +439,11 @@
          height: 18px;
          overflow: hidden;
 
-         &:hover {
-            height: 100%;
-            margin-top: 17px;
-            background: rgba(245, 245, 245);
-         }
+         //&:hover {
+         //   height: 100%;
+         //   margin-top: 17px;
+         //   background: rgba(245, 245, 245);
+         //}
       }
 
       @media screen and (max-width: 425px) {
@@ -574,7 +568,7 @@
       @media screen and (max-width: 1024px) {
          width: 100vw;
          max-height: calc(100vh - 98px);
-         top: 97px; //!
+         top: 97px;
          left: 0;
          background: white;
          border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -643,13 +637,12 @@
             border-bottom: 0;
             color: #FFFFFF;
             width: 100vw;
-            margin: 0 calc(0 - var(--pdng-conteiner));
-            //padding-left: 12px;
+            margin: 0 calc(0px - var(--pdng-conteiner));
             background: #337D5A;
          }
 
          &:nth-child(4):hover {
-            margin: 0 calc(0 - var(--pdng-conteiner));
+            margin-left: calc(0px - var(--pdng-conteiner)) !important;
          }
       }
    }

@@ -24,6 +24,7 @@
 		"critical": "^5.1.1",
 		"critters-webpack-plugin": "^3.0.2",
 		"del": "latest",
+		"glob": "^10.3.3",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "latest",
 		"gulp-babel": "^8.0.0",

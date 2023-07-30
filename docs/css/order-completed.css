@@ -854,9 +854,9 @@ h6 {
   width: 100vw;
   height: 100vh;
   left: 0;
-  -webkit-transition: all 0.9s ease 0s;
-  -o-transition: all 0.9s ease 0s;
-  transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   z-index: 1;
 }
 
@@ -864,9 +864,9 @@ h6 {
   top: 0;
   background: #ffffff;
   opacity: 0.78;
-  -webkit-transition: all 0.9s ease 0s;
-  -o-transition: all 0.9s ease 0s;
-  transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .top-header {
@@ -1333,10 +1333,6 @@ h6 {
 
 .menu-footer__item-box {
   margin-right: 15px;
-}
-
-.menu-footer__item-box:hover {
-  border-bottom: 3px solid transparent;
 }
 
 .menu-footer__item {
@@ -1899,16 +1895,17 @@ footer {
   }
 
   .middle-header__comunication-section {
+    position: relative;
+    right: var(--pdng-conteiner);
     max-width: inherit;
+    width: 100vw;
     height: 48px;
+    margin: 0 0 0 0;
+    padding: 0 var(--pdng-conteiner) 0 var(--pdng-conteiner);
     background: rgba(245, 245, 245, 0.5);
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
-    width: 100vw;
-    position: relative;
-    right: var(--pdng-conteiner);
-    padding: 0 0 0 var(--pdng-conteiner);
   }
 
   .middle-header__messengers-box {
@@ -1931,12 +1928,6 @@ footer {
   .middle-header__tells {
     height: 18px;
     overflow: hidden;
-  }
-
-  .middle-header__tells:hover {
-    height: 100%;
-    margin-top: 17px;
-    background: rgb(245, 245, 245);
   }
 
   .middle-header__button {
@@ -2033,12 +2024,12 @@ footer {
     border-bottom: 0;
     color: #FFFFFF;
     width: 100vw;
-    margin: 0 calc(0 - var(--pdng-conteiner));
+    margin: 0 calc(0px - var(--pdng-conteiner));
     background: #337D5A;
   }
 
   .lower-header__item-box:nth-child(4):hover {
-    margin: 0 calc(0 - var(--pdng-conteiner));
+    margin-left: calc(0px - var(--pdng-conteiner)) !important;
   }
 
   .top-footer {
@@ -2256,7 +2247,7 @@ footer {
 
   .middle-header__comunication-section {
     height: 38px;
-    margin: 0 0 0 0;
+    padding: 0 0 0 var(--pdng-conteiner);
   }
 
   .middle-header__contacts-box {
