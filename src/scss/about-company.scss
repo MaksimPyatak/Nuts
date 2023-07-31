@@ -28,7 +28,7 @@
 @import "./components/main/about-manufacturer.scss";
 @import "./components/statistics.scss";
 @import "./components/gallery-component.scss";
-@import "./components/eco-banner.scss";
+//@import "./components/eco-banner.scss";
 @import "./components/news.scss";
 @import "./components/contacts.scss";
 
@@ -140,19 +140,19 @@ main {
       }
    }
 
-   &__eco-banner {
-      .eco-banner {
-         background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("@img/about-company-page/eco-banner.jpg");
+   //&__eco-banner {
+   //   .eco-banner {
+   //      background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("@img/about-company-page/eco-banner.jpg");
 
-         &__eco-icon-box {
-            margin: 54px 0 42px 2px;
-         }
+   //      &__eco-icon-box {
+   //         margin: 54px 0 42px 2px;
+   //      }
 
-         &__title {
-            margin: 0 19px 12px 0;
-         }
-      }
-   }
+   //      &__title {
+   //         margin: 0 19px 12px 0;
+   //      }
+   //   }
+   //}
 
    &__news {
       padding: 87px 0 0 0;
