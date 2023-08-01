@@ -3,8 +3,6 @@
   @@include('html/head.html',{ "title":"Главная - Орех Причерноморья", "style": "css/style.min.css" })
   <!--, "style-preload": "css/main.min.css"-->
   <body>
-    <!--@@include('html/elements/preloader.html',{})-->
-    <!--<div class="wrapper">-->
     @@include('html/header.html',{})
     <main class="main-page">
       <div class="main-page__banner">@@include('html/components/main/banner.html',{"img":"@img/main/banner.webp","img-375":"@img/main/banner-375.webp","title": "Орех Причерноморья", "subtitle": "Единственный в Украине сад совместного выращивание фундука и грецкого ореха"})</div>
@@ -12,9 +10,8 @@
         <div class="production__container">
           <h2 class="production__title">Продукция</h2>
           <div class="production__subtitle subtitle-h2">Экологически чистые, качественные ядра грецкого ореха и фундука, а также плоды шиповника в удобной, надежной, вакуумной упаковке разного объема</div>
-          <!--<div class="production__box">-->
+          <!---->
           @@include('html/components/production.html',{})
-          <!--</div>-->
           <a href="catalog.html" class="production__button">
             <div class="production__button-text">Перейти в магазин</div>
           </a>
@@ -30,9 +27,8 @@
     <!-- Підключення додаткового файлу стилів -->
     <!--<link rel="stylesheet" href="main.min.css" />-->
     @@include('html/footer.html',{})
-    <!--</div>-->
+    <!---->
     @@include('./html/components/video-modal.html',{})
-    <!--@@include('html/elements/pop-up2.html',{})-->
     <script src="js/app.min.js"></script>
     <script src="https://www.youtube.com/iframe_api" async></script>
   </body>

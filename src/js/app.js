@@ -8,11 +8,4 @@ import "./modules/product-card.js"
 import "./modules/img-modal.js"
 import "./modules/about-manufacturer-swiper.js"
 import "./modules/news.js"
-import "./modules/select.js"
-import "./modules/scroll-container.js"
-import "./modules/tabs.js"
-import "./modules/table.js"
-import "./modules/form.js"
-import "./modules/form-redirect.js"
-import "./modules/input-file.js";
 
