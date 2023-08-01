@@ -33,20 +33,38 @@ if (table) {
 
       calculateAmount(i);
       input.addEventListener("input", function () {
-         calculateAmount(i);
-         calculateTotalAmount();
+         let inputValue = parseFloat(input.value);
+         if (isNaN(inputValue) || inputValue < input.min) {
+            input.value = input.min;
+            console.log(inputValue);
+            calculateAmount(i);
+            calculateTotalAmount();
+         } else if (inputValue > input.max) {
+            input.value = input.max;
+            calculateAmount(i);
+            calculateTotalAmount();
+         } else {
+            calculateAmount(i);
+            calculateTotalAmount();
+         }
       })
       decrease.addEventListener("click", () => {
          const currentValue = parseFloat(input.value);
-         input.value = currentValue - 1;
-         calculateAmount(i);
-         calculateTotalAmount();
+         console.log(currentValue);
+         if (currentValue > input.min) {
+            input.value = currentValue - 1;
+            calculateAmount(i);
+            calculateTotalAmount();
+         }
       });
       increase.addEventListener("click", () => {
          const currentValue = parseFloat(input.value);
-         input.value = currentValue + 1;
-         calculateAmount(i);
-         calculateTotalAmount();
+         console.log(currentValue);
+         if (currentValue < input.max) {
+            input.value = currentValue + 1;
+            calculateAmount(i);
+            calculateTotalAmount();
+         }
       });
    }
    calculateTotalAmount();
