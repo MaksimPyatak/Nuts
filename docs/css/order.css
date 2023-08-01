@@ -1788,6 +1788,17 @@ footer {
   color: #337D5A;
 }
 
+.basket-table__placing-order:hover div {
+  color: #337D5A;
+}
+
+.basket-table__placing-order div {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
 .basket-table__for-order-block {
   margin: 63px 0 0 0;
   display: -webkit-box;

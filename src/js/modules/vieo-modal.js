@@ -51,6 +51,12 @@ Array.from(playrVideoButtons).forEach(async function (button) {
       // Додати <iframe> до контейнера
       videoBox.appendChild(iframe);
 
+
+      const closeIcon = document.querySelector('.video-modal__icon-box');
+      // Встановлюємо обробник події закриття модального вікна
+      headerZero.addEventListener("click", close);
+      closeIcon.addEventListener("click", close);
+
       // Відео-програвач YouTube
       let player;
 
@@ -62,16 +68,18 @@ Array.from(playrVideoButtons).forEach(async function (button) {
             }
          });
       }
-
-      const closeIcon = document.querySelector('.video-modal__icon-box');
+      //! Не даЄ закрити вікно якщо не завантажилось API YouTube
+      //const closeIcon = document.querySelector('.video-modal__icon-box');
       // Функція, яка буде викликана, коли програвач готовий
-      async function onPlayerReady(event) {
-         // Встановлюємо обробник події закриття модального вікна
-         headerZero.addEventListener("click", close);
-         closeIcon.addEventListener("click", close);
-      }
+      //async function onPlayerReady(event) {
+      //   console.log(closeIcon);
+      //   // Встановлюємо обробник події закриття модального вікна
+      //   headerZero.addEventListener("click", close);
+      //   closeIcon.addEventListener("click", close);
+      //}
 
       async function close(e) {
+         console.log('click');
          youtubePlayer.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
          if (bodyElement.classList.contains('_lock')) {
             document.body.classList.remove('_lock');
@@ -87,8 +95,10 @@ Array.from(playrVideoButtons).forEach(async function (button) {
 
       // Викликати функцію onYouTubeIframeAPIReady() після завантаження API
       if (typeof YT !== 'undefined' && YT.loaded) {
+         console.log('if');
          onYouTubeIframeAPIReady();
       } else {
+         console.log('else');
          window.onYouTubeIframeAPIReady = onYouTubeIframeAPIReady;
       }
    });

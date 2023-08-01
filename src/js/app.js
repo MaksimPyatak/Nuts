@@ -1,5 +1,4 @@
 import * as flsFunctions from "./modules/functions.js";
-//import {preloaderF} from "./modules/preloader.js";
 
 flsFunctions.isWebp();
 
@@ -15,7 +14,5 @@ import "./modules/tabs.js"
 import "./modules/table.js"
 import "./modules/form.js"
 import "./modules/form-redirect.js"
-
-//!!Підключення файлу з бургер-меню
-//flsFunctions.burgerMenu();
+import "./modules/input-file.js";
 

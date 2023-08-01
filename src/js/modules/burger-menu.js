@@ -50,7 +50,6 @@ if (iconMenu) {
       lowerHeader.classList.toggle('_active');
       iconMenu.classList.toggle('_active');
       changeLowerHeaderTop();
-      console.log(document.body.style.paddingRight);
       if (document.body.style.paddingRight == 0 || document.body.style.paddingRight == '0px') {
          document.body.style.paddingRight = `${getScrollbarWidth()}px`
       } else {
@@ -60,12 +59,13 @@ if (iconMenu) {
    const videoModal = document.querySelector('.video-modal');
    window.addEventListener('resize', function () {
       if (window.innerWidth > 1024) {
-         //  element.classList.remove(className); 
          document.body.classList.remove('_lock');
-         if (videoModal.style.display != "block") {
-            headerZero.classList.remove('_active');
-
-         } topHeader.classList.remove('_active');
+         if (videoModal) {
+            if (videoModal.style.display != "block") {
+               headerZero.classList.remove('_active');
+            }
+         }
+         topHeader.classList.remove('_active');
          middleHeader.classList.remove('_active');
          lowerHeader.classList.remove('_active');
          iconMenu.classList.remove('_active');

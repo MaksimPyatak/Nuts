@@ -18,4 +18,3 @@ if (input !== null) {
       }
    }
 }
-console.log(input.files.length);
