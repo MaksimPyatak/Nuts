@@ -26,6 +26,14 @@ function getScrollbarWidth() {
 
 Array.from(playrVideoButtons).forEach(async function (button) {
    button.addEventListener("click", function () {
+      var scriptElement = document.createElement('script');
+
+      // Вказуємо шлях до скрипта, який хочемо підключити
+      scriptElement.src = 'https://www.youtube.com/iframe_api';
+
+      // Додаємо елемент <script> в тег <head> або <body> (в залежності від того, де потрібно підключити скрипт)
+      document.body.appendChild(scriptElement);
+
       let data = button.getAttribute("data-content");
       videoModal.style.display = "block";
       document.body.style.paddingRight = `${getScrollbarWidth()}px`
