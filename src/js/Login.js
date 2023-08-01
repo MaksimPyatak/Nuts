@@ -3,3 +3,4 @@ flsFunctions.isWebp();
 
 import "./modules/burger-menu.js";
 import "./modules/input-file.js";
+import "./modules/form-redirect.js"

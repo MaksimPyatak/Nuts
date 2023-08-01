@@ -1602,6 +1602,10 @@ footer {
   border-color: none;
 }
 
+.registration-form__tab label {
+  cursor: pointer;
+}
+
 .registration-form__item .new-select__header {
   font-family: Montserrat;
   font-size: 14px;

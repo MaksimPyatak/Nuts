@@ -115,10 +115,13 @@
       }
    }
 
-   &__tab {}
+   &__tab {
+      label {
+         cursor: pointer;
+      }
+   }
 
    &__item {
-
       .new-select__header {
          font-family: Montserrat;
          font-size: 14px;
