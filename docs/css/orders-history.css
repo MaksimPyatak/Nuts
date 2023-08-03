@@ -883,8 +883,8 @@ main {
   font-family: "nut";
   font-size: 6px;
   color: #93B474;
-  bottom: calc(50% - 3px);
-  right: 12px;
+  bottom: 3px;
+  right: 0;
   position: absolute;
   z-index: 0;
 }
@@ -1918,6 +1918,12 @@ main {
 
   main {
     margin: 117px 0 0 0;
+  }
+
+  .lang-select::after {
+    bottom: calc(50% - 3px);
+    right: 12px;
+    z-index: 0;
   }
 
   .top-header {
