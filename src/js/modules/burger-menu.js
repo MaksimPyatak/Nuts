@@ -14,7 +14,6 @@ function getScrollbarWidth() {
 
    // Calculating difference between container's full width and the child width
    const scrollbarWidth = outer.offsetWidth - inner.offsetWidth
-   console.log(scrollbarWidth);
    // Removing temporary elements from the DOM
    outer.parentNode.removeChild(outer)
 
@@ -26,6 +25,7 @@ if (iconMenu) {
    const middleHeader = document.querySelector('.middle-header');
    const lowerHeader = document.querySelector('.lower-header');
    const headerZero = document.querySelector('.header__zero');
+   const itemBox = lowerHeader.getElementsByClassName('lower-header__item-box');
    let height = lowerHeader.scrollHeight;
    lowerHeader.style.top = (0 - height) + 'px';
 
@@ -55,6 +55,15 @@ if (iconMenu) {
       } else {
          document.body.style.paddingRight = '0px'
       }
+      for (const elem of itemBox) {
+         if (elem.classList.contains('hover-effect')) {
+            elem.classList.remove("hover-effect")
+         } else {
+            window.setTimeout(() => {
+               elem.classList.add("hover-effect")
+            }, 1000)
+         }
+      }
    })
    const videoModal = document.querySelector('.video-modal');
    window.addEventListener('resize', function () {
@@ -71,6 +80,10 @@ if (iconMenu) {
          middleHeader.classList.remove('_active');
          lowerHeader.classList.remove('_active');
          iconMenu.classList.remove('_active');
+
+         if (document.body.style.paddingRight != 0 && document.body.style.paddingRight != '0px') {
+            document.body.style.paddingRight = `0px`
+         }
       }
    });
    window.addEventListener('resize', function () {
