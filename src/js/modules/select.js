@@ -1,4 +1,5 @@
 const selectElements = document.querySelectorAll('.select');
+console.log(selectElements);
 selectElements.forEach(function (selectElement) {
    const _this = selectElement,
       selectOption = _this.querySelectorAll('option'),
