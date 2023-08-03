@@ -61,7 +61,7 @@ if (iconMenu) {
          } else {
             window.setTimeout(() => {
                elem.classList.add("hover-effect")
-            }, 1000)
+            }, 900)
          }
       }
    })
@@ -81,6 +81,11 @@ if (iconMenu) {
          lowerHeader.classList.remove('_active');
          iconMenu.classList.remove('_active');
 
+         for (const elem of itemBox) {
+            if (elem.classList.contains('hover-effect')) {
+               elem.classList.remove("hover-effect")
+            }
+         }
          if (document.body.style.paddingRight != 0 && document.body.style.paddingRight != '0px') {
             document.body.style.paddingRight = `0px`
          }
