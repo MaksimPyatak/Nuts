@@ -26,7 +26,6 @@ if (table) {
    }
    function isScientificNotation(inputValue) {
       const scientificRegex = /^[+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)$/;
-      console.log(scientificRegex.test(inputValue));
       return scientificRegex.test(inputValue);
    }
 
@@ -58,7 +57,6 @@ if (table) {
       })
       decrease.addEventListener("click", () => {
          const currentValue = parseFloat(input.value);
-         console.log(currentValue);
          if (currentValue > input.min) {
             input.value = currentValue - 1;
             calculateAmount(i);
@@ -67,7 +65,6 @@ if (table) {
       });
       increase.addEventListener("click", () => {
          const currentValue = parseFloat(input.value);
-         console.log(currentValue);
          if (currentValue < input.max) {
             input.value = currentValue + 1;
             calculateAmount(i);

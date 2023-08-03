@@ -64,6 +64,8 @@ if (iconMenu) {
             if (videoModal.style.display != "block") {
                headerZero.classList.remove('_active');
             }
+         } else {
+            headerZero.classList.remove('_active');
          }
          topHeader.classList.remove('_active');
          middleHeader.classList.remove('_active');
