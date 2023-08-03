@@ -24,6 +24,11 @@ if (table) {
       const total = quantity * price; // Підраховуємо загальну суму для даного товару
       row.cells[3].innerText = total + ' грн'; // Записуємо загальну суму в четверту комірку
    }
+   function isScientificNotation(inputValue) {
+      const scientificRegex = /^[+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)$/;
+      console.log(scientificRegex.test(inputValue));
+      return scientificRegex.test(inputValue);
+   }
 
    // Проходимося по рядках (починаючи з індексу 1, оскільки індекс 0 - заголовок)
    for (let i = 1; i < rows.length; i++) {
@@ -33,20 +38,23 @@ if (table) {
 
       calculateAmount(i);
       input.addEventListener("input", function () {
-         let inputValue = parseFloat(input.value);
-         if (isNaN(inputValue) || inputValue < input.min) {
-            input.value = input.min;
-            console.log(inputValue);
-            calculateAmount(i);
-            calculateTotalAmount();
-         } else if (inputValue > input.max) {
-            input.value = input.max;
-            calculateAmount(i);
-            calculateTotalAmount();
-         } else {
-            calculateAmount(i);
-            calculateTotalAmount();
+         function valueChack() {
+            let inputValue = Number(input.value);
+            input.value = inputValue;
+            if ((typeof inputValue != "number") || inputValue < input.min) {
+               input.value = input.min;
+               calculateAmount(i);
+               calculateTotalAmount();
+            } else if (inputValue > input.max) {
+               input.value = input.max;
+               calculateAmount(i);
+               calculateTotalAmount();
+            } else {
+               calculateAmount(i);
+               calculateTotalAmount();
+            }
          }
+         window.setTimeout(valueChack, 2000)
       })
       decrease.addEventListener("click", () => {
          const currentValue = parseFloat(input.value);
