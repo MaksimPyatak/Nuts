@@ -27,6 +27,10 @@ Array.from(zoomIcon).forEach(function (button) {
    button.addEventListener("click", function () {
       let data = button.getAttribute("data-content");
       videoModal.style.display = "block";
+
+      const root = document.documentElement;
+
+      root.style.setProperty('--mgr-logo-section', `${getScrollbarWidth()}px`);
       document.body.style.paddingRight = `${getScrollbarWidth()}px`
 
       // Створити <img> елемент
@@ -57,6 +61,7 @@ Array.from(zoomIcon).forEach(function (button) {
          }
          videoModal.style.display = "none";
          document.body.style.paddingRight = '0px'
+         root.style.setProperty('--mgr-logo-section', `0px`);
          headerZero.removeEventListener("click", close);
          closeIcon.removeEventListener("click", close);
       }

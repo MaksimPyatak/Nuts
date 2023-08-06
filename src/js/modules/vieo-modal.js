@@ -35,6 +35,9 @@ Array.from(playrVideoButtons).forEach(async function (button) {
       //document.body.appendChild(scriptElement);
 
       let data = button.getAttribute("data-content");
+      const root = document.documentElement;
+
+      root.style.setProperty('--mgr-logo-section', `${getScrollbarWidth()}px`);
       videoModal.style.display = "block";
       document.body.style.paddingRight = `${getScrollbarWidth()}px`
 
@@ -97,6 +100,7 @@ Array.from(playrVideoButtons).forEach(async function (button) {
          }
          videoModal.style.display = "none";
          document.body.style.paddingRight = '0px'
+         root.style.setProperty('--mgr-logo-section', `0px`);
          headerZero.removeEventListener("click", close);
          closeIcon.removeEventListener("click", close);
       }

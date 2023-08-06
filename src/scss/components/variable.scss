@@ -1,17 +1,11 @@
 :root {
 
-   //--breakpoint-xs: 320px; 
    --breakpoint-sm: 480px;
    --breakpoint-md: 767px;
    --breakpoint-lg: 1023px;
    --breakpoint-xl: 1439px;
-   //--breakpoint-xxl: 480px; 
 
    --pdng-conteiner: 56px;
-
-   //@media screen and (max-width: 1440px) {
-   //   --pdng-conteiner: 56px;
-   //}
 
    @media screen and (max-width: 768px) {
       --pdng-conteiner: 36px;
@@ -21,7 +15,6 @@
       --pdng-conteiner: 12px;
    }
 
-   //--------------width-smaller-container
    --width-smaller-container: 1044px;
 
    @media screen and (max-width: 1440px) {
@@ -41,4 +34,6 @@
    }
 
    --pdng-text-conteiner: 120px;
+
+   --mgr-logo-section:0px;
 }

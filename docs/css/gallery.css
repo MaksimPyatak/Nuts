@@ -629,6 +629,7 @@ h6 {
   --pdng-conteiner: 56px;
   --width-smaller-container: 1044px;
   --pdng-text-conteiner: 120px;
+  --mgr-logo-section: 0px;
 }
 
 .icon {
@@ -2275,6 +2276,7 @@ main {
 
   .middle-header__logo-section {
     height: 80px;
+    margin-right: var(--mgr-logo-section);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2894,10 +2896,6 @@ main {
     margin-top: 2px;
     font-size: 12px;
     line-height: 15px;
-  }
-
-  .middle-header__lang-select-wrapper {
-    padding: 0 12px 0 13px;
   }
 
   .banner__content {
