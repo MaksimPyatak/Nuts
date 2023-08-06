@@ -8,4 +8,5 @@ import "./modules/product-card.js"
 import "./modules/img-modal.js"
 import "./modules/about-manufacturer-swiper.js"
 import "./modules/news.js"
+import "./modules/card-animation.js"
 

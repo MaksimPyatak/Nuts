@@ -2946,12 +2946,15 @@ main {
   color: #FFFFFF;
 }
 
-.product-benefits__card:hover .product-benefits__card-text {
-  display: block;
+.product-benefits__card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.product-benefits__card:hover .product-benefits__card-icon {
-  margin: 28px 0 8px 11px;
+.product-benefits__card:hover .product-benefits__card-text {
+  display: block;
 }
 
 .product-benefits__card-icon {
@@ -3006,17 +3009,113 @@ main {
 .no-webp .product-benefits .card-walnut:hover{
   background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/walnuts.jpg"); }
 
-.no-webp .product-benefits .card-hazelnut{
-  background-image: url("../img/main/hazelnut.jpg"); }
+.product-benefits .card-hazelnut {
+  position: relative;
+  padding: 0;
+}
 
-.no-webp .product-benefits .card-hazelnut:hover{
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url("../img/main/hazelnut.jpg"); }
+.product-benefits .card-hazelnut img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
-.no-webp .product-benefits .card-hazelnut:hover{
-  background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/hazelnut.jpg"); }
+.product-benefits .card-hazelnut .product-benefits__card-base-layer {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 2;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: top 0.25s ease 0.05s, margin-top 0.25s ease 0s, -webkit-transform 0.25s ease 0.05s;
+  transition: top 0.25s ease 0.05s, margin-top 0.25s ease 0s, -webkit-transform 0.25s ease 0.05s;
+  -o-transition: top 0.25s ease 0.05s, transform 0.25s ease 0.05s, margin-top 0.25s ease 0s;
+  transition: top 0.25s ease 0.05s, transform 0.25s ease 0.05s, margin-top 0.25s ease 0s;
+  transition: top 0.25s ease 0.05s, transform 0.25s ease 0.05s, margin-top 0.25s ease 0s, -webkit-transform 0.25s ease 0.05s;
+}
 
-.no-webp .product-benefits .card-hazelnut:hover{
-  background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/hazelnut.jpg"); }
+.product-benefits .card-hazelnut .product-benefits__card-hover-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 125, 90, 0.95);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: translatex(0px) rotateY(90deg) scaleX(1%);
+          transform: translatex(0px) rotateY(90deg) scaleX(1%);
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+.product-benefits .card-hazelnut .product-benefits__card-hover-layer p {
+  max-width: 323px;
+  margin: 17px 0 0 0;
+}
+
+.product-benefits .card-hazelnut .product-benefits__card-hover-layer-box {
+  padding: 3px 20px 0 20px;
+}
+
+.product-benefits .card-hazelnut:hover .product-benefits__card-hover-layer {
+  -webkit-transform: translate(0, 0%) rotateX(0);
+          transform: translate(0, 0%) rotateX(0);
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+.product-benefits .card-hazelnut .card-base-layer__hover {
+  --retreat: 203px;
+  top: 0;
+  margin-top: var(--retreat);
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: top 0.25s ease 0.05s, margin-top 0.25s ease 0s, -webkit-transform 0.15s ease 0.05s;
+  transition: top 0.25s ease 0.05s, margin-top 0.25s ease 0s, -webkit-transform 0.15s ease 0.05s;
+  -o-transition: top 0.25s ease 0.05s, transform 0.15s ease 0.05s, margin-top 0.25s ease 0s;
+  transition: top 0.25s ease 0.05s, transform 0.15s ease 0.05s, margin-top 0.25s ease 0s;
+  transition: top 0.25s ease 0.05s, transform 0.15s ease 0.05s, margin-top 0.25s ease 0s, -webkit-transform 0.15s ease 0.05s;
+}
 
 .no-webp .product-benefits .card-rosehip{
   background-image: url("../img/main/rosehip.jpg"); }
@@ -3506,10 +3605,6 @@ main {
 
   .product-benefits__card {
     padding: 20px;
-  }
-
-  .product-benefits__card:hover .product-benefits__card-icon {
-    margin: 0 0 8px 11px;
   }
 }
 
@@ -4560,14 +4655,6 @@ main {
 .webp .product-benefits .card-walnut:hover{ background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/walnuts.webp); }
 
 .webp .product-benefits .card-walnut:hover{ background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/walnuts.webp); }
-
-.webp .product-benefits .card-hazelnut{ background-image: url(../img/main/hazelnut.webp); }
-
-.webp .product-benefits .card-hazelnut:hover{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url(../img/main/hazelnut.webp); }
-
-.webp .product-benefits .card-hazelnut:hover{ background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/hazelnut.webp); }
-
-.webp .product-benefits .card-hazelnut:hover{ background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/hazelnut.webp); }
 
 .webp .product-benefits .card-rosehip{ background-image: url(../img/main/rosehip.webp); }
 
