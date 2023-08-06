@@ -45,14 +45,6 @@
    &__card {
       height: 525px;
       width: 100%;
-      //padding: 40px;
-      //background-size: cover;
-      //background-repeat: no-repeat;
-      //background-position: center;
-      //display: flex;
-      //flex-direction: column;
-      //justify-content: center;
-      //align-items: center;
       text-align: center;
       color: #FFFFFF;
 
@@ -70,29 +62,16 @@
          object-fit: cover;
       }
 
-      //@media screen and (max-width: 1440px) {
-      //   padding: 20px;
-      //}
-
       @media screen and (max-width: 1024px) {
          height: 400px;
       }
 
-      //&:hover {
-
-      //   .product-benefits__card-text {
-      //      display: block;
-      //   }
-      //}
-
       .product-benefits {
          &__card-base-layer {
             position: absolute;
-            //top: 0;
             top: 50%;
             left: 0;
             width: 100%;
-            //margin-top: 203px;
             padding: 0 20px 0 20px;
             display: flex;
             flex-direction: column;
@@ -100,7 +79,6 @@
             justify-content: flex-end;
             z-index: 2;
             transform: translate(0, -50%);
-            //transition: margin-top 0.5s ease 0s, translate(0, -50%);
             transition: top 0.25s ease 0.05s, transform 0.25s ease 0.05s, margin-top 0.25s ease 0s;
          }
 
@@ -117,8 +95,8 @@
             align-items: center;
             z-index: 1;
             transform-origin: left bottom;
-            transform: translatex(-0px) rotateY(90deg) scaleX(1%); //?!
-            transition: transform 0.5s ease 0s; //?!
+            transform: rotateY(90deg);
+            transition: transform 0.5s ease 0s;
 
             p {
                max-width: 323px;
@@ -134,8 +112,8 @@
       &:hover {
          .product-benefits {
             &__card-hover-layer {
-               transform: translate(0, 0%) rotateX(0); //?!
-               transition: transform 0.5s ease 0s; //?!
+               transform: rotateX(0);
+               transition: transform 0.5s ease 0s;
             }
          }
       }
@@ -173,142 +151,4 @@
          font-size: 28zpx;
       }
    }
-
-   //&__card-text {
-   //   display: none;
-   //   margin: 3px 7px 0 0;
-   //   font-weight: 600;
-   //   font-size: 18px;
-   //   line-height: 128%;
-   //   letter-spacing: 0.01em;
-
-   //   @media (max-width: 1024px) {
-   //      padding: 0 15%;
-   //      font-size: 16px;
-   //   }
-
-   //   @media (max-width: 768px) {
-   //      padding: 0 10%;
-   //      font-size: 14px;
-   //   }
-
-   //   @media (max-width: 425px) {
-   //      padding: 0;
-   //      font-size: 12px;
-   //   }
-
-   //   p {
-   //      margin: 17px 0 0 0;
-
-   //      &:nth-child(2) {
-   //         line-height: 139%;
-   //      }
-   //   }
-   //}
-
-
-   //.card-walnut {
-   //   background-image: linear-gradient(transparent, transparent), url('@img/main/walnuts.jpg');
-   //   //transition: all 0.9s ease 0s;
-
-   //   .product-benefits__card-icon {
-   //      font-size: 76px;
-   //   }
-
-   //   &:hover {
-   //      background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url('@img/main/walnuts.jpg');
-   //      //transition: all 0.9s ease 0s;
-   //   }
-   //}
-
-   //.card-hazelnut {
-   //   //   position: relative;
-   //   //   padding: 0;
-
-   //   //img {
-   //   //   width: 100%;
-   //   //   height: 100%;
-   //   //   object-fit: cover;
-   //   //}
-
-   //   //.product-benefits {
-   //   //   &__card-base-layer {
-   //   //      position: absolute;
-   //   //      //top: 0;
-   //   //      top: 50%;
-   //   //      left: 0;
-   //   //      width: 100%;
-   //   //      //margin-top: 203px;
-   //   //      padding: 0 20px 0 20px;
-   //   //      display: flex;
-   //   //      flex-direction: column;
-   //   //      align-items: center;
-   //   //      justify-content: flex-end;
-   //   //      z-index: 2;
-   //   //      transform: translate(0, -50%);
-   //   //      //transition: margin-top 0.5s ease 0s, translate(0, -50%);
-   //   //      transition: top 0.25s ease 0.05s, transform 0.25s ease 0.05s, margin-top 0.25s ease 0s;
-   //   //   }
-
-   //   //   &__card-hover-layer {
-   //   //      position: absolute;
-   //   //      bottom: 0;
-   //   //      left: 0;
-   //   //      width: 100%;
-   //   //      height: 100%;
-   //   //      background: rgba(51, 125, 90, 0.95);
-   //   //      display: flex;
-   //   //      flex-direction: column;
-   //   //      justify-content: flex-end;
-   //   //      align-items: center;
-   //   //      z-index: 1;
-   //   //      transform-origin: left bottom;
-   //   //      transform: translatex(-0px) rotateY(90deg) scaleX(1%);
-   //   //      transition: transform 0.5s ease 0s;
-
-   //   //      p {
-   //   //         max-width: 323px;
-   //   //         margin: 17px 0 0 0;
-   //   //      }
-   //   //   }
-
-   //   //   &__card-hover-layer-box {
-   //   //      padding: 3px 20px 0 20px;
-
-   //   //   }
-
-   //   //}
-
-   //   //&:hover {
-   //   //   .product-benefits {
-   //   //      &__card-hover-layer {
-   //   //         transform: translate(0, 0%) rotateX(0);
-   //   //         transition: transform 0.5s ease 0s;
-   //   //      }
-   //   //   }
-   //   //}
-
-   //   //.card-base-layer__hover {
-   //   //   --retreat: 203px;
-   //   //   top: 0;
-   //   //   margin-top: var(--retreat);
-   //   //   transform: translate(0, 0);
-   //   //   transition: top 0.25s ease 0.05s, transform 0.15s ease 0.05s, margin-top 0.25s ease 0s;
-   //   //}
-   //}
-
-   //.card-rosehip {
-   //   background-image: url("@img/main/rosehip.jpg");
-   //   //transition: all 0.9s ease 0s;
-
-   //   .product-benefits__card-icon {
-   //      margin: -2px 17px 20px 0px;
-   //      font-size: 54px;
-   //   }
-
-   //   &:hover {
-   //      background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url('@img/main/rosehip.jpg');
-   //      //transition: all 0.9s ease 0s;
-   //   }
-   //}
 }

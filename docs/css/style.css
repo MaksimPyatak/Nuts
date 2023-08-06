@@ -2997,8 +2997,8 @@ main {
   -webkit-transform-origin: left bottom;
       -ms-transform-origin: left bottom;
           transform-origin: left bottom;
-  -webkit-transform: translatex(0px) rotateY(90deg) scaleX(1%);
-          transform: translatex(0px) rotateY(90deg) scaleX(1%);
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
   -webkit-transition: -webkit-transform 0.5s ease 0s;
   transition: -webkit-transform 0.5s ease 0s;
   -o-transition: transform 0.5s ease 0s;
@@ -3016,8 +3016,8 @@ main {
 }
 
 .product-benefits__card:hover .product-benefits__card-hover-layer {
-  -webkit-transform: translate(0, 0%) rotateX(0);
-          transform: translate(0, 0%) rotateX(0);
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
   -webkit-transition: -webkit-transform 0.5s ease 0s;
   transition: -webkit-transform 0.5s ease 0s;
   -o-transition: transform 0.5s ease 0s;
