@@ -2925,25 +2925,15 @@ main {
 .product-benefits__card {
   height: 525px;
   width: 100%;
-  padding: 40px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   color: #FFFFFF;
+  position: relative;
+  padding: 0;
+}
+
+.product-benefits__card picture {
+  width: 100%;
+  height: 100%;
 }
 
 .product-benefits__card img {
@@ -2953,75 +2943,7 @@ main {
      object-fit: cover;
 }
 
-.product-benefits__card:hover .product-benefits__card-text {
-  display: block;
-}
-
-.product-benefits__card-icon {
-  margin: 0 0 21px 7px;
-  font-size: 50px;
-  font-weight: normal;
-}
-
-.product-benefits__card-heading {
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.01em;
-}
-
-.product-benefits__card-text {
-  display: none;
-  margin: 3px 7px 0 0;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 128%;
-  letter-spacing: 0.01em;
-}
-
-.product-benefits__card-text p {
-  margin: 17px 0 0 0;
-}
-
-.product-benefits__card-text p:nth-child(2) {
-  line-height: 139%;
-}
-
-.no-webp .product-benefits .card-walnut{
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url("../img/main/walnuts.jpg"); }
-
-.no-webp .product-benefits .card-walnut{
-  background-image: -o-linear-gradient(transparent, transparent), url("../img/main/walnuts.jpg"); }
-
-.no-webp .product-benefits .card-walnut{
-  background-image: linear-gradient(transparent, transparent), url("../img/main/walnuts.jpg"); }
-
-.product-benefits .card-walnut .product-benefits__card-icon {
-  font-size: 76px;
-}
-
-.no-webp .product-benefits .card-walnut:hover{
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url("../img/main/walnuts.jpg"); }
-
-.no-webp .product-benefits .card-walnut:hover{
-  background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/walnuts.jpg"); }
-
-.no-webp .product-benefits .card-walnut:hover{
-  background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/walnuts.jpg"); }
-
-.product-benefits .card-hazelnut {
-  position: relative;
-  padding: 0;
-}
-
-.product-benefits .card-hazelnut img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.product-benefits .card-hazelnut .product-benefits__card-base-layer {
+.product-benefits__card .product-benefits__card-base-layer {
   position: absolute;
   top: 50%;
   left: 0;
@@ -3051,7 +2973,7 @@ main {
   transition: top 0.25s ease 0.05s, transform 0.25s ease 0.05s, margin-top 0.25s ease 0s, -webkit-transform 0.25s ease 0.05s;
 }
 
-.product-benefits .card-hazelnut .product-benefits__card-hover-layer {
+.product-benefits__card .product-benefits__card-hover-layer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3084,16 +3006,16 @@ main {
   transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
 
-.product-benefits .card-hazelnut .product-benefits__card-hover-layer p {
+.product-benefits__card .product-benefits__card-hover-layer p {
   max-width: 323px;
   margin: 17px 0 0 0;
 }
 
-.product-benefits .card-hazelnut .product-benefits__card-hover-layer-box {
+.product-benefits__card .product-benefits__card-hover-layer-box {
   padding: 3px 20px 0 20px;
 }
 
-.product-benefits .card-hazelnut:hover .product-benefits__card-hover-layer {
+.product-benefits__card:hover .product-benefits__card-hover-layer {
   -webkit-transform: translate(0, 0%) rotateX(0);
           transform: translate(0, 0%) rotateX(0);
   -webkit-transition: -webkit-transform 0.5s ease 0s;
@@ -3103,7 +3025,7 @@ main {
   transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
 
-.product-benefits .card-hazelnut .card-base-layer__hover {
+.product-benefits__card .card-base-layer__hover {
   --retreat: 203px;
   top: 0;
   margin-top: var(--retreat);
@@ -3117,22 +3039,18 @@ main {
   transition: top 0.25s ease 0.05s, transform 0.15s ease 0.05s, margin-top 0.25s ease 0s, -webkit-transform 0.15s ease 0.05s;
 }
 
-.no-webp .product-benefits .card-rosehip{
-  background-image: url("../img/main/rosehip.jpg"); }
-
-.product-benefits .card-rosehip .product-benefits__card-icon {
-  margin: -2px 17px 20px 0px;
-  font-size: 54px;
+.product-benefits__card-icon {
+  margin: 0 0 21px 7px;
+  font-size: 50px;
+  font-weight: normal;
 }
 
-.no-webp .product-benefits .card-rosehip:hover{
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url("../img/main/rosehip.jpg"); }
-
-.no-webp .product-benefits .card-rosehip:hover{
-  background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/rosehip.jpg"); }
-
-.no-webp .product-benefits .card-rosehip:hover{
-  background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url("../img/main/rosehip.jpg"); }
+.product-benefits__card-heading {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.01em;
+}
 
 .no-webp .eco-banner{
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../img/main/eco-banner.jpg"); }
@@ -3601,10 +3519,6 @@ main {
 
   .middle-header__button-box {
     margin: 3px -13px 0 0;
-  }
-
-  .product-benefits__card {
-    padding: 20px;
   }
 }
 
@@ -4094,11 +4008,6 @@ main {
     font-size: 36px;
   }
 
-  .product-benefits__card-text {
-    padding: 0 15%;
-    font-size: 16px;
-  }
-
   .eco-banner {
     height: 600px;
   }
@@ -4303,11 +4212,6 @@ main {
 
   .product-benefits__card-heading {
     font-size: 32px;
-  }
-
-  .product-benefits__card-text {
-    padding: 0 10%;
-    font-size: 14px;
   }
 
   .eco-banner__subtitle {
@@ -4566,11 +4470,6 @@ main {
     font-size: 28zpx;
   }
 
-  .product-benefits__card-text {
-    padding: 0;
-    font-size: 12px;
-  }
-
   .eco-banner {
     height: 450px;
   }
@@ -4643,26 +4542,6 @@ main {
 .webp .banner-with-video{ background-image: -o-linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/banner2.webp); }
 
 .webp .banner-with-video{ background-image: linear-gradient(rgba(13, 12, 12, 0.55), rgba(13, 12, 12, 0.55)), url(../img/main/banner2.webp); }
-
-.webp .product-benefits .card-walnut{ background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url(../img/main/walnuts.webp); }
-
-.webp .product-benefits .card-walnut{ background-image: -o-linear-gradient(transparent, transparent), url(../img/main/walnuts.webp); }
-
-.webp .product-benefits .card-walnut{ background-image: linear-gradient(transparent, transparent), url(../img/main/walnuts.webp); }
-
-.webp .product-benefits .card-walnut:hover{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url(../img/main/walnuts.webp); }
-
-.webp .product-benefits .card-walnut:hover{ background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/walnuts.webp); }
-
-.webp .product-benefits .card-walnut:hover{ background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/walnuts.webp); }
-
-.webp .product-benefits .card-rosehip{ background-image: url(../img/main/rosehip.webp); }
-
-.webp .product-benefits .card-rosehip:hover{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 125, 90, 0.95)), to(rgba(51, 125, 90, 0.95))), url(../img/main/rosehip.webp); }
-
-.webp .product-benefits .card-rosehip:hover{ background-image: -o-linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/rosehip.webp); }
-
-.webp .product-benefits .card-rosehip:hover{ background-image: linear-gradient(rgba(51, 125, 90, 0.95), rgba(51, 125, 90, 0.95)), url(../img/main/rosehip.webp); }
 
 .webp .eco-banner{ background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../img/main/eco-banner.webp); }
 
